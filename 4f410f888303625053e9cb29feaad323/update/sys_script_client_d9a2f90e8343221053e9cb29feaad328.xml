@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Apply CPF Mask</description>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>SkillUP - CPF Mask</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   var input = g_form.getElement('cpf');
+
+   input.addEventListener('input', function(){
+		var value = input.value.replace(/\D/g, ''); //remove letras se houver
+
+		var formatted = "";
+		
+		if(value.length > 0){
+			formatted += value.substring(0,3);
+		}
+
+		if(value.length > 3){
+			formatted += "." + value.substring(3,6);
+		}
+
+		if(value.length > 6){
+			formatted += "." + value.substring(6,9);
+		}
+		
+		if(value.length > 9){
+			formatted += "-" + value.substring(9,11);
+		}
+
+		input.value = formatted;
+   });
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 13:27:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d9a2f90e8343221053e9cb29feaad328</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>SkillUP - CPF Mask</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name>sys_script_client_d9a2f90e8343221053e9cb29feaad328</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-01 14:50:00</sys_updated_on>
+        <table>x_1805432_mock_ski_team</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

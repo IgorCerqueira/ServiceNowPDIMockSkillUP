@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Reportar bug em lote">da4b6e1f838fa61053e9cb29feaad37e</sc_cat_item>
+        <sc_category display_value="SkillUP">7110045f8303a61053e9cb29feaad302</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>estagiario.1</sys_created_by>
+        <sys_created_on>2025-08-04 16:42:27</sys_created_on>
+        <sys_id>02b50b938343e61053e9cb29feaad39c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SkillUP.Reportar bug em lote</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name>sc_cat_item_category_02b50b938343e61053e9cb29feaad39c</sys_update_name>
+        <sys_updated_by>estagiario.1</sys_updated_by>
+        <sys_updated_on>2025-08-04 16:42:27</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

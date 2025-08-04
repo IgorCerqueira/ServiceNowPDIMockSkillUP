@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_1805432_mock_ski.SkillUPFindManager</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>SkillUPFindManager</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var SkillUPFindManager = Class.create();
+SkillUPFindManager.prototype = {
+    initialize: function() {
+    },
+
+	internManager: function(form_data) {
+		var dept = form_data.department;
+
+		if (!dept) {
+            return 'sys_id=-1'; // sem resultados
+        }
+
+		var gdt_hire_date = new GlideDateTime(form_data.hire_date);
+		var gdt_actual_date = new GlideDateTime();
+
+		var date_difference = GlideDateTime.subtract(gdt_hire_date, gdt_actual_date);
+		var diff_days = date_difference.getDayPart();
+
+	
+		
+        var gr = new GlideRecord('x_1805432_mock_ski_team');
+        gr.addQuery('department', dept);
+
+		if(diff_days > 90)
+			gr.addQuery('position', 'manager');
+		else{
+			gr.addQuery('position', 'monitor');
+		}
+        gr.query();
+
+        var userIds = [];
+        while (gr.next()) {
+            userIds.push(gr.sys_id.toString());
+        }
+
+        if (userIds.length === 0) {
+            return 'sys_id=-1';
+        }
+
+        return 'sys_idIN' + userIds.join(',');
+	},
+
+
+    type: 'SkillUPFindManager'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-03 01:43:11</sys_created_on>
+        <sys_id>22ada6fe8347261053e9cb29feaad380</sys_id>
+        <sys_mod_count>24</sys_mod_count>
+        <sys_name>SkillUPFindManager</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name>sys_script_include_22ada6fe8347261053e9cb29feaad380</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-03 03:02:11</sys_updated_on>
+    </sys_script_include>
+</record_update>

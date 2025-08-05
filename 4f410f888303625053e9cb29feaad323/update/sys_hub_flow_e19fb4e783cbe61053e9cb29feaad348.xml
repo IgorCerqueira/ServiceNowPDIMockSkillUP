@@ -1,0 +1,937 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=1017000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>skillup____verifica_a_criticidade_do_bug_e_atribui_user</internal_name>
+        <label_cache>[{"name":"227af728-f99a-41ac-9f61-1c1e7a3e815d.Record.task.assigned_to","label":"1 - Look Up Record➛Bug Record➛Task➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1805432_mock_ski_project_task","column_name":"assigned_to","usedInstances":{"7048711e-7732-47f3-9172-c12946513cc2":["assigned_to"]}},{"name":"227af728-f99a-41ac-9f61-1c1e7a3e815d.Record.project.manager","label":"1 - Look Up Record➛Bug Record➛Project➛Manager","reference":"x_1805432_mock_ski_team","reference_display":"Team","type":"reference","base_type":"reference","parent_table_name":"x_1805432_mock_ski_project","column_name":"manager","usedInstances":{"096d680b-c575-49c3-9f95-7032603ea673":["assigned_to"]}},{"name":"227af728-f99a-41ac-9f61-1c1e7a3e815d.Record","label":"1 - Look Up Record➛Bug Record","reference":"x_1805432_mock_ski_bug","reference_display":"Bug","type":"reference","base_type":"reference","usedInstances":{"096d680b-c575-49c3-9f95-7032603ea673":["record","assigned_to"],"7048711e-7732-47f3-9172-c12946513cc2":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"227af728-f99a-41ac-9f61-1c1e7a3e815d.Record.risk_severity","label":"1 - Look Up Record➛Bug Record➛Risk severity","reference":"","reference_display":"Risk severity","type":"choice","base_type":"choice","parent_table_name":"x_1805432_mock_ski_bug","column_name":"risk_severity","choices":[{"label":"-- None --","image":"","reference":false,"used":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"label":"High","image":"","reference":false,"used":false,"rawLabel":"High","selected":false,"missing":false,"value":"high","parameters":{"name":"x_1805432_mock_ski_bug","dependent_values":[""]}},{"label":"Low","image":"","reference":false,"used":false,"rawLabel":"Low","selected":false,"missing":false,"value":"low","parameters":{"name":"x_1805432_mock_ski_bug","dependent_values":[""]}},{"label":"Medium","image":"","reference":false,"used":false,"rawLabel":"Medium","selected":false,"missing":false,"value":"medium","parameters":{"name":"x_1805432_mock_ski_bug","dependent_values":[""]}}],"usedInstances":{"8c40f4a4-2061-4cb1-ab34-7b030532db58":["condition"]}},{"name":"Created_1.current.record_key","label":"Trigger - Record Created➛Item Produced Record Record➛Record key","reference":"","reference_display":"Record key","type":"document_id","base_type":"document_id","parent_table_name":"sc_item_produced_record","column_name":"record_key","usedInstances":{"227af728-f99a-41ac-9f61-1c1e7a3e815d":["conditions"]}}]</label_cache>
+        <master_snapshot>0e7341af83cbe61053e9cb29feaad365</master_snapshot>
+        <master_snapshot_digest/>
+        <name>SkillUP -   Verifica a criticidade do bug e atribui user</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>d67341af83cbe61053e9cb29feaad39c</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:34:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e19fb4e783cbe61053e9cb29feaad348</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>SkillUP -   Verifica a criticidade do bug e atribui user</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name>sys_hub_flow_e19fb4e783cbe61053e9cb29feaad348</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:51:53</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=e19fb4e783cbe61053e9cb29feaad348"/>
+    <sys_variable_value action="delete_multiple" query="document_key=e19fb4e783cbe61053e9cb29feaad348"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="sc_item_produced_record">producer=adf9029f83cba61053e9cb29feaad3ea<item display_table="sc_cat_item_producer" display_value="Reportar Bug" endquery="false" field="producer" goto="false" newquery="false" operator="=" or="false" value="adf9029f83cba61053e9cb29feaad3ea"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:51:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d67341af83cbe61053e9cb29feaad39c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:51:53</sys_updated_on>
+        <table>sc_item_produced_record</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>e19fb4e783cbe61053e9cb29feaad348</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:51:53</sys_created_on>
+        <sys_id>927341af83cbe61053e9cb29feaad39d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:51:53</sys_updated_on>
+        <trigger display_value="">d67341af83cbe61053e9cb29feaad39c</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=e19fb4e783cbe61053e9cb29feaad348^sys_idNOT IN927341af83cbe61053e9cb29feaad39d"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=e19fb4e783cbe61053e9cb29feaad348"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=e19fb4e783cbe61053e9cb29feaad348^sys_idNOT IN6d9fb4e783cbe61053e9cb29feaad348"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>e19fb4e783cbe61053e9cb29feaad348</id>
+        <name>SkillUP -   Verifica a criticidade do bug e atribui user</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:34:54</sys_created_on>
+        <sys_id>6d9fb4e783cbe61053e9cb29feaad348</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:34:54</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=6d9fb4e783cbe61053e9cb29feaad348"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=e19fb4e783cbe61053e9cb29feaad348^sys_idNOT IN9d7301af83cbe61053e9cb29feaad3a3,d57301af83cbe61053e9cb29feaad3a7"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="SkillUP -   Verifica a criticidade do bug e atribui user">e19fb4e783cbe61053e9cb29feaad348</model>
+        <model_id>e19fb4e783cbe61053e9cb29feaad348</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e19fb4e783cbe61053e9cb29feaad348</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:51:48</sys_created_on>
+        <sys_id>9d7301af83cbe61053e9cb29feaad3a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:51:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9d7301af83cbe61053e9cb29feaad3a3"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="SkillUP -   Verifica a criticidade do bug e atribui user">e19fb4e783cbe61053e9cb29feaad348</model>
+        <model_id>e19fb4e783cbe61053e9cb29feaad348</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_e19fb4e783cbe61053e9cb29feaad348</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:51:48</sys_created_on>
+        <sys_id>d57301af83cbe61053e9cb29feaad3a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:51:48</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d57301af83cbe61053e9cb29feaad3a7"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=e19fb4e783cbe61053e9cb29feaad348"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e19fb4e783cbe61053e9cb29feaad348"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=e19fb4e783cbe61053e9cb29feaad348^sys_idNOT IN157301af83cbe61053e9cb29feaad3d2"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="SkillUP -   Verifica a criticidade do bug e atribui user">e19fb4e783cbe61053e9cb29feaad348</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:51:48</sys_created_on>
+        <sys_id>157301af83cbe61053e9cb29feaad3d2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:51:51</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLZACuvimvG2TLBpguykcb/uQBgJFDm2isuRKlLLeRf69Q90sS7Jjx8rWeTEgkpo5PDpzhvTDd90nHvj6pT4jng/6hS4CCVFA/Nl6BTgs1bAbkKWaW5KAERlGa/1SRglc6DwKlzNYrnwicTEnfoyDYcQg0i/NCz0lfgL36/iWYSR8PwtTxNSLaXyOqSskLN1VFLKEAnMjoBgEVzARY+z1n8XCW1yl/VGs0qblKroQPosg0C8fHi/0FYkwjVQQvjemhMJBOSWOBQa1TduyDMOaDExvZHumxWwChoEBm5w0cMsOajabhq8SAgas4qPFWgSE3QX+ulqxQNJzhpbkayy+YfSJodZxQOwU8rnq0S1oyYfpIhQU7lZShEE+kuPMJ0M/WQafc/yKUOAk8WVJKI4kMcaDlYKsQBSI+P0ifJqWCT+KINtdMemHlPjVE5EyEl4iIVaEc+Ej9W7OTRwmUYZ+enN1N712//owu/rtZupOb+5n09ur2c21/pzty/03URFzhAUWN9/Oc6WCjwJ89QHjdewK9d1jGomV/EClSEv1PV9sFH0VBkxkrLRUTcupeFvV5e73ydowdgqb1jKW4i5EHf2dGIbNCOOOYTl8YlOPjExjaINDPRwAQpgN5Gg1j0b4IpAdavZ4Tc11PjoAyw5q6nvep+ti5BBhDwzjf5J2YVmvVfYyZOBfb8LpODmfo9ZFsEqkYuuJBDJ2ZegSxtwaj2opYnpJ6vne2np/WelREmAIt/pCbb1nRFaMfhIxbuABq7VkKwuJ8/xTEXKaBFqInxJ/NJpESJbUSv/jt0syLzjm9+ADlTVZ8C9x/el3EccimNdQV0kzVlo5q3QoL63cUp47PjH5Y5/F3iY9bZDZ6F5H17Zpcu4Bt4yxqmzTsD1uGmNjSDizDYNatdpug9mJUjYk8SY1flyFx5kY/QOk16S4AG/Uq+EgGaXbGixJUBIpjOSqH2hmT9AsBa1hiPZRjljJMh++3lbnvq31fEYgLCX4BjvUGNWCAxyQ++ETmvEr3M8j9J95FCYBa9qRiqmJQNus0H4q+Pu5RyfkYQT7AWyvOCcP3NBeCpcE6x7cz+am58AADDQ9G/3OGzqOR4nF+Xg0BstsuN8GRie2d+F6L6gt7ZLrLgfsFE7apbcjvO8EgC0fPBrg6Q5YCLPT//K59+F0TwsIXIQaub7yspbhzX3BoJzrt9pbqdNNfZ9a8Xzi0KE5HtMx3mOw4vkAPGIOrCFxxiN7MmxUfAvKPpiyg5kfcrtRt1UFZIcbfMmnzusS/5ayjUFK1Y6O79IBnmOzd0iepNYp1WfRMlMJI+1zGPxyu1mn3QM2wOyK21e7PgSF+rDa28LwQrlonRcw9a84vpVanTN3sHJ2V6qGSNLtvZ58pYLBZOhwu9tiuNNlMRswu2Ge/fHiwApJd9Za1znjUMGnnXWz82DwCgk3ZFI/Mew50vRFitk7KdbbkWKffIwqa3HnPfI1YN9RC8vOFaf0MZUT3JDXzfs61HBCwySa4Frx3yIwzVtrcgFIqY/nZUyoqeynuna9i7ShVAr+sUDyE3irm+GwVhygzq9RNaTQ7w0Y2JgMh/aO87DTvAF3AXoB79m3raOrIu0qsr2967i4zZid3asm2W1FHNiXet11d3M6bded7emlXZ/eePbd3ztQnGlLefwPSsTnvHYfAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=e19fb4e783cbe61053e9cb29feaad348^sys_idNOT IN117301af83cbe61053e9cb29feaad3d4,d17301af83cbe61053e9cb29feaad3d6,d17301af83cbe61053e9cb29feaad3d7"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="SkillUP -   Verifica a criticidade do bug e atribui user">e19fb4e783cbe61053e9cb29feaad348</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:51:48</sys_created_on>
+        <sys_id>117301af83cbe61053e9cb29feaad3d4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:51:51</sys_updated_on>
+        <ui_id>227af728-f99a-41ac-9f61-1c1e7a3e815d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VYXW/aPBT+K1GuKUsIEOjd1gpp0rZKW7ebvpXlxA5YNXZmO20p4r+/x3EClG8o07pLH5+P55zznIPD3dRnxL/0ST/oZ/1+pxcHQRQFQbcbpThMkqibJkGC237DF3hMQdPghFM4PmJe2PMzCntBpx210FimD0g/MJQUQ1AgTOccT35Vep9KYTpinCgq/Mu7+4afYwVODVX+5XTlykxyijhOKAfbWxvT+2YBNA7G+8p4Hb8NUB+RcK6lIhZL0PDps6GCUAiVYa5pwx9jQbCRajKXKIrJjeALwYgJAx59q/ys2Qu47wVWL6OQVkrd3fyIqgI5cTqSLKU3uWFSOIkD6i4lL8bim0vAlpZmuOCmLi1ICg3+aG4xWxAVouzHSD59rwMOmCjTqy65TDGfn7AxiiWFodr2gnI6BkdojPOciSHKlXxkpTFgGTeHHA7NjMsnCKrZUDRxaoE3oUS4OQD5dSn+hRWzWXwFN2AMgBiHbiNXdC0LVVblEaW80OWFwkI7X/6srBX6XViULusqP+RKBAo6VSw3H8HgkVapzBo1pTs7KdJfUCKVgjAbUy/xWk80YuS/AozJdHoF3TaUoLCZFgqqaZqKpkAX9EAns9k624+0Pm0srpZxH5rzRuNNhagG5JWsGpDwbAPSDoK/NCJGFe9vQvZx3iW8h/gh2UkCsui3lsogV7kl5q+z+WSGDhjl5NXiPgBcbXxjyeYlk214K4JmNsbKBm/98xv8XdITABHk6s0EZ6L8AQWg5+FtZyc1knCFB2X7l/a1lWGdrrMXe0Z6L6dv2bKvNX8PAFkb/gBE3q1DuQF4vV9r9xV1o7NRN2odR10gzt10jn5etQ0Frt9JtnW1/ovVx6v6wK4lg3B2P6f+1Wkxw2NjtmzMldmMjhrOZWa5m+stBDvzK2zLsDX+5HSPwLSKh9ywoidGhtQsotdaRJonzB823Vfsms9Qmd6bX3Thzkd/svSiYxkaQ59YDs9M99TSCCuKMlkIgqoH5oI2tm8ZU9pUyus75Ds1hRKehJHzzIh6pbY31z7HZjkgu9rwc+bV6VUYtAfpeWV63jy944qxZR+1z/jWe8s+GmDGy9LDh0K+1DuqlFRbdtKeru1o/4EL60BQ4VlBvX2jbeL7xs22B+s/8dX51q2TUpy0W7gbR2EYBGFA4qAXx2Gvm2RdHLezxaAhpEUKaxE8Z0AMcI9qItRdDdZXi9uNJ/81Ajv3w6BycSje2vhaCvuJ2oqNZwFDn70a8P6Uqn2RSMkpFgt6dv7awngv/54U7Ha1Nk70ZVPT/tSPecF+Cva7oJ8tKXo0aPVCkl704jC+aGeke9EnuHOB+0knjghN29npv8/3/wORoaG2RhQAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=117301af83cbe61053e9cb29feaad3d4"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="SkillUP -   Verifica a criticidade do bug e atribui user">e19fb4e783cbe61053e9cb29feaad348</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>8c40f4a4-2061-4cb1-ab34-7b030532db58</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:51:49</sys_created_on>
+        <sys_id>d17301af83cbe61053e9cb29feaad3d6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:51:49</sys_updated_on>
+        <ui_id>096d680b-c575-49c3-9f95-7032603ea673</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UTW/bMAz9K4XPiWHZSZrk1qEIsMNaoBt66QqBluhUq/wxWU6bBfnvo2w5Tbuu64oMw4D5Rlrke4964tUmUDKYByOUEZuxiUhYksRRFE9HLJ0kKYtlAogsGAQF5EgnDYrSSIpXoBuX2Gzi+Biy43g6zGYzGI4YiOEsm7AhEwyPIcEpG8vwoq3bbqlSqrrSsL70DSgjbpSWBotgfnU9CCowhGXRBPPNk192XSHXkKKmwtNSNDkW9uj9KfV4rY6++qIX8lSYw6BY+u5cuST9cnxYNAjw3mIhkeAy0DUOghwKCbY062BuTUMJgyDPC73enbhRhe2U5nBfq2/UfxS5cxmSNOGnsAu5n1A/nFIJPK+sKosuYyHV/eRK3eTFWSfBzRYzaLTdm21TUz+sHGVHomOYfbwp7y56vIUqWnWerS4F6F0E1hqVNhZrdx2osR1KDlWliiWvTLlSbTFRycOlpiDMdHlHmLVaFiEIxzukAUG4oPxpm74Eo5yID9SGireteP61cbidDE+Yt5pbwby9KDpaC6Mqe0KNV+hpbgfeyOn4JQOI2cN97/V8MPM9Z9NoPEpinpfilte3iqfN8kfPvmuTb7PtJwd8dNYBv5b0o+KfiPDGfZTzvh0fzLfTv+Rbz+gfM+6v7BrFL+6rvZtuHVrvWRVqxwclt+XnJooS+VuLOCT9X1DYkEwASzTPLeY/gPDGF4M58bJ41DEbvHp2fYOFQi3rZ4bZPxkPwFceYLfuD/Zu2CRqv/9b/4Bb//o7mHat9cAIAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d17301af83cbe61053e9cb29feaad3d6"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="SkillUP -   Verifica a criticidade do bug e atribui user">e19fb4e783cbe61053e9cb29feaad348</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>0741a0a4-6dcf-4f04-ab80-ff53c5c10ecf</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:51:49</sys_created_on>
+        <sys_id>d17301af83cbe61053e9cb29feaad3d7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:51:49</sys_updated_on>
+        <ui_id>7048711e-7732-47f3-9172-c12946513cc2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1UTW/bMAz9K4XPjmHZ+b5tCALssBbIhl66QqAlOhEiW54tp8mC/PdJtpymXddlRYZhwHwjLfK9Rz3xbu8J7k29PvKQTMiQxSSOozCMxn2SDOOERDwGROL5Xg4ZmpMlMlVyE29A1jax30fRCNJRNO6lkwn0+gRYb5IOSY8wgiOIcUwGPFg0dYeDqeSiKiTsbl0Dk2ErIXmJuTe9u/e9AkqDpbH0pvtnv/SuQCohQWkKZ4rVGeb66sPM9DhXR1e96IQ8F2YxTMxddyps0vyyfEjoe7jVmHM0cCnICn0vg5yDVuXOm+qyNokSgd/kcnc8sRK5bpVmsK3EN9O/H9pzKRppzE3hGFI3oW44SjC8KbRQeZvRkMhuckrWWX7dSrCzxRRqqU9mW1emHxaWsiXRMkw/rdTDosObi7xR59hKxUAeI9C6FEmtsbLXgRKboWRQFCJf0qJUG9EUGypZsJQmCFKpHgxmJZZ5AMzyDsyAIJib/KxJ30IprIiPpo0pPjTi6dfa4rYyHGHaaG4E0+aizNGKlaLQ70zjDTqaB98ZORm8ZgA2ebzvk56PZt5SMg4H/TiimWJrWq0FTerlj5593yTfZtvPFvjqugU+l/ST4p+IcMZ9knO+HVzMt+O/5FvH6B8z7q/sGkav7quTm24cWp1YFSrLBznV6ksdhjH/rUUcaKjWwUmPlzbzn4B445vBzBDTeNVS88+eXtdgLlDy6oVxdo/GAdCNAzgu/Iu9HDIMm+//3r/g3r//DjMdG2HCCAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d17301af83cbe61053e9cb29feaad3d7"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=e19fb4e783cbe61053e9cb29feaad348"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=e19fb4e783cbe61053e9cb29feaad348^sys_idNOT IN5d7301af83cbe61053e9cb29feaad3d6,dd7301af83cbe61053e9cb29feaad3d4"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">997301af83cbe61053e9cb29feaad3d6</block>
+        <comment/>
+        <connected_to>8c40f4a4-2061-4cb1-ab34-7b030532db58</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="SkillUP -   Verifica a criticidade do bug e atribui user">e19fb4e783cbe61053e9cb29feaad348</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:51:49</sys_created_on>
+        <sys_id>5d7301af83cbe61053e9cb29feaad3d6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:51:51</sys_updated_on>
+        <ui_id>0741a0a4-6dcf-4f04-ab80-ff53c5c10ecf</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d57301af83cbe61053e9cb29feaad3d4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="SkillUP -   Verifica a criticidade do bug e atribui user">e19fb4e783cbe61053e9cb29feaad348</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:51:48</sys_created_on>
+        <sys_id>dd7301af83cbe61053e9cb29feaad3d4</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:51:51</sys_updated_on>
+        <ui_id>8c40f4a4-2061-4cb1-ab34-7b030532db58</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Uy27bMBD8FUNnWdDD8usWpAhQoG2AJMilDYQVtbIIU6JKUnZUw//epR6O0ThIUeTYmzi73J1ZzurgyMbUjdEP8kprvqmc9fcn1+GVxej74FRQorN2mKwybriskg5wnR2IxgauC2TbCTdYTpiiDAaCm5YSMq5rAe3je3ms4CJTOHSuQVF9g8pZH/4ImbbGRECKgsrdG8WrDV3nGZ1yH/JgxQIWhfMo9P1wOQvSeZQGYRYBQkR548XrUcjkS4e4byq0/QjXYyepMksr8F0Hnw1WGVLrHIRG1ymhysBI1Z4QhZDdVuIFKHhlqJxjk581/0W1wzi2iTmSRoZ98HRMhgH2MCskZ3hbW4I9YiAVwx0mRVNW33oddvSYQyPMOHpCGk31sLakLYuBUn5fyP3d2PCGV53AISgkPdHpBIbGkDYGtX0YFFhSoaSEuqbhJLWSO95dJi6ltxF08HIh99TUusoDZol7NCPwbgj/1MGPoLhV8ZXK0OWeZgqas6RzIJUziiQcu7EkPxtLqBc4SEn6aVCCJlfV5or67HBgfXRf2/fMuYdDGC4gX4TLab5awXQWAJuu8nkwDViAC4hwGcSZd4eMXt5TXG8TjTsk87bH44/G96Os4JvitdU/rvBH7MYK4jwO/Pjybszml3bjwla8vRDhOwthn/Av98H3/f8Lcb4QXCe9sQdtXfN/3ocna/6+g+59kyHjmog8WOzz+Ne3gZYMwNk5tJdqayW8YMffUgzYaT8GAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=e19fb4e783cbe61053e9cb29feaad348"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=e19fb4e783cbe61053e9cb29feaad348"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e19fb4e783cbe61053e9cb29feaad348</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:51:48</sys_created_on>
+        <sys_id>1d7301af83cbe61053e9cb29feaad3a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:51:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_e19fb4e783cbe61053e9cb29feaad348</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:51:48</sys_created_on>
+        <sys_id>957301af83cbe61053e9cb29feaad3a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:51:48</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_e19fb4e783cbe61053e9cb29feaad348"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_e19fb4e783cbe61053e9cb29feaad348"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>skillup____verifica_a_criticidade_do_bug_e_atribui_user</internal_name>
+        <label_cache>[{"name":"227af728-f99a-41ac-9f61-1c1e7a3e815d.Record.task.assigned_to","label":"1 - Look Up Record➛Bug Record➛Task➛Assigned to","reference":"sys_user","reference_display":"User","type":"reference","base_type":"reference","parent_table_name":"x_1805432_mock_ski_project_task","column_name":"assigned_to","usedInstances":{"7048711e-7732-47f3-9172-c12946513cc2":["assigned_to"]}},{"name":"227af728-f99a-41ac-9f61-1c1e7a3e815d.Record.project.manager","label":"1 - Look Up Record➛Bug Record➛Project➛Manager","reference":"x_1805432_mock_ski_team","reference_display":"Team","type":"reference","base_type":"reference","parent_table_name":"x_1805432_mock_ski_project","column_name":"manager","usedInstances":{"096d680b-c575-49c3-9f95-7032603ea673":["assigned_to"]}},{"name":"227af728-f99a-41ac-9f61-1c1e7a3e815d.Record","label":"1 - Look Up Record➛Bug Record","reference":"x_1805432_mock_ski_bug","reference_display":"Bug","type":"reference","base_type":"reference","usedInstances":{"096d680b-c575-49c3-9f95-7032603ea673":["record","assigned_to"],"7048711e-7732-47f3-9172-c12946513cc2":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"227af728-f99a-41ac-9f61-1c1e7a3e815d.Record.risk_severity","label":"1 - Look Up Record➛Bug Record➛Risk severity","reference":"","reference_display":"Risk severity","type":"choice","base_type":"choice","parent_table_name":"x_1805432_mock_ski_bug","column_name":"risk_severity","choices":[{"label":"-- None --","image":"","reference":false,"used":false,"rawLabel":"-- None --","selected":false,"missing":false,"value":""},{"label":"High","image":"","reference":false,"used":false,"rawLabel":"High","selected":false,"missing":false,"value":"high","parameters":{"name":"x_1805432_mock_ski_bug","dependent_values":[""]}},{"label":"Low","image":"","reference":false,"used":false,"rawLabel":"Low","selected":false,"missing":false,"value":"low","parameters":{"name":"x_1805432_mock_ski_bug","dependent_values":[""]}},{"label":"Medium","image":"","reference":false,"used":false,"rawLabel":"Medium","selected":false,"missing":false,"value":"medium","parameters":{"name":"x_1805432_mock_ski_bug","dependent_values":[""]}}],"usedInstances":{"8c40f4a4-2061-4cb1-ab34-7b030532db58":["condition"]}},{"name":"Created_1.current.record_key","label":"Trigger - Record Created➛Item Produced Record Record➛Record key","reference":"","reference_display":"Record key","type":"document_id","base_type":"document_id","parent_table_name":"sc_item_produced_record","column_name":"record_key","usedInstances":{"227af728-f99a-41ac-9f61-1c1e7a3e815d":["conditions"]}}]</label_cache>
+        <master>true</master>
+        <name>SkillUP -   Verifica a criticidade do bug e atribui user</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="SkillUP -   Verifica a criticidade do bug e atribui user">e19fb4e783cbe61053e9cb29feaad348</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:51:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0e7341af83cbe61053e9cb29feaad365</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:51:52</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=0e7341af83cbe61053e9cb29feaad365"/>
+    <sys_variable_value action="delete_multiple" query="document_key=0e7341af83cbe61053e9cb29feaad365"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=0e7341af83cbe61053e9cb29feaad365"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=0e7341af83cbe61053e9cb29feaad365^sys_idNOT INc67341af83cbe61053e9cb29feaad366"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>0e7341af83cbe61053e9cb29feaad365</id>
+        <name>SkillUP -   Verifica a criticidade do bug e atribui user</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:51:52</sys_created_on>
+        <sys_id>c67341af83cbe61053e9cb29feaad366</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:51:52</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=c67341af83cbe61053e9cb29feaad366"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=0e7341af83cbe61053e9cb29feaad365^sys_idNOT IN167341af83cbe61053e9cb29feaad373,867341af83cbe61053e9cb29feaad367"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="SkillUP -   Verifica a criticidade do bug e atribui user">0e7341af83cbe61053e9cb29feaad365</model>
+        <model_id>0e7341af83cbe61053e9cb29feaad365</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_0e7341af83cbe61053e9cb29feaad365</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:51:52</sys_created_on>
+        <sys_id>167341af83cbe61053e9cb29feaad373</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:51:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=167341af83cbe61053e9cb29feaad373"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="SkillUP -   Verifica a criticidade do bug e atribui user">0e7341af83cbe61053e9cb29feaad365</model>
+        <model_id>0e7341af83cbe61053e9cb29feaad365</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_0e7341af83cbe61053e9cb29feaad365</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:51:52</sys_created_on>
+        <sys_id>867341af83cbe61053e9cb29feaad367</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:51:52</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=867341af83cbe61053e9cb29feaad367"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=0e7341af83cbe61053e9cb29feaad365"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0e7341af83cbe61053e9cb29feaad365"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=0e7341af83cbe61053e9cb29feaad365^sys_idNOT IN9a7341af83cbe61053e9cb29feaad381"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="SkillUP -   Verifica a criticidade do bug e atribui user">0e7341af83cbe61053e9cb29feaad365</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:51:52</sys_created_on>
+        <sys_id>9a7341af83cbe61053e9cb29feaad381</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:51:52</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLZACuvimvG2TLBpguykcb/uQBgJFDm2isuRKlLLeRf69Q90sS7Jjx8rWeTEgkpo5PDpzhvTDd90nHvj6pT4jng/6hS4CCVFA/Nl6BTgs1bAbkKWaW5KAERlGa/1SRglc6DwKlzNYrnwicTEnfoyDYcQg0i/NCz0lfgL36/iWYSR8PwtTxNSLaXyOqSskLN1VFLKEAnMjoBgEVzARY+z1n8XCW1yl/VGs0qblKroQPosg0C8fHi/0FYkwjVQQvjemhMJBOSWOBQa1TduyDMOaDExvZHumxWwChoEBm5w0cMsOajabhq8SAgas4qPFWgSE3QX+ulqxQNJzhpbkayy+YfSJodZxQOwU8rnq0S1oyYfpIhQU7lZShEE+kuPMJ0M/WQafc/yKUOAk8WVJKI4kMcaDlYKsQBSI+P0ifJqWCT+KINtdMemHlPjVE5EyEl4iIVaEc+Ej9W7OTRwmUYZ+enN1N712//owu/rtZupOb+5n09ur2c21/pzty/03URFzhAUWN9/Oc6WCjwJ89QHjdewK9d1jGomV/EClSEv1PV9sFH0VBkxkrLRUTcupeFvV5e73ydowdgqb1jKW4i5EHf2dGIbNCOOOYTl8YlOPjExjaINDPRwAQpgN5Gg1j0b4IpAdavZ4Tc11PjoAyw5q6nvep+ti5BBhDwzjf5J2YVmvVfYyZOBfb8LpODmfo9ZFsEqkYuuJBDJ2ZegSxtwaj2opYnpJ6vne2np/WelREmAIt/pCbb1nRFaMfhIxbuABq7VkKwuJ8/xTEXKaBFqInxJ/NJpESJbUSv/jt0syLzjm9+ADlTVZ8C9x/el3EccimNdQV0kzVlo5q3QoL63cUp47PjH5Y5/F3iY9bZDZ6F5H17Zpcu4Bt4yxqmzTsD1uGmNjSDizDYNatdpug9mJUjYk8SY1flyFx5kY/QOk16S4AG/Uq+EgGaXbGixJUBIpjOSqH2hmT9AsBa1hiPZRjljJMh++3lbnvq31fEYgLCX4BjvUGNWCAxyQ++ETmvEr3M8j9J95FCYBa9qRiqmJQNus0H4q+Pu5RyfkYQT7AWyvOCcP3NBeCpcE6x7cz+am58AADDQ9G/3OGzqOR4nF+Xg0BstsuN8GRie2d+F6L6gt7ZLrLgfsFE7apbcjvO8EgC0fPBrg6Q5YCLPT//K59+F0TwsIXIQaub7yspbhzX3BoJzrt9pbqdNNfZ9a8Xzi0KE5HtMx3mOw4vkAPGIOrCFxxiN7MmxUfAvKPpiyg5kfcrtRt1UFZIcbfMmnzusS/5ayjUFK1Y6O79IBnmOzd0iepNYp1WfRMlMJI+1zGPxyu1mn3QM2wOyK21e7PgSF+rDa28LwQrlonRcw9a84vpVanTN3sHJ2V6qGSNLtvZ58pYLBZOhwu9tiuNNlMRswu2Ge/fHiwApJd9Za1znjUMGnnXWz82DwCgk3ZFI/Mew50vRFitk7KdbbkWKffIwqa3HnPfI1YN9RC8vOFaf0MZUT3JDXzfs61HBCwySa4Frx3yIwzVtrcgFIqY/nZUyoqeynuna9i7ShVAr+sUDyE3irm+GwVhygzq9RNaTQ7w0Y2JgMh/aO87DTvAF3AXoB79m3raOrIu0qsr2967i4zZid3asm2W1FHNiXet11d3M6bded7emlXZ/eePbd3ztQnGlLefwPSsTnvHYfAAA=</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=0e7341af83cbe61053e9cb29feaad365^sys_idNOT IN167341af83cbe61053e9cb29feaad381,1e7341af83cbe61053e9cb29feaad380,5e7341af83cbe61053e9cb29feaad37f"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="SkillUP -   Verifica a criticidade do bug e atribui user">0e7341af83cbe61053e9cb29feaad365</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>0741a0a4-6dcf-4f04-ab80-ff53c5c10ecf</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:51:52</sys_created_on>
+        <sys_id>167341af83cbe61053e9cb29feaad381</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:51:52</sys_updated_on>
+        <ui_id>7048711e-7732-47f3-9172-c12946513cc2</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVTU/jMBD9K8jnNoqTtrS97VIhrcSCBCsuLIom9qRYOB9rO0C36n/fSeKUCBALEntA25tnPDPvvbypr7ZMSbZkE5QhX/CZiHkcR2EYzSc8ncUpj2QMiJyNWAE50k2DojSSzneg6yaw3UbRIWSH0XycLRYwnnAQ40U242MuOB5CjHM+lcF5W7fbUaVUttKwufQNKCJulJYGC7a8uh6xCgzNcmjYcvsk9VawGlLUdPW8R/sUvdtUzVmWos6xcInqgye+cuUzB99WlKGiBg4PRwwfHBYSCUgG2uKI5VBIcKXZsKUzNQUMgjwr9GZ/40YVriOaw4NVv2nyJGzuZUjMhBdhf0y8QF04W4GDC+osXG32epVKoO00kZhBrd3RMNZdOKucKouuxEGq++pS13lx2inC9g0G36O2BAKrhmeDvKOVXdyU9+c9yGNVtJJ4iroUoPcncM6otHYNnC1Dja3GOVSVKtZJZco71RYTlDxYazoEmS7vaaZV6yIA0eAOSFUIjim+asOXYFRD4ju1oeLdiNmNPdJg7SMV0jD5VTdIOmKeQtKq0EqQtE5oioVRlftCo+7QA9+N/Dqk09ccJhaPhhr0fFyJh4TPw+kkjpK8FLeJvVVJWq+fO/9rG3yf+d8ArTf/j/aTvwzV+/9Z7GRYe3DaJbz7px/m/vlncr+n8ent/zfTh9Grf6sDJ7U+twPDEwhCiDJx5c86DGP5rkchcGBvg0GPl16JfzHifZv3Bn36zTtWqKV9QbB+7TAnbg6TTsAnq+eTB5c+uX98Pmz/+Cxsf59oC/+bN+j6D3y+30GUCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=167341af83cbe61053e9cb29feaad381"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="SkillUP -   Verifica a criticidade do bug e atribui user">0e7341af83cbe61053e9cb29feaad365</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>8c40f4a4-2061-4cb1-ab34-7b030532db58</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:51:52</sys_created_on>
+        <sys_id>1e7341af83cbe61053e9cb29feaad380</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:51:52</sys_updated_on>
+        <ui_id>096d680b-c575-49c3-9f95-7032603ea673</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VVXU/bMBT9K8jPbRQnbWn7tlEhTWIgwcQLoOjGvikezsdsB+iq/vfdJE5bAWIgsQe0vvl++ZyTc+urNVOSzdkIZchnfCJiHsdRGEbTEU8nccojGQMiZwNWQI5UaVCURtL5HnTdBNbrKDqE7DCaDrPZDIYjDmI4yyZ8yAXHQ4hxyscyOG/7NhvqlMpWGlaXfgBFxK3S0mDB5lc3A1aBobscGjZfP0m9FayGFDWVnvdon6J3q6o5y1LUORYuUX3wxHcufObg24Iy1NTA4eGA4aPDQiIByUBbHLAcCgmuNCs2d6amgEGQZ4VebStuVeE6ojk8WvWbbh6FTV2GxEx4EbbHxAvUhbMFOLigycLVZqtXqQTaThOJGdTaHe3HuoKzyqmy6FocpLrvLnWdF6edImw7YO971JZAYNXwbJB3tLKL2/LhvAd5rIpWEk9RlwL09gTOGZXWroGzZqix1TiHqlLFMqlMea/aZoKSB0tNhyDT5QPdadWyCEA0uANSFYJjii/a8CUY1ZD4TmOoeTNgdmWPNFi7o0IaJr/qBklHzFNIWhVaCZLWCU2zMKpyX+iqe/TANwO/Dun4NYeJ2c5QezN3K/GY8Gk4HsVRkpfiLrF3Kknr5XPnf22D7zP/G6D15v/RfvKXoXr/P4ud7PcenHYJ7/7xh7l/+pnc72l8evv/zfRh9Orf6p6TWp/bPcMTCEKIMnHldR2GsXzXoxCQIj9RuIC8BEs0Lz0S/+CG9+3dG9Tp9+5YoZb2Bbn6pcOcqDlMOvmeLJ5PHlz65Pbp+bDt45Ow/X2iHfxvXqCbP468c46SCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=1e7341af83cbe61053e9cb29feaad380"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="SkillUP -   Verifica a criticidade do bug e atribui user">0e7341af83cbe61053e9cb29feaad365</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:51:52</sys_created_on>
+        <sys_id>5e7341af83cbe61053e9cb29feaad37f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:51:52</sys_updated_on>
+        <ui_id>227af728-f99a-41ac-9f61-1c1e7a3e815d</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYUW/iOBD+K1GeKZcQINC321ZIK+1tpW1vX/ZWlhM7xaqxs7bTliL++47jBCJIgWip1OoePR7b38x839jJj5XPiH/pk2kwzabT0SQOgigKgvE4SnGYJNE4TYIED/2eL/CCgqfBCacwfMS8sONnFE6C0TAaoIVMH5B+YCgp7sGBMJ1zvPxe+X0qjemccaKo8C9//Oz5OVawqaHKv1ztTJ2KiuOEcnC9q2DtoDTLfDNE5ZyzfWku8766CamIhRL0fPpsqCAUMGSYa9rzF1gQbKRabiyKYnIj+NYwZ8LAjr51ftbsBc6dBNYvoxBVSt3cZoiq/Dhzdo0NvjWqSE2hKtd0LllKtcsHoRkuuLlq2pzDTW6YFG6JC9utlrxYiK8uHf5mg7ocYCk0gKC5DdQir8LIbufy6VuNcsZEmZNqkssU880IG6NYUhiLZ+VTThewEVrgPGfiHuVKPrJyMWBZ9O85DPoZl09wqGb3oo9TC7wPecX9GdivS/N3rJiN4h/YBhYDIMaBIciVUMtClal8RCkvdDmhsNBuL3/d8/VSX3Gs9TZySDn6VVjcLg9VxMglzS5JFcvN37DFI62CW/dqYYwOUnC6pVwqBWEWhW6oA9AgRv4rYDFZra6ANIYSFPbTQkF+TV/RFFiHHuhyvd7XTMfVHcV1PLJaXFfN0NrCrWS2Z/vStkEls/BsMhsGwUcSGhz+/nTWXTkuBUfkE5KDJCNbPmmpDHK5bOhnXxOdeX4ChJrnN5aZXrJ8DVVF84xRTtpuk5md2LlNBv/P2+RdkhwAEeSqxwRnonwaANC3Yv/oIPWScIdnJb0ad4e1YZ3uawB7RnovnZVwApxaCbdwtnfn8LRArPt9SZndXl8bKwFEZxNANDiPAFabMDeJbMl5/Rq01az9X6w/3vUHCjYWhOs2gXU6M+x65mC9L+Cok4KbZHMz169w7szPxlcU2XvLFjCHpdV5yOkXPTFyT8329NqLSPOE+UPbfMU4VBeqDO8NnqDhwa+gpPEEZRlaQOVYDi9l9zbUCCuKMlkIgqo38pZItpIZU9pUzvuN5hsF/QhPgjA9M6de6e1tvDtexMfjqFP5OfPqQKrTtAeBeGUg3iaQbmF3aVrDMz5Oz920Zpjxshrw+ZM3ykmVkuqVxnWkkAcYcWJXOxFUeFZQf9722iTQ2v6OYP0Q39Lnb00pxclwgMdxFIZBEAYkDiZxHE7GSTbG8TDbahQhLVLoprBzBlSB7VFNjbrOwX7/cS21a6M5AVVNwWsp7Of1IDaehQX19WpYx4FXDSWRklMsdjrKHdwTf80q/BVfR++uq3yIP0sFu9vNtDO15vqt3g0F+1ewXwX9bCk2ocFgEpL0YhKH8cUwI+OLKcGjCzxNRnFEaDrMzvkU+Pkb3EewX6gVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=5e7341af83cbe61053e9cb29feaad37f"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=0e7341af83cbe61053e9cb29feaad365"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=0e7341af83cbe61053e9cb29feaad365^sys_idNOT IN9e7341af83cbe61053e9cb29feaad37d,9e7341af83cbe61053e9cb29feaad37e"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">d57301af83cbe61053e9cb29feaad3d4</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="SkillUP -   Verifica a criticidade do bug e atribui user">0e7341af83cbe61053e9cb29feaad365</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:51:52</sys_created_on>
+        <sys_id>9e7341af83cbe61053e9cb29feaad37d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:51:52</sys_updated_on>
+        <ui_id>8c40f4a4-2061-4cb1-ab34-7b030532db58</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNnWdAjft6CBAEKpA2QBLm0gbCmVhYRSlRJyo5q+N+71MM2khRp0Bx7M4fL3ZnRDrxjqrZVbc29OjdGrEu2/P7oMVE6jH7vWAkFsiXjqkyFFapMWsBjG5C1u7jIkT+NhMVixDVVcJDCNlSQClNJaB7eq+O5kKnGfnIFmvpb1Gy5e3ElUmqTBZCFCx7yOJrGURBE87NwNY1XYZTGgBBTQwkrlG7iQHl03SLeH7XYpnK4sVqU6/583Xe5G0ClU8cqDDyGzxbLFIlPBtKgxwooU7BKNwdEI6Q3pTwCuSgttWOu+NmIXzQwmkxcYYYkkWN3eTgmvX8dnF2CBaJSc1vrvpTnSnA0nTkpZlBLe3GKdQU3lZPaPbGwksNrJeui/NY5wg4Nhs9FSG2IBFZOqaPe68jucrW9HVheibJ1pb+Uij7r4QSWvFvV1vHZMZRYUKOkgKoiR5NKq41oHxOXwl9LOviZVFsa6jbRB+6I+2Qs+FeEX7bwA2jhVHylNvS4o7kCI3jSbi21I5uQ7T1mGnMhwZijSHI3+Vk7ip3kXlzS+eOe0G5W9pwmb7DXsfdeh+Bk/3e7KJpBNovm42yxgPFZCHy8yKbhOOQhziDGeThJ/VvktEC+FuYpMbhBikCz3/+ogyBOc7HOXwfm8xp/LGELmGSTMJi8nbCz6VsJeyNbH4xV9E6s3Df9y1QFQfA/Vv8cK2GSLgy9tnb4J6bq0UWom3nwmgtD1O4d9mX4B3IXDS2X4KfQVuknJ+qI7X8D419UOcsGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">997301af83cbe61053e9cb29feaad3d6</block>
+        <comment/>
+        <connected_to>8c40f4a4-2061-4cb1-ab34-7b030532db58</connected_to>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="SkillUP -   Verifica a criticidade do bug e atribui user">0e7341af83cbe61053e9cb29feaad365</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Else">1f781bf3c32232002841b63b12d3aee6</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:51:52</sys_created_on>
+        <sys_id>9e7341af83cbe61053e9cb29feaad37e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:51:52</sys_updated_on>
+        <ui_id>0741a0a4-6dcf-4f04-ab80-ff53c5c10ecf</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/6tWyi8tKSgtKQ7JdywuzkzPU7KKjtVRyswDiUHYZYlFmYlJOalQbkpqcmZxZn5eCEjME0ldSmVeYm5mMrJQeX5RdlpOfjlCrBYAD1ouqHEAAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=0e7341af83cbe61053e9cb29feaad365"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=0e7341af83cbe61053e9cb29feaad365"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_0e7341af83cbe61053e9cb29feaad365</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:51:52</sys_created_on>
+        <sys_id>167341af83cbe61053e9cb29feaad377</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:51:52</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_0e7341af83cbe61053e9cb29feaad365</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:51:52</sys_created_on>
+        <sys_id>de7341af83cbe61053e9cb29feaad370</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:51:52</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_0e7341af83cbe61053e9cb29feaad365"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_0e7341af83cbe61053e9cb29feaad365"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>e19fb4e783cbe61053e9cb29feaad348</sys_id>
+        <latest_snapshot>0e7341af83cbe61053e9cb29feaad365</latest_snapshot>
+        <compiler_build/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=e19fb4e783cbe61053e9cb29feaad348^sys_idNOT INda7341af83cbe61053e9cb29feaad39d"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan/>
+        <plan_id>e19fb4e783cbe61053e9cb29feaad348</plan_id>
+        <snapshot>0e7341af83cbe61053e9cb29feaad365</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:51:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>da7341af83cbe61053e9cb29feaad39d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:51:53</sys_updated_on>
+        <trigger display_value="">d67341af83cbe61053e9cb29feaad39c</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=e19fb4e783cbe61053e9cb29feaad348"/>
+</record_update>

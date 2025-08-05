@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=9224000,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>skillup__if_scripting_on_servicenow__course_is_done_set_task_to_intern</internal_name>
+        <label_cache>[{"name":"bb31387a-3a18-435c-b0ee-db076b698616.Record.sys_created_on","label":"1 - Look Up Record➛Certificates Record➛Created","reference":"","reference_display":"Created","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_1805432_mock_ski_certificates","column_name":"sys_created_on","usedInstances":{"543040ff-39bf-43bc-8354-5dba8df5555e":["start_date"]}},{"name":"9a15d4d4-6b87-4755-90af-6bde5c01cbf9.Record","label":"3 - Look Up Record➛Project Task Record","reference":"x_1805432_mock_ski_project_task","reference_display":"Project Task","type":"reference","base_type":"reference","usedInstances":{"28074925-bd34-467f-9872-27023c13e486":["task"],"543040ff-39bf-43bc-8354-5dba8df5555e":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9a15d4d4-6b87-4755-90af-6bde5c01cbf9.Record.project","label":"3 - Look Up Record➛Project Task Record➛Project","reference":"x_1805432_mock_ski_project","reference_display":"Project","type":"reference","base_type":"reference","parent_table_name":"x_1805432_mock_ski_project_task","column_name":"project","usedInstances":{"28074925-bd34-467f-9872-27023c13e486":["project"]}},{"name":"d4528274-1b01-4499-bbd3-beabc2c2437a.Records","label":"3 - Look Up Records➛Project Task Records","reference":"x_1805432_mock_ski_project_task","reference_display":"Project Task","type":"records","base_type":"records","usedInstances":{"cd59b8be-e95d-4e80-b4b8-19aedcad43f4":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bb31387a-3a18-435c-b0ee-db076b698616.Record.intern","label":"1 - Look Up Record➛Certificates Record➛Intern","reference":"x_1805432_mock_ski_team","reference_display":"Team","type":"reference","base_type":"reference","parent_table_name":"x_1805432_mock_ski_certificates","column_name":"intern","usedInstances":{"5fd0ca1a-e0d8-48b1-b9ab-d90d35af2cb0":["team"],"28074925-bd34-467f-9872-27023c13e486":["team"]}},{"name":"Created_1.current.record_table","label":"Trigger - Record Created➛Item Produced Record Record➛Record table","reference":"","reference_display":"Record table","type":"table_name","base_type":"table_name","parent_table_name":"sc_item_produced_record","column_name":"record_table","usedInstances":{}},{"name":"Created_1.current","label":"Trigger - Record Created➛Item Produced Record Record","reference":"sc_item_produced_record","reference_display":"Item Produced Record","type":"reference","base_type":"reference","usedInstances":{"8c3f5c8b-16f5-45c9-b85b-6e0c6e23ca53":["requested_item"],"23ba0484-59ac-497d-8eb2-572e53883034":["requested_item"]},"attributes":{}},{"name":"Service Catalog_1.table_name","label":"Trigger - Service Catalog➛Table Name","type":"table_name","base_type":"table_name","usedInstances":{"c72f5115-f990-4a3c-baf7-a06accf77f05":["condition"]},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Item Produced Record Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sc_item_produced_record","column_name":"sys_id","usedInstances":{}},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Item Produced Record Table","reference":"sc_item_produced_record","reference_display":"Item Produced Record","type":"table_name","base_type":"table_name","usedInstances":{"c4de6ebb-49a7-4cd7-b869-19a5476567e3":["table"],"ac2e32b2-fed5-4b62-a263-e5972619e6a4":["table"],"ec90ef02-fd49-449b-bda0-04aae7248e54":["condition"]},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.record_key","label":"Trigger - Record Created➛Item Produced Record Record➛Record key","reference":"","reference_display":"Record key","type":"document_id","base_type":"document_id","parent_table_name":"sc_item_produced_record","column_name":"record_key","usedInstances":{"bb31387a-3a18-435c-b0ee-db076b698616":["conditions"]}},{"name":"bb31387a-3a18-435c-b0ee-db076b698616.Record.course.training","label":"1 - Look Up Record➛Certificates Record➛Course➛Training","reference":"","reference_display":"Training","type":"string","base_type":"string","parent_table_name":"x_1805432_mock_ski_course","column_name":"training","usedInstances":{"2fe7f104-f249-472d-81f9-ccd8a71a62bd":["condition"]}}]</label_cache>
+        <master_snapshot>53199067830be61053e9cb29feaad3a8</master_snapshot>
+        <master_snapshot_digest/>
+        <name>SkillUP - if Scripting on serviceNow course is done set task to intern</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>620ad4a7830be61053e9cb29feaad3fc</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 22:45:00</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>38b89427830be61053e9cb29feaad335</sys_id>
+        <sys_mod_count>35</sys_mod_count>
+        <sys_name>SkillUP - if Scripting on serviceNow course is done set task to intern</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name>sys_hub_flow_38b89427830be61053e9cb29feaad335</sys_update_name>
+        <sys_updated_by>estagiario.1</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:18:46</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=38b89427830be61053e9cb29feaad335"/>
+    <sys_variable_value action="delete_multiple" query="document_key=38b89427830be61053e9cb29feaad335"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="sc_item_produced_record">producer=8b5a3bc38303a61053e9cb29feaad365<item display_table="sc_cat_item_producer" display_value="Envio de certificados" endquery="false" field="producer" goto="false" newquery="false" operator="=" or="false" value="8b5a3bc38303a61053e9cb29feaad365"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>true</on_insert>
+        <on_update>false</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 22:50:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>620ad4a7830be61053e9cb29feaad3fc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 22:50:51</sys_updated_on>
+        <table>sc_item_produced_record</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>38b89427830be61053e9cb29feaad335</identifier>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>estagiario.1</sys_created_by>
+        <sys_created_on>2025-08-05 01:18:46</sys_created_on>
+        <sys_id>9debf8e383cbe61053e9cb29feaad330</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>estagiario.1</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:18:46</sys_updated_on>
+        <trigger display_value="">620ad4a7830be61053e9cb29feaad3fc</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=38b89427830be61053e9cb29feaad335^sys_idNOT IN9debf8e383cbe61053e9cb29feaad330"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=38b89427830be61053e9cb29feaad335"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=38b89427830be61053e9cb29feaad335^sys_idNOT INb0b89427830be61053e9cb29feaad336"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>38b89427830be61053e9cb29feaad335</id>
+        <name>SkillUP - if 'Scripting on serviceNow’ ' course is done set task to intern</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 22:45:00</sys_created_on>
+        <sys_id>b0b89427830be61053e9cb29feaad336</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 22:45:00</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=b0b89427830be61053e9cb29feaad336"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=38b89427830be61053e9cb29feaad335^sys_idNOT IN7ee81827830be61053e9cb29feaad313,c5c99067830be61053e9cb29feaad3f5"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name,uiTypeLabel=Table Name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="SkillUP - if Scripting on serviceNow course is done set task to intern">38b89427830be61053e9cb29feaad335</model>
+        <model_id>38b89427830be61053e9cb29feaad335</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_38b89427830be61053e9cb29feaad335</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 22:45:57</sys_created_on>
+        <sys_id>7ee81827830be61053e9cb29feaad313</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 22:49:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7ee81827830be61053e9cb29feaad313"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id,uiTypeLabel=Document ID</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="SkillUP - if Scripting on serviceNow course is done set task to intern">38b89427830be61053e9cb29feaad335</model>
+        <model_id>38b89427830be61053e9cb29feaad335</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_38b89427830be61053e9cb29feaad335</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 22:49:40</sys_created_on>
+        <sys_id>c5c99067830be61053e9cb29feaad3f5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 22:49:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c5c99067830be61053e9cb29feaad3f5"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=38b89427830be61053e9cb29feaad335"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=38b89427830be61053e9cb29feaad335"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=38b89427830be61053e9cb29feaad335^sys_idNOT IN13e1f467838be61053e9cb29feaad303"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="SkillUP - if Scripting on serviceNow course is done set task to intern">38b89427830be61053e9cb29feaad335</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 00:35:13</sys_created_on>
+        <sys_id>13e1f467838be61053e9cb29feaad303</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 00:40:56</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLZACuli+5G2bZNEA203heNuHNBAocmgTlSVXopT1LvLvHepiy7o4dqxsnRcDIqmZw6MzZ0g/fNd94oGvX+oz4vmgX+gikBAFxJ+tV4DDUg27AVmquSUJGJFhtNYvZZTAhc6jcDmD5conEhdz4sc4GEYMIv3SvNBT4idwv45vGUbC97MwRUy9mMbnmLpCwtJdRSFLKDA3AopBcAUTMcZe/1ksvMVV2h/FKm1arqIL4bMIAv3y4fFCX5EI00gF4XttSigclFMyscCgtmlblmFY44HpDW3PtJhNwDAwYJ2TGm7ZQs120/BVQsCAbfhosBYBYXeBv96sWCDpOUNL8jUW3zD62FDrOCB2Cvnc5tEtaMmH6SIUFO5WUoRBPpLjzCdDP1kGn3P8ilDgJPFlSSiOJDHGg5WCrEAUiPj9Inyalgk/iiDbXTHph5T4myciZSS8REKsCOfCR+rdnJs4TKIM/fTm6m567f71YXb1283Und7cz6a3V7Oba/0525f7b6Ii5ggLLG6+neeNCj4K8NUHjNexK9R3j2kkVvIDlSIt1fd8sVX0VRgwkbHSUDUtp+JdVZe73ydrw+gUNq1kLMVdiDr6OzEMm409h9getce2YZOhaTg2TKhnTTgQwuyhc7Sah0N8EUiHmj1eUXOVjxbAsoWa6p736boYOUTYA8P4n6RdWNZrlb0MGfjX23A6Ts7nqHURrBKp2HoigYxdGbqEMbfCo1qKmF6Ser63pt5fVnqUBBjC3Xyhpt4zIjeMfhIxbuABq7VkKwuJ8/xTEXKaBFqInxJ/NJpESJbUSv/jt0syLzjm9+ADlRVZ8C9x9el3EccimFdQb5JmrDRybtKhvLRyS3nu+MTkj30We5P0tEZmrXsdXdumybkH3DJGqrJNw/a4aYwMh3BmGwa1KrXdBNOJUtYk8SY1flyFx5kY/QOkV6e4AG9Uq+EgGaW7GixJUBIpjOSqH2hmT9AsBa1miPZRjriRZT58vavOfVvr+YxAWErwDXaoMaoFBzgg98MnNONXuJ9H6D/zKEwCVrcjFVMTgbZdof1U8Pdzj07Iwwj2A9hdcU4euKW9FC4J1j24n81NbwIDMND0bPQ7z5lMPEoszkfDEVhmzf22MFqxvQvXe0FtaZtcuxywVThpm96O8L4TADZ88GiApztgIcxW/8vn3ofTPS0gcBFq5PrKyxqGN/cFg3Ku32pvpE639X1qxfPxhDrmaERHeI/BiucD8Ig5sBwyGQ3tsVOr+AaUfTBlCzM/5HajbqsKSIcbfMmnzusS/5ayjUFK1Y6O79IBnmOzd0iepNIp1WfRMlMJI+1zGPxyu12n3QM2wOyK21e7PgSF+rDa28LwQrlonBcw9a84vpNanTM7WDm7K1VNJOnuXk++UsFg7Ey43W4xfNJmMVsw3TDP/nhxYIWknbXWds44VPBpa910HgxeIeGaTKonhj1Hmr5IMXsnxXo7UuyTj1FlLXbeI18D9h21sOxccUofUznBDXnVvK9DDSc0TKIJrhX/LQLTvLUmF4CU+nhexoSayn6qa1e7SBPKRsE/Fkh+Am90MxzWigPU+TWqmhT6vQEDGxHHsTvOw5P6DbgN0At4z75tHV0VaVuR7e1dx8Wtx2ztXhXJ7iriwL7U667bm9Npu25tTy/t+vTGs+/+3oLiTFvK43+ubcZ1dh8AAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=38b89427830be61053e9cb29feaad335^sys_idNOT IN0b3334e7838be61053e9cb29feaad34a,2d8878af838be61053e9cb29feaad300,67c9382383cbe61053e9cb29feaad396,ed8838af838be61053e9cb29feaad3ff"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="SkillUP - if Scripting on serviceNow course is done set task to intern">38b89427830be61053e9cb29feaad335</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 00:40:56</sys_created_on>
+        <sys_id>0b3334e7838be61053e9cb29feaad34a</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_updated_by>estagiario.1</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:18:41</sys_updated_on>
+        <ui_id>bb31387a-3a18-435c-b0ee-db076b698616</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VY227bOBD9FUHPjitZvuZtkcBAgW0DtNm+pAFBkVRMhCZVkkriGP73HYqS7fhux0XTRw7ncmbmzJjy3TTkNLwM6SAaZINBp9+LoiSJom43IThO06RL0ijF7bARSjxmoGlxKhgcn7Ao3PkFxf2o005aaKzIIzKPHBGmLc84wZYZ0KTc5AJPflQGV29vyYgLqpkML+/uG2GONYSxTIeX05UrO8kZEjhlApzcOhTBVwepcXAGb4zXM3IB6iOS3rXS1GGJGiF7sUxSBqEyLAxrhGMsKbZKT+YSzTC9kWIhGHFpwWPolF8MfwX3/cjpZQzSIszfzY+oqpQXk5HihN3klivpJR6ov1SiGMuvPgFXY5bhQti6xiApDPhjucPsQFSIsu8j9fytDjjkskyvuhSKYDE/YWs1TwvXJegFE2wMjtAY5zmXDyjX6omXxoBl3HwQcGhmQj1DUMMfZBMTB7wJJcLNIcivS/EPrLnL4gu4AWMAxAV0G/miG1XosipPiIjClBcaS+N9hbOyVuhX4VD6rKv8kC8RKBiieW7/AYMnVqUya9Qk7+ykyGBBCaIk5S6mWWK6mRjE6c8CjOl0egXdtoyiuEkKDdW0Tc0I0AU9sslstk77I61PG4urZdyH5rzReFMhqgF5I6sGJD7bgLSj6A+NiNXFx5uQfZz3Ce8hfkx3koAu+m2UtshXbon562w+maFDzgR9s7gPAFcb3ziyBelkG96KoJmLsbLBW3/9Bv+Q9ARAFPl6cym4LH9AAeh5eNvZSY00XuFB2f6lfe1k2JB19uLAquD19C1b9rXm7wEga8PvgCi49Sg3AK/3a+2+om5yNuomreOoC8S5m87Rz6u2ocD1O8m1rtZ/dfp4VR/YtWQQz+7n1L86LWZ8bMyWi7kym8lRw7nMLH9zvYVgZ36FbRm2xu+c7hGYVvGQH1b0zOkDs4votRZV9hmLx033FbvmM1Sm9+4XXbzz0Z8uveh4hsbQJ57DM9M/tQzCmqFMFZKi6oG5oI3rW8a1sZXy+g75xmyhZaBg5AI7YkGpHcy1z7FZDsiuNvycBXV6FQYTQHpBmV4wT++4YmzZR+0zvvXes4+GmIuy9PChkC/1jmmt9JadtKdrO9p/4MI6EFR8VlDv32ib+L5xs+3B+ld8db536xCG03YLd3tJHEdRHNFe1O/14n43zbq4184Wg4aQkQTWInjOgBjgHtVEqLsara8WvxtP/msEdu6nYeXiULy18bWS7hO11bOBAwx9DmrA+1Oq9kWqlGBYLujZ+WML46P8e1Lw29XaeNG/m5r2u37MC/6f5L8K9tmRos+iVj+m5KLfi3sX7Yx2LwYUdy7wIO30EspIOzv99/n+f3ywSyRYFAAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0b3334e7838be61053e9cb29feaad34a"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="SkillUP - if Scripting on serviceNow course is done set task to intern">38b89427830be61053e9cb29feaad335</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>2fe7f104-f249-472d-81f9-ccd8a71a62bd</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:04:03</sys_created_on>
+        <sys_id>2d8878af838be61053e9cb29feaad300</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_updated_by>estagiario.1</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:18:41</sys_updated_on>
+        <ui_id>28074925-bd34-467f-9872-27023c13e486</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/91UyW7bMBD9lYBnSSCtxbJvAYrcmgBpkUuaClxGMRtqqUg5dg3/e4da0jSIgSAoULS6zfbmveFobg9EK7ImGQOarlgmYxbHC0oXecJEFgu2UDEHSEhAal4BZjouDBSDEZAtN7137gqW0zSJF0XVyIfCPuiCG9NI7kBhmtK2NXx/M2WfnT+LyY02qoOarG/vAtLyDpEddGR9eBFy+xYKwwUYhPjsWZxdjizequC34hOKfJeXvqZTnhANCOwc1Ap5r0tuLASk4rXirun2ZO26Hh0dcHVVm/1TxkbXDgGJz91Z/QPRc+rzSkBpEsbYk1lMsxrdctNoCVet0009egZiU7AxfVVfjiL8lKHkvXHzlNHTW8SD1lP2JCZG5adN83g9N7zQ9aBuCvqHMU8Wd67Tondg/XuAgQqBioq3ra7vi7ZrtnooRi5VdG/QiErTPGJTq+/riEtPPMIJ8egC/R8G9w3vtFfxEWGw+DioL773vu+oY2JcjKIxwcpOt+4c4bYwkTsG8+oqoKuTD8/Er4cettU+W1sHvPrSUxqrw0EIrM+XPIw5y8MkTmUoKECoBF1mIlvlGcuia5C4DBE+KXT18fgVJ/ANpJsxVpylKlFJmIl8GSbLNA1XlJdoKkglZVKUqxljKkUQx+3DOxCw0jruejvWNji01362/1LjO48GVDgZB2fjbII3788McKHBKPvKQs1XY2pQbKcG0+Vgf+pysIwO39+5HyPPf+x8PLvkJw7J3U/ykBJSBQcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2d8878af838be61053e9cb29feaad300"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="SkillUP - if Scripting on serviceNow course is done set task to intern">38b89427830be61053e9cb29feaad335</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>2fe7f104-f249-472d-81f9-ccd8a71a62bd</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:09:38</sys_created_on>
+        <sys_id>67c9382383cbe61053e9cb29feaad396</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_updated_by>estagiario.1</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:18:41</sys_updated_on>
+        <ui_id>543040ff-39bf-43bc-8354-5dba8df5555e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VXU/bMBT9K1Wem8hpPpr2bRJC2sNgYogXxizHvikezsdip9BV/e+7TpxSGGMIoU2Tlrd77XvuOdfH8eXWk8JbejEIEi7ClEdhFM0ImWVxmKdRHs5ExABCb+pVrATc2QKvW4HxmqnOJrbbBQsTEYvYT/Ns7sfzJPEXhBUYCkg4CXleLIKzvm63w0ohdaPY5sIBYIZfSyVaqLzl5dXUa1iLvQy03nL7aMlsGqCK5aCw8KjmXQmVmbw/QoyX6hirz0Yhj4XZHhgLh06lTeKS5ROSqQd3BioB2K5gSsPUK1klmKnbjbc0bYeJFpg4rdRmv+NaVmZQWrI7Lb8jfkzsvgJQGndT2IfUTWgcTi05nDZG1tWQMSxX4+Rq1ZXVySDBzhYK1ilzMNtOIx40lrIlMTAsPl3Xt2djv2NZ9eocW1VzpvYRM6aVeWdA2+MABf1QStY0slrRpq3Xsi9GKmWwUhgEhapvsaeWqypg3PIOcEAsOMb8UZ++YK20Ij4gDBbvevH0W2f7DjIcYdpr7gXT/qBwq+atbMw7BF6Do7mbOiPnyXMG4Iv78z7AvDfzHQ0zksTRjJY1v6H6RlqFX4Ebapi++dm8H4fVyfmw+jojn1sqk5OByktlPCj+hSxn5Qc55+TkzZyc/SUnO0b/mJV/Z2Aye/YPdnDSvWf1gXm1YabTnztCIiErq2fVgtZfMN8airRhWNtu8xzRsznzIxZmfhwl3M8JgC9yMk/zdJGlYer+2IHeaMrRBwYEKnjqB/7H+r7ydkGJbA1MBr7TF895BDiWoIR+YvDj9XIN6No12D8Wb3bHwpT03/834w3fjKsfI26jzf4IAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=67c9382383cbe61053e9cb29feaad396"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="SkillUP - if Scripting on serviceNow course is done set task to intern">38b89427830be61053e9cb29feaad335</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>2fe7f104-f249-472d-81f9-ccd8a71a62bd</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:04:03</sys_created_on>
+        <sys_id>ed8838af838be61053e9cb29feaad3ff</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_updated_by>estagiario.1</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:18:41</sys_updated_on>
+        <ui_id>9a15d4d4-6b87-4755-90af-6bde5c01cbf9</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/9VY227bOBD9FUHPjitZtmXnbdHAQIFus2jTvGQDgiKpmA1NqiSVxAny7x2Kku34HsdF00fO9czM4Zjy1VPIaXga0mE0zIfD3iCNoiSJon4/ITjOsqRPsijD3bAVSjxhYGlxJhgc77Ao3fkBxYOo1006aKLILTK3HBVa/WDEIovNLVhSbgqBp5e1w39eG1x4LRlzQTWT4enVdSsssIY0lunw9GlJZacFQwJnTECQC4ci+OIgtfau4IXzakUuQXNE0odWmjosUStkD5ZJyiBVjoVhrXCCJcVW6elMohmm51LMBWMuLUQMnfGD4Y8QfhA5u5xBWYR53eyI6k55MRkrTth5YbmSXuKBeqUS5UR+8QW4HrMcl8I2PQZJaSAeKxxmB6JGlH8bq/uvTcIRl1V5tVIogsXshK3VPCstM24WTLAJBEITXBRc3rgZ3/HKGbBM2jcCDu1cqHtIaviNbGPigLehRbg9AvlZJb7Emrsq/oUw4AyAuIBpI990o0pddeUOEVGaSqGxND5W+Fz1Cv0sHUpfdV0f8i0CA0M0L+w/4HDH6lKeWw3Je1spMpxTgihJuctpFphuLLal+b8EZ6ogMXBhhdxrbQ6j+MdFDPviX+u8rqia7C9kNdnjo5G9G0V/iO5Wl++P7bv46wveQeKYbiUBnc/bKG2R79wii6cGERieZdRlXWXwsv4w9o44E/TFgt4DeON87ogYZNNNtdTkzV2OpU3d+es39bukLgCiyPebS8Fl9UMJQI/D6d5WamTxEg+q8S8w2smwIatcxoFVwePhG7iaa8PfPUA2jt8AUXDhUa4B3uzeJnxN3eRo1E06r6MuEOfqaYZ+1rU1DW7eQ250jf2js8fL9sCuBYf4+XpG/Y+H5Yxfm7Pjci7dzeRVl3ORWV5ztoFgR35tbbhsrd95u8fgWudD/rKie05vmJ1nb6yosvdY3K7T1+ya3aGqvDe/3OKtj/ts4eXGczSBOfECnpOaEaCCQVgzlKtSUlQ/JOe0cXPLuTa2Nl7dIV+ZLbUMFFy5wI5ZUFkHM+tjbJY9qmscP+VBU16NwQRQXlCVF8zKe10zNuyj7hHfgW/ZRyPMRdV6+CAoFmbHtFZ6w07aMbUt499zYe0JKj4qqLdvtHV8X7vZdmD9K74u37p1CMNZt4P7aRLHURRHNI0GaRoP+lnex2k3n180hIwksBYhcg7EgPCoIUIz1Wh1tfjdePBfILBzP4zqEPvibZzPlHQfqZ3UBg4wzDloAO8uqd4XmVKCYTmnZ++PLYz38i9JyS+We+NFn9cN7Xf9mJf8u+Q/S/bJkWLAos4gpuRkkMbpSTen/ZMhxb0TPMx6aUIZ6eaH/z5f/wK9a/pjQBQAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ed8838af838be61053e9cb29feaad3ff"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=38b89427830be61053e9cb29feaad335"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=38b89427830be61053e9cb29feaad335^sys_idNOT IN833334e7838be61053e9cb29feaad34b"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">cf3334e7838be61053e9cb29feaad34a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="SkillUP - if Scripting on serviceNow course is done set task to intern">38b89427830be61053e9cb29feaad335</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 00:40:56</sys_created_on>
+        <sys_id>833334e7838be61053e9cb29feaad34b</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_updated_by>estagiario.1</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:18:44</sys_updated_on>
+        <ui_id>2fe7f104-f249-472d-81f9-ccd8a71a62bd</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1VTW/bMAz9K4HPjuGP2E1zKzYUGLC1QFP0shUGLdOJMFnyJDlpFuS/j/JHGrTpNgzbbTfrkeLjo/jgvada27TW3KsrY/hKeovPj77HpcPoe+9JqNFbeEzJkluuZN4BvrcB0brABjWvdhOmWm1wMgRLbhoBu4ef5bA1F6XGgbEBTbBF7S32L0J212AuoEBBpZZWc7mi67ykUxVCFV2yiCVxlsRhGM9nUZElRRSXCSAklDdefDcKmHzsEP9NZY6PcDMyKV26tqLQ9/DJoiyRqCsQBn2vBlmCVXp3RDRCeSvFM7Dm0lI5zyU/Gf6dasdp6hIrJI0M++DxmA/D62G2VpzhbeMa7BELhRjuMCXaWt70OtzYsYJW2HHshLSG6mHjmnZdDC1Vy7Xa3o2E11x2AoegUAzE8QSWxlC0Fo17GBRYU6G8hqah4eSNVhveXaZe6mAl6BBUQm2J1G1TAMw1HtCMILgm/H0HP4DmTsUnKkOX+zYLMJzl3eZROatJwqEbS/6tdQ31AgcpeT8NSjBM88ZeEc8Gh64P/uu1PdnY/b4okiiZX8A0gWg+nSUpmxYh4rQswousyC7nWZQFd8jo5YN+aQOrgUuSfDh8acMwKZcdLQET2iiDekOvdKO2r3f/H7P9DRddQlqlUZied9EsO+eiM/552zrxL6zjHvs3nROG4X/rnFqHm7y3wKCtI/9j5zw6m/QMpt+bEhk31Mi9wz6M/wUX2NECcHYKbZX+6iQ8Y4cfs60It2EGAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=38b89427830be61053e9cb29feaad335"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=38b89427830be61053e9cb29feaad335"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_38b89427830be61053e9cb29feaad335</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 22:49:40</sys_created_on>
+        <sys_id>51c99067830be61053e9cb29feaad3f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 22:49:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_38b89427830be61053e9cb29feaad335</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 22:45:58</sys_created_on>
+        <sys_id>c7e81827830be61053e9cb29feaad317</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 22:45:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_38b89427830be61053e9cb29feaad335"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_38b89427830be61053e9cb29feaad335"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>skillup__if_scripting_on_servicenow__course_is_done_set_task_to_intern</internal_name>
+        <label_cache>[{"name":"bb31387a-3a18-435c-b0ee-db076b698616.Record.sys_created_on","label":"1 - Look Up Record➛Certificates Record➛Created","reference":"","reference_display":"Created","type":"glide_date_time","base_type":"glide_date_time","parent_table_name":"x_1805432_mock_ski_certificates","column_name":"sys_created_on","usedInstances":{"543040ff-39bf-43bc-8354-5dba8df5555e":["start_date"]}},{"name":"9a15d4d4-6b87-4755-90af-6bde5c01cbf9.Record","label":"3 - Look Up Record➛Project Task Record","reference":"x_1805432_mock_ski_project_task","reference_display":"Project Task","type":"reference","base_type":"reference","usedInstances":{"28074925-bd34-467f-9872-27023c13e486":["task"],"543040ff-39bf-43bc-8354-5dba8df5555e":["record"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9a15d4d4-6b87-4755-90af-6bde5c01cbf9.Record.project","label":"3 - Look Up Record➛Project Task Record➛Project","reference":"x_1805432_mock_ski_project","reference_display":"Project","type":"reference","base_type":"reference","parent_table_name":"x_1805432_mock_ski_project_task","column_name":"project","usedInstances":{"28074925-bd34-467f-9872-27023c13e486":["project"]}},{"name":"d4528274-1b01-4499-bbd3-beabc2c2437a.Records","label":"3 - Look Up Records➛Project Task Records","reference":"x_1805432_mock_ski_project_task","reference_display":"Project Task","type":"records","base_type":"records","usedInstances":{"cd59b8be-e95d-4e80-b4b8-19aedcad43f4":["items"]},"attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bb31387a-3a18-435c-b0ee-db076b698616.Record.intern","label":"1 - Look Up Record➛Certificates Record➛Intern","reference":"x_1805432_mock_ski_team","reference_display":"Team","type":"reference","base_type":"reference","parent_table_name":"x_1805432_mock_ski_certificates","column_name":"intern","usedInstances":{"5fd0ca1a-e0d8-48b1-b9ab-d90d35af2cb0":["team"],"28074925-bd34-467f-9872-27023c13e486":["team"]}},{"name":"Created_1.current.record_table","label":"Trigger - Record Created➛Item Produced Record Record➛Record table","reference":"","reference_display":"Record table","type":"table_name","base_type":"table_name","parent_table_name":"sc_item_produced_record","column_name":"record_table","usedInstances":{}},{"name":"Created_1.current","label":"Trigger - Record Created➛Item Produced Record Record","reference":"sc_item_produced_record","reference_display":"Item Produced Record","type":"reference","base_type":"reference","usedInstances":{"8c3f5c8b-16f5-45c9-b85b-6e0c6e23ca53":["requested_item"],"23ba0484-59ac-497d-8eb2-572e53883034":["requested_item"]},"attributes":{}},{"name":"Service Catalog_1.table_name","label":"Trigger - Service Catalog➛Table Name","type":"table_name","base_type":"table_name","usedInstances":{"c72f5115-f990-4a3c-baf7-a06accf77f05":["condition"]},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.sys_id","label":"Trigger - Record Created➛Item Produced Record Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"sc_item_produced_record","column_name":"sys_id","usedInstances":{}},{"name":"Created_1.table_name","label":"Trigger - Record Created➛Item Produced Record Table","reference":"sc_item_produced_record","reference_display":"Item Produced Record","type":"table_name","base_type":"table_name","usedInstances":{"c4de6ebb-49a7-4cd7-b869-19a5476567e3":["table"],"ac2e32b2-fed5-4b62-a263-e5972619e6a4":["table"],"ec90ef02-fd49-449b-bda0-04aae7248e54":["condition"]},"attributes":{"test_input_hidden":"true"}},{"name":"Created_1.current.record_key","label":"Trigger - Record Created➛Item Produced Record Record➛Record key","reference":"","reference_display":"Record key","type":"document_id","base_type":"document_id","parent_table_name":"sc_item_produced_record","column_name":"record_key","usedInstances":{"bb31387a-3a18-435c-b0ee-db076b698616":["conditions"]}},{"name":"bb31387a-3a18-435c-b0ee-db076b698616.Record.course.training","label":"1 - Look Up Record➛Certificates Record➛Course➛Training","reference":"","reference_display":"Training","type":"string","base_type":"string","parent_table_name":"x_1805432_mock_ski_course","column_name":"training","usedInstances":{"2fe7f104-f249-472d-81f9-ccd8a71a62bd":["condition"]}}]</label_cache>
+        <master>true</master>
+        <name>SkillUP - if Scripting on serviceNow course is done set task to intern</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="SkillUP - if Scripting on serviceNow course is done set task to intern">38b89427830be61053e9cb29feaad335</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 22:46:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>53199067830be61053e9cb29feaad3a8</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>estagiario.1</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:18:46</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=53199067830be61053e9cb29feaad3a8"/>
+    <sys_variable_value action="delete_multiple" query="document_key=53199067830be61053e9cb29feaad3a8"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=53199067830be61053e9cb29feaad3a8"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=53199067830be61053e9cb29feaad3a8^sys_idNOT IN9f199067830be61053e9cb29feaad3a8"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>53199067830be61053e9cb29feaad3a8</id>
+        <name>SkillUP - if 'Scripting on serviceNow’ ' course is done set task to intern</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 22:46:48</sys_created_on>
+        <sys_id>9f199067830be61053e9cb29feaad3a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 22:46:48</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=9f199067830be61053e9cb29feaad3a8"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=53199067830be61053e9cb29feaad3a8^sys_idNOT IN5f199067830be61053e9cb29feaad3a9,da0ad4a7830be61053e9cb29feaad3a9"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="SkillUP - if Scripting on serviceNow course is done set task to intern">53199067830be61053e9cb29feaad3a8</model>
+        <model_id>53199067830be61053e9cb29feaad3a8</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_53199067830be61053e9cb29feaad3a8</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 22:46:48</sys_created_on>
+        <sys_id>5f199067830be61053e9cb29feaad3a9</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>estagiario.1</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:18:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5f199067830be61053e9cb29feaad3a9"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="SkillUP - if Scripting on serviceNow course is done set task to intern">53199067830be61053e9cb29feaad3a8</model>
+        <model_id>53199067830be61053e9cb29feaad3a8</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_53199067830be61053e9cb29feaad3a8</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 22:50:50</sys_created_on>
+        <sys_id>da0ad4a7830be61053e9cb29feaad3a9</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>estagiario.1</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:18:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=da0ad4a7830be61053e9cb29feaad3a9"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=53199067830be61053e9cb29feaad3a8"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=53199067830be61053e9cb29feaad3a8"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=53199067830be61053e9cb29feaad3a8^sys_idNOT INd20ad4a7830be61053e9cb29feaad3c9"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="SkillUP - if Scripting on serviceNow course is done set task to intern">53199067830be61053e9cb29feaad3a8</flow>
+        <generation_source/>
+        <name>Created</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 22:50:50</sys_created_on>
+        <sys_id>d20ad4a7830be61053e9cb29feaad3c9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 22:50:50</sys_updated_on>
+        <trigger_definition display_value="Created">798916a0c31322002841b63b12d3ae7c</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/9VY227jNhD9FUFPLZACuli+5G2bZNEA203heNuHNBAocmgTlSVXopT1LvLvHepiy7o4dqxsnRcDIqmZw6MzZ0g/fNd94oGvX+oz4vmgX+gikBAFxJ+tV4DDUg27AVmquSUJGJFhtNYvZZTAhc6jcDmD5conEhdz4sc4GEYMIv3SvNBT4idwv45vGUbC97MwRUy9mMbnmLpCwtJdRSFLKDA3AopBcAUTMcZe/1ksvMVV2h/FKm1arqIL4bMIAv3y4fFCX5EI00gF4XttSigclFMyscCgtmlblmFY44HpDW3PtJhNwDAwYJ2TGm7ZQs120/BVQsCAbfhosBYBYXeBv96sWCDpOUNL8jUW3zD62FDrOCB2Cvnc5tEtaMmH6SIUFO5WUoRBPpLjzCdDP1kGn3P8ilDgJPFlSSiOJDHGg5WCrEAUiPj9Inyalgk/iiDbXTHph5T4myciZSS8REKsCOfCR+rdnJs4TKIM/fTm6m567f71YXb1283Und7cz6a3V7Oba/0525f7b6Ii5ggLLG6+neeNCj4K8NUHjNexK9R3j2kkVvIDlSIt1fd8sVX0VRgwkbHSUDUtp+JdVZe73ydrw+gUNq1kLMVdiDr6OzEMm409h9getce2YZOhaTg2TKhnTTgQwuyhc7Sah0N8EUiHmj1eUXOVjxbAsoWa6p736boYOUTYA8P4n6RdWNZrlb0MGfjX23A6Ts7nqHURrBKp2HoigYxdGbqEMbfCo1qKmF6Ser63pt5fVnqUBBjC3Xyhpt4zIjeMfhIxbuABq7VkKwuJ8/xTEXKaBFqInxJ/NJpESJbUSv/jt0syLzjm9+ADlRVZ8C9x9el3EccimFdQb5JmrDRybtKhvLRyS3nu+MTkj30We5P0tEZmrXsdXdumybkH3DJGqrJNw/a4aYwMh3BmGwa1KrXdBNOJUtYk8SY1flyFx5kY/QOkV6e4AG9Uq+EgGaW7GixJUBIpjOSqH2hmT9AsBa1miPZRjriRZT58vavOfVvr+YxAWErwDXaoMaoFBzgg98MnNONXuJ9H6D/zKEwCVrcjFVMTgbZdof1U8Pdzj07Iwwj2A9hdcU4euKW9FC4J1j24n81NbwIDMND0bPQ7z5lMPEoszkfDEVhmzf22MFqxvQvXe0FtaZtcuxywVThpm96O8L4TADZ88GiApztgIcxW/8vn3ofTPS0gcBFq5PrKyxqGN/cFg3Ku32pvpE639X1qxfPxhDrmaERHeI/BiucD8Ig5sBwyGQ3tsVOr+AaUfTBlCzM/5HajbqsKSIcbfMmnzusS/5ayjUFK1Y6O79IBnmOzd0iepNIp1WfRMlMJI+1zGPxyu12n3QM2wOyK21e7PgSF+rDa28LwQrlonBcw9a84vpNanTM7WDm7K1VNJOnuXk++UsFg7Ey43W4xfNJmMVsw3TDP/nhxYIWknbXWds44VPBpa910HgxeIeGaTKonhj1Hmr5IMXsnxXo7UuyTj1FlLXbeI18D9h21sOxccUofUznBDXnVvK9DDSc0TKIJrhX/LQLTvLUmF4CU+nhexoSayn6qa1e7SBPKRsE/Fkh+Am90MxzWigPU+TWqmhT6vQEDGxHHsTvOw5P6DbgN0At4z75tHV0VaVuR7e1dx8Wtx2ztXhXJ7iriwL7U667bm9Npu25tTy/t+vTGs+/+3oLiTFvK43+ubcZ1dh8AAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_create</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=53199067830be61053e9cb29feaad3a8^sys_idNOT IN370afc2383cbe61053e9cb29feaad331,3fb8fcaf838be61053e9cb29feaad315,7bb8fcaf838be61053e9cb29feaad316,c44374e7838be61053e9cb29feaad309"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>f9d01dd2c31332002841b63b12d3aea1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="SkillUP - if Scripting on serviceNow course is done set task to intern">53199067830be61053e9cb29feaad3a8</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>2fe7f104-f249-472d-81f9-ccd8a71a62bd</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:10:45</sys_created_on>
+        <sys_id>370afc2383cbe61053e9cb29feaad331</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_updated_by>estagiario.1</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:18:46</sys_updated_on>
+        <ui_id>543040ff-39bf-43bc-8354-5dba8df5555e</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VV207jMBD9lSrPTeQ0l6Z9W1EhrcTCChAvLBs59qR4cS5rO0A36r8zSZxSAWJBQiuh7dvMeMbnnMypL1tHcGfphMCJv/BjFvhBMCNkloR+FgeZP+MBBfCdqVPSAvCkAlYpjvEtlU2XaNsF9SMe8tCNs2TuhvMocheE5hhyiBjxWZYvvNO+b7vFTi50Lenmwg7ADLsWkisoneXl1dSpqcK7DChn2T4pvRWspBlIPHo6on2K3mzqLuYVawooTSrG5JHtXNnK5OsKK9jUwfHJ1IF7AyUHBJJTqWHqFLTk1FRq4yyNajChgPKTUm52J65FaQaiBb3X4g/eHJLuXA7IjFkRdmFqBRrS+YoaeoaTmWnUTq9KMNCDJhxy2khzsJ8bDpzURlTl0GJoJsfuSjZFeTwo4uwG7H2PRiMIqDueHfKBVn52Xd2djiAPRdlLYinKilG5i6gxSmSN6eC0DkjoNS5oXYtyndaquhV9M0IpvLXEwMtldYd3arEuPco63B6qSr1DzK/69AVVoiPxDcdg83bq6I0+kFTrRyqoYfq76ZAMxCyFtFehlyDtN6FrZkrU5gtedQsW+HZq7ZBFr20YWzwu1N7MR0vcp35CojCYpUXFblJ9IzrOv4CZ1FB989wC34fq5Hyovs8ObwA72uG8X4KXwVtHPMsd7fdOjoeC9UP0YX5IPpMfLI1Pb4i/2YDMXv2j3dukfvP1ngW0oabRPxpCAi7KjuFagdY/Ma9MikRgqLVtluH0ZE7dgPqJGwYRczMC4PKMzOMsXiSxH9vXw0N+KcN1MsCRwUuPyT+7930efYOSo0cPBUiuX5B2NCgUSNhAOkj9xKS2OLmwxd3D9WFO9WPS/z6RX/+b9+vqASwLzGDQCQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=370afc2383cbe61053e9cb29feaad331"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="SkillUP - if Scripting on serviceNow course is done set task to intern">53199067830be61053e9cb29feaad3a8</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>2fe7f104-f249-472d-81f9-ccd8a71a62bd</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:05:00</sys_created_on>
+        <sys_id>3fb8fcaf838be61053e9cb29feaad315</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:13:53</sys_updated_on>
+        <ui_id>9a15d4d4-6b87-4755-90af-6bde5c01cbf9</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjley/JlbkcBAgW6zaLy9dAuCIqmYG5pUSSqJE+S/71CUbMFWYgt1gAR71HDIeTPz3pD2j6eQ0/A8pLNols1mo+kkipIkisbjhOA4TZMxSaMUD8NeKPGKgafFqWDweYdF4b4fUDyNRsNkgFaK3CJzy1Gu1b+MWGSxuQVPyk0u8Pp7teEvvxos/CpZckE1k+H5j5+9MMcawlimw/OnnaVjcQqcMgGuiwroDm67zjefqFzzti/NbcFXv6A0dVCiXsgeLJOUAYYMC8N64QpLiq3S641FM0yvpNgallxaODF0zg+GP0LcaeT8MgZZEebXNp+oKpQ3Z5fY4murC2ILXbmSpeKEGV8PyjJcCHvRtHmHq9xyJf0Wn7bfrUSxkl99OcLNAXVfwFIYAMFyl6hDXqWRXS/V/bca5ZzLsibVolAEi80XtlbztLAOz1PIBFvBQWiF85zLG8eLO15uBiyr/o2Aj34m1D0ENfxG9jFxwPtQV9yfg/2yNH/Hmrss/oRjYDMA4gIYgnwLjSp0Wco7RERhygWNpfFnhc+90KzNhcDGbDOHkqNfhcPt61BljHzR3BaieW4/wRF3rEruuVdLZfQqBWdbyhElKXcoTEMvxmJbmH8K2EwVBAZK7Umk1aejUA6jrIVy0YTZBr2SzJ7tS9sBlWTik0lmGEUfSTQQ/P1pprsKfAkOSCGmr5KMbvlklLbI17KphbVBBDhgGXVR93Wwu95NA0fAqzVw5VgbpOuXEFcSyDgTtO3WmLuFnVtj8P+8Nd6lAAAQRb57XAouyycAAH0rZYxepV4a7/CspFdDF86GDdlXBA6sCh47K+EIOLUSriF2sPB4WiDWd0FJmd17oDZWAkhOJoBkcBoBPG3S3BSypeb1q891s/Z/dP541x8o2NgQP7cJrFPMuGvMwfO+gJNOCm6Sza9cvsC5Ez8PX1Bk7y1HwBK2VvGQ1y+65/SG2W302osqe4/Fbdt6xThUN6pM7w2emvGrv3bSxlOTZ2gFneM5vIg1I0AOg7BmKFOFpKh6C2+J5DqZcW1s5bw/aL4x0I8MFAgzsEsWlN7BxrvjRXw4j7qUn7OgTqSKZgJIJCgTCTaJdEu7y9AanvDheuqhNcdclN2Anzl5o51Ma6VfGFwHGvkKI46cakeCik8K6vfHXpsEWsffAawf4jfz6UcTYTgdDvB4ksRxFMURnUTTySSejtNsjCfDbKtRhIwkME3h5AyoAsejmhp1n6P9+eNHatdBcwSqmoKXSrof2IOJDRws6G9QwzoMvBooqVKCYbkzURZwT/wxr/BXfB29u6nyIf5BKvhit9Le1Frrt3o3FPxvyX8V7LOj2JRFg2lMydl0Ek/Ohhkdn80oHp3hWTqaJJSRYXbKp8DP/wCWdAIlohUAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3fb8fcaf838be61053e9cb29feaad315"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
+        <display_text/>
+        <flow display_value="SkillUP - if Scripting on serviceNow course is done set task to intern">53199067830be61053e9cb29feaad3a8</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>2fe7f104-f249-472d-81f9-ccd8a71a62bd</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 01:05:00</sys_created_on>
+        <sys_id>7bb8fcaf838be61053e9cb29feaad316</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:10:45</sys_updated_on>
+        <ui_id>28074925-bd34-467f-9872-27023c13e486</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/91V207bQBD9FbTPtrWOL3HyhkB5akGCihcK1nh3TLasL/WuA2mUf+/4FiIE6kV9oX7bmTlnzxmPx7c7piRbsthHHi38WAR+EMw4nyWhn8VB5s9kAIghc1gJBVKlhUxj2h8ctgHddsHn1E94FAaztKjEY2oeVQpaVwIsSiqTytQatjdj9cnpUU6slZYNlmx5e+ewGhpittiw5e5V6nd1ashQU+mXTug7uu22fjP26Rh7cjEkqkZ2erjD8NliKUn2Mgdt0GEFlBJs1WzZ0jYtBRoEeVnq7aFirUpLhKyrfTbqB12b8K4uR3ImcMgdjunYqiGcn4OFa2IWtm3GUrGulEAz9ERiDq22Z8exoeCytqoqB0hvc0RXui3Ki6El7EAwvRmKtIZEYN357JSPNvLrdfV0NalcqbJvyZjsXqY+nMDaRmWt7fTsGGosiCgtoK5V+ZDWTbVRPZi0FN6DpoOX6+qJLjXqofRAdMI9ait4K4qf9+EbaFTn4jPREHjvMLM1ZxqMefFCTUy/t52SwdnoIR3a0EFEo2p7ShdscJS7d6YPQCJfvDtYfvYySP3Mm6PhtwjF15bzQO52WUb4ZA5uAH7ihkEk3IwjujLj8ziLF0nsx94VCpopjyYDm3K/v6eefENhJ44F+JEMZejGWTJ3w3kUuQsOOR0lRoL7IssXE8cIJRIL5vEvGAhpLNjWDNiKmvbWJ/tfevzD1fPrCZlWz0qhluaNkZn2DhbUXIvpMEKvds+YPLkZk+P+8f/V/vFj3j8faAsN5j78Ejr637yzju5+Ag4Uu26RBwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7bb8fcaf838be61053e9cb29feaad316"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
+        <display_text/>
+        <flow display_value="SkillUP - if Scripting on serviceNow course is done set task to intern">53199067830be61053e9cb29feaad3a8</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 00:41:00</sys_created_on>
+        <sys_id>c44374e7838be61053e9cb29feaad309</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 00:41:00</sys_updated_on>
+        <ui_id>bb31387a-3a18-435c-b0ee-db076b698616</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyt3NbODBQoNsATbaXtiAokoqJ0KRKUkmcwP99h6Jka23FtlAHSNAjh0Pyzcx7Q0rfX0JOw8uQTqNpOp0OJ+Mo6vejaDTqExwnSX9EkijBg7ATSrxk4GlxIhgMH7DI3fgJxZNoOOj30FKRe2TuOSJMW55ygi0z4Em5yQRefSsXzP4/SxZcUM1kePn9ZyfMsIZjLNPh5cvO1Kk4BU6YANfbEugObrvKNkNUzHnb5/qy4IufUJo6KFEnZE+WScoAQ4qFYZ1wiSXFVunVxqIZptdSbA0LLi3sGDrnJ8Of4dxJ5PxSBlER5uc2Q1QmypvTK2zxjdU5sbkuXclCcQJZK/JBWYpzYWd1m3e4zixX0i/xYfvVSuRL+cWnI9xsUNUFLLkBECxzgTrkZRjpzUI9fq1QzrksclJOCkWw2IywtZonuass1I8JtoSN0BJnGZd3KNPqgReLAcuyeydg0E2FeoRDDb+TXUwc8C7kFXfnYL8qzN+w5i6Kf2AbWAyAuACGIF9Co3JdpPIBEZGbYkJjafxe4boTmpWZCWzMNnJIOfqVO9w+D2XEyCfNLSGaZ/Zv2OKBlcGtO5VUhgcpON1SjihJuUNhanoBNIjTHzkspi8vMyCNZRTFXZJryK/takaAdeierdbrffG0XN1SXMcjq8Q1q4fWFG4psz3b56YNSpnFZ5PZIIo+ktDg8Pens/bK8Sk4Ip+YHiQZ3fLJKG2Rz2VNP/uaaM3zEyBUPL92zAyS1WuoSpqnnAnadJvM3cTObdL7M2+Td0lyAESRrx6XgsviaQBA34r9w4PUS+IdnhX0qt0dzoYN2dcADqwKnlsr4QQ4lRJu4Ozg1uNpgFj1+4Iyu72+MpYC6J9NAP3eeQTwsglzk8iGnFevQVfNyv/Z+eNdf6BgbUG8bhJYqzPjtmf21vsC7rdScJ1sfubqFc6d+dn4iiI7b9kCFrC0PA95/aJHTu+Y3Z5eeVFlH7G4b5ovGYeqQhXhvcETND74FZTUnqA8RUuoHM/gpezfhgZhzVCqcklR+UbeEslVMuXa2NJ5v9F8ZaAfGSgQZmAXLCi8g413y4v4eBxVKj+lQRVIeZoJIJCgCCTYBNIu7DZNa3DGx+m5m9Ycc1FUAz5/slo5mdZKv9K4jhTyACNO7GongorPCur3216TBBrb3xGsH+Jb+vytiTCcDHp4NO7HcRTFER1Hk/E4noySdITHg3SrUYSMJNBNYecUqALbo4oaVZ2j/f7jW2rbRnMCqoqCV0q6z+ve2AYOFtQ3qGAdB142lEQpwbDc6Si3cE/8NS/xl3wdvruu8iH+LOX8djfT3tSY67d6N+T8X8l/5eyTo9iERb1JTMnFZByPLwYpHV1MKR5e4GkyHPcpI4P0nE+Bn/8Bc5sBhroVAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c44374e7838be61053e9cb29feaad309"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=53199067830be61053e9cb29feaad3a8"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=53199067830be61053e9cb29feaad3a8^sys_idNOT INc04374e7838be61053e9cb29feaad30a"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">cf3334e7838be61053e9cb29feaad34a</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="SkillUP - if Scripting on serviceNow course is done set task to intern">53199067830be61053e9cb29feaad3a8</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 00:41:00</sys_created_on>
+        <sys_id>c04374e7838be61053e9cb29feaad30a</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_updated_by>estagiario.1</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:18:46</sys_updated_on>
+        <ui_id>2fe7f104-f249-472d-81f9-ccd8a71a62bd</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+1Vy27bMBD8FYNnWZAsW3F8CxwEKJAmQBzk0gbCilrZRGlSJSk7ruF/71KSH0jcR9D21ps5S+7OjHbgLdO1q2pnH/WVtWKu2OTTc8CE8hj93jIFS2QTxrUqhBNaZQ0QsBXI2hdWaES56XFdG4u9rlgIW0nYPP3sDl8IWRjsJlZgCHZo2GT7qiQKalFGUMaXPObJIE0GUTQYD+M8TfJ4UCSAkFBDCTlKujrdU+3dNkjwQw1uU3ncOiPUvDvfdl1me1CbwrOKo4Dhi0NVIPEpQVoM2BJUAU6bzQExCMW9kkdgIZSjdsxffrHiGw0cjEb+YokkkWNbPByzzrsWLq/BAVGpuatNd5UvtOBoW3MKLKGWbnqKtRfuKy+1feIgl/vXWtZLddc6wg4N9p+KkNoSCay8Uk+901HOFnr9sGd5I1TjSleUmoM8nMCRd3ntPJ8tQ4lLapQtoarI0awyeiWax8RlGc4lHcJS6jUN9RsYAvfEQzIWwhvCrxv4CYzwKj5SG3rc0szBCp4120rtyCZku4DZjZ1KsPYoktzNvtaeYiu5E5e1/vgn3IjKXdHkFXY6dsHb5T/Z++02z5M4GV9AP4F43B8mI97PI8R+kUcXaZ5ejtM4DR+Q0wKF7eqHzoBQZMJu97mOoqSYNWMJ6NG2WjQr+m53ev02Qf942vuyeAmjchRHo/NZHKbnsngmhe8M4OAXAfRf/zfzF0XR/wD+cQCFzdrYdNqa4X8xf88+bO3Mg9dcWKL26LEP+/8oX9jQcgl+Cq21+eJFHbHdd4lFrdbtBgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=53199067830be61053e9cb29feaad3a8"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=53199067830be61053e9cb29feaad3a8"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_53199067830be61053e9cb29feaad3a8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 22:46:49</sys_created_on>
+        <sys_id>53199067830be61053e9cb29feaad3b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 22:46:49</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_53199067830be61053e9cb29feaad3a8</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 22:50:50</sys_created_on>
+        <sys_id>9e0ad4a7830be61053e9cb29feaad3b2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 22:50:50</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_53199067830be61053e9cb29feaad3a8"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_53199067830be61053e9cb29feaad3a8"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>38b89427830be61053e9cb29feaad335</sys_id>
+        <latest_snapshot>53199067830be61053e9cb29feaad3a8</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch5-06-11-2025_06-25-2025_1836.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=38b89427830be61053e9cb29feaad335^sys_idNOT INaf199067830be61053e9cb29feaad3cf"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.OncePerRecord</binding_strategy>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"af199067830be61053e9cb29feaad3cf","name":"plan","plan_signature":null}}</plan>
+        <plan_id>38b89427830be61053e9cb29feaad335</plan_id>
+        <snapshot>53199067830be61053e9cb29feaad3a8</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 22:46:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>af199067830be61053e9cb29feaad3cf</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>estagiario.1</sys_updated_by>
+        <sys_updated_on>2025-08-05 01:18:46</sys_updated_on>
+        <trigger display_value="">620ad4a7830be61053e9cb29feaad3fc</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=38b89427830be61053e9cb29feaad335"/>
+</record_update>

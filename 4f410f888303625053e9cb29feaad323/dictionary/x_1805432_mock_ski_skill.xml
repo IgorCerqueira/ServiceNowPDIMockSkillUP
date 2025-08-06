@@ -1,19 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="d61e4fd283cf621053e9cb29feaad36b" label="Skill" max_length="40" name="x_1805432_mock_ski_skill" type="collection">
-        <element choice="1" label="Level" max_length="40" name="level" type="choice">
+        <element choice="1" label="nivel" max_length="40" name="level" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Intermediate" value="intermediate"/>
                 <element inactive_on_update="false" label="Advanced" value="advanced"/>
                 <element inactive_on_update="false" label="Basic" value="basic"/>
             </choice>
         </element>
-        <element choice="1" label="Technical" max_length="40" name="technical" type="choice">
+        <element choice="1" label="Technical" mandatory="true" max_length="40" name="technical" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Technical" value="technical"/>
                 <element inactive_on_update="false" label="Language" value="language"/>
                 <element inactive_on_update="false" label="General" value="general"/>
+                <element inactive_on_update="false" label="Experience" sequence="0" value="Experience"/>
             </choice>
         </element>
-        <element label="Skill" max_length="255" name="skill" type="string"/>
+        <element label="Skill" mandatory="true" max_length="255" name="skill" type="string"/>
     </element>
 </database>

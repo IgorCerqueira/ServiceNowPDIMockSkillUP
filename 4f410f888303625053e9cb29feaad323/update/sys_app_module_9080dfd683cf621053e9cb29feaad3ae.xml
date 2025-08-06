@@ -25,17 +25,17 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>9080dfd683cf621053e9cb29feaad3ae</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name>Has skills</sys_name>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Possui habilidades</sys_name>
         <sys_overrides/>
         <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
         <sys_policy/>
         <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
         <sys_update_name>sys_app_module_9080dfd683cf621053e9cb29feaad3ae</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-01 15:24:47</sys_updated_on>
+        <sys_updated_on>2025-08-06 18:43:42</sys_updated_on>
         <timeline_page/>
-        <title>Has skills</title>
+        <title>Possui habilidades</title>
         <uncancelable>false</uncancelable>
         <view_name/>
         <window_name/>

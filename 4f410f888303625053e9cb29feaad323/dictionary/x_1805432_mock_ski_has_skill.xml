@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element db_object_id="5a401bd683cf621053e9cb29feaad3b7" label="Has skill" max_length="40" name="x_1805432_mock_ski_has_skill" type="collection">
-        <element label="Skill" max_length="32" name="skill" reference="x_1805432_mock_ski_skill" type="reference"/>
+    <element db_object_id="5a401bd683cf621053e9cb29feaad3b7" label="Possui habilidade" max_length="40" name="x_1805432_mock_ski_has_skill" type="collection">
+        <element label="Habilidade" mandatory="true" max_length="32" name="skill" reference="x_1805432_mock_ski_skill" type="reference"/>
         <element choice="1" label="Level" max_length="40" name="level" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Basic" value="basic"/>
@@ -8,7 +8,7 @@
                 <element inactive_on_update="false" label="Advanced" value="advanced"/>
             </choice>
         </element>
-        <element label="Employee" max_length="32" name="employee" reference="x_1805432_mock_ski_team" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="Funcionário" mandatory="true" max_length="32" name="employee" reference="x_1805432_mock_ski_team" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <index name="index">
             <element name="employee"/>
         </index>

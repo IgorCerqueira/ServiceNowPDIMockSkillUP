@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="requester" label="Solicitante" language="pb" table="x_1805432_mock_ski_shared_service">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>requester</element>
+            <help/>
+            <hint/>
+            <label>Solicitante</label>
+            <language>pb</language>
+            <name>x_1805432_mock_ski_shared_service</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-08-06 21:02:59</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Solicitante</sys_name>
+            <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+            <sys_update_name>sys_documentation_x_1805432_mock_ski_shared_service_requester_pb</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-08-06 21:02:59</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

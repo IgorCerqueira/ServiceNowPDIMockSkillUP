@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_1805432_mock_ski.SkillUPGetCourses</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>SkillUPGetCourses</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var SkillUPGetCourses = Class.create();
+SkillUPGetCourses.prototype = {
+    initialize: function() {
+    },
+
+getCourses: function(sourceInstance, username, password) {
+        var endpoint = "/api/now/table/u_cursos";
+
+        var restMessage = new sn_ws.RESTMessageV2();
+        restMessage.setEndpoint("https://" + sourceInstance + endpoint);
+        restMessage.setHttpMethod("GET");
+        restMessage.setBasicAuth(username, password);
+        restMessage.setRequestHeader("Accept", "application/json");
+
+        var response = restMessage.execute();
+        var httpStatus = response.getStatusCode();
+
+        if (httpStatus === 200) {
+            var responseBody = response.getBody();
+            var responseJson = JSON.parse(responseBody);
+            var courses = responseJson.result;
+
+            if (courses && courses.length > 0) {
+                gs.info("Cursos encontrados. Iniciando a importação...");
+                this._populateCourses(courses);
+            } else {
+                gs.info("Nenhum curso encontrado na instância de origem.");
+            }
+        } else {
+            gs.info("Erro ao buscar dados da Instância X. Status: " + httpStatus);
+            gs.info("Mensagem de erro: " + response.getErrorMessage());
+        }
+    },
+
+    _populateCourses: function(courses) {
+        var grCourse = new GlideRecord("x_1805432_mock_ski_course");
+
+        for (var i = 0; i < courses.length; i++) {
+            var sourceCourse = courses[i];
+
+            grCourse.initialize();
+            
+            grCourse.setValue("sys_id", sourceCourse.sys_id);
+            grCourse.setValue("template", sourceCourse.u_template);
+            grCourse.setValue("training", sourceCourse.u_treinamento);
+            grCourse.setValue("duration", sourceCourse.u_duracao);
+            grCourse.setValue("order", sourceCourse.u_ordem);
+            grCourse.setValue("url", sourceCourse.u_url);
+            grCourse.setValue("active", true);
+            
+            grCourse.insert();
+            gs.info("Novo curso inserido: " + sourceCourse.u_treinamento);
+        }
+    },
+
+    type: 'SkillUPGetCourses'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-06 19:02:29</sys_created_on>
+        <sys_id>cad871cc83dbaa1053e9cb29feaad30c</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>SkillUPGetCourses</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name>sys_script_include_cad871cc83dbaa1053e9cb29feaad30c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-06 20:26:56</sys_updated_on>
+    </sys_script_include>
+</record_update>

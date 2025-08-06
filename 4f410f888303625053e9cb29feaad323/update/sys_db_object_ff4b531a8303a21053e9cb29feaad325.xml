@@ -19,7 +19,7 @@
         <provider_class/>
         <read_access>true</read_access>
         <scriptable_table>false</scriptable_table>
-        <super_class display_value="User" name="sys_user">7330d8239820221055904c91e2b6549d</super_class>
+        <super_class display_value="Usuário" name="sys_user">7330d8239820221055904c91e2b6549d</super_class>
         <sys_class_name>sys_db_object</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-08-01 15:43:13</sys_created_on>

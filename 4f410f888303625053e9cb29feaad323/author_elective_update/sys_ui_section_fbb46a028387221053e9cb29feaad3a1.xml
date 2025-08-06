@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="" section_id="fbb46a028387221053e9cb29feaad3a1" sys_domain="global" table="x_1805432_mock_ski_m2m_courses_team" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-31 17:05:59</sys_created_on>
+            <sys_id>3fb42e028387221053e9cb29feaad379</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1805432_mock_ski_m2m_courses_team" sys_domain="global" view="Default view">fbb46a028387221053e9cb29feaad3a1</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-31 17:05:59</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>course</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-31 17:05:59</sys_created_on>
+            <sys_id>b3b42e028387221053e9cb29feaad37a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1805432_mock_ski_m2m_courses_team" sys_domain="global" view="Default view">fbb46a028387221053e9cb29feaad3a1</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-31 17:05:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>intern</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-31 17:05:59</sys_created_on>
+            <sys_id>3bb42e028387221053e9cb29feaad37a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1805432_mock_ski_m2m_courses_team" sys_domain="global" view="Default view">fbb46a028387221053e9cb29feaad3a1</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-31 17:05:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-31 17:05:59</sys_created_on>
+            <sys_id>bfb42e028387221053e9cb29feaad37a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1805432_mock_ski_m2m_courses_team" sys_domain="global" view="Default view">fbb46a028387221053e9cb29feaad3a1</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-31 17:05:59</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>status</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-31 17:05:59</sys_created_on>
+            <sys_id>37b42e028387221053e9cb29feaad37b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1805432_mock_ski_m2m_courses_team" sys_domain="global" view="Default view">fbb46a028387221053e9cb29feaad3a1</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-31 17:05:59</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-31 17:05:59</sys_created_on>
+            <sys_id>bbb42e028387221053e9cb29feaad37b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_1805432_mock_ski_m2m_courses_team" sys_domain="global" view="Default view">fbb46a028387221053e9cb29feaad3a1</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-31 17:05:59</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption/>
+            <header>false</header>
+            <name>x_1805432_mock_ski_m2m_courses_team</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-31 17:05:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fbb46a028387221053e9cb29feaad3a1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1805432_mock_ski_m2m_courses_team</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+            <sys_update_name>sys_ui_section_fbb46a028387221053e9cb29feaad3a1</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-31 17:05:59</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</application>
+        <file_path/>
+        <instance_id>a68516d2ebb06ad0cbdefceacad0cd70</instance_id>
+        <instance_name>dev324686</instance_name>
+        <name>sys_ui_section_fbb46a028387221053e9cb29feaad3a1</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="" section_id="fbb46a028387221053e9cb29feaad3a1" sys_domain="global" table="x_1805432_mock_ski_m2m_courses_team" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>.begin_split</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-31 17:05:59</sys_created_on><sys_id>3fb42e028387221053e9cb29feaad379</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1805432_mock_ski_m2m_courses_team" sys_domain="global" view="Default view">fbb46a028387221053e9cb29feaad3a1</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-31 17:05:59</sys_updated_on><sys_user/><type>.begin_split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>course</element><position>1</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-31 17:05:59</sys_created_on><sys_id>b3b42e028387221053e9cb29feaad37a</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1805432_mock_ski_m2m_courses_team" sys_domain="global" view="Default view">fbb46a028387221053e9cb29feaad3a1</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-31 17:05:59</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>intern</element><position>2</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-31 17:05:59</sys_created_on><sys_id>3bb42e028387221053e9cb29feaad37a</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1805432_mock_ski_m2m_courses_team" sys_domain="global" view="Default view">fbb46a028387221053e9cb29feaad3a1</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-31 17:05:59</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.split</element><position>3</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-31 17:05:59</sys_created_on><sys_id>bfb42e028387221053e9cb29feaad37a</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1805432_mock_ski_m2m_courses_team" sys_domain="global" view="Default view">fbb46a028387221053e9cb29feaad3a1</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-31 17:05:59</sys_updated_on><sys_user/><type>.split</type></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>status</element><position>4</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-31 17:05:59</sys_created_on><sys_id>37b42e028387221053e9cb29feaad37b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1805432_mock_ski_m2m_courses_team" sys_domain="global" view="Default view">fbb46a028387221053e9cb29feaad3a1</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-31 17:05:59</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_element action="INSERT_OR_UPDATE"><element>.end_split</element><position>5</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-31 17:05:59</sys_created_on><sys_id>bbb42e028387221053e9cb29feaad37b</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="NULL" display_value="" name="x_1805432_mock_ski_m2m_courses_team" sys_domain="global" view="Default view">fbb46a028387221053e9cb29feaad3a1</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-31 17:05:59</sys_updated_on><sys_user/><type>.end_split</type></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption/><header>false</header><name>x_1805432_mock_ski_m2m_courses_team</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-31 17:05:59</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>fbb46a028387221053e9cb29feaad3a1</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1805432_mock_ski_m2m_courses_team</sys_name><sys_overrides/><sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package><sys_policy/><sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope><sys_update_name>sys_ui_section_fbb46a028387221053e9cb29feaad3a1</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-31 17:05:59</sys_updated_on><sys_user/><title>true</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>947588521</payload_hash>
+        <record_name>M2M Courses / Team</record_name>
+        <reverted_from/>
+        <source>b55b0bc88343625053e9cb29feaad38d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 17:05:59</sys_created_on>
+        <sys_id>bbb42e028387221053e9cb29feaad37d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1986172a1c10000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 17:05:59</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>73b42e0286872210c921cd9c516a887d</update_guid>
+        <update_guid_history>73b42e0286872210c921cd9c516a887d:947588521,f3b46a0230872210f209e30c9c9d88a4:-895162635</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-01 12:18:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>0b8a0cab0d2f4e1a96b7332cffafa799</sys_id>
+        <sys_metadata>fbb46a028387221053e9cb29feaad3a1</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1805432_mock_ski_m2m_courses_team</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_parent display_value="">a6f22e4e8347221053e9cb29feaad3c3</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_scope_delete display_value="">268ad51b8f0946f5bb145049f5e84279</sys_scope_delete>
+        <sys_update_name>sys_ui_section_fbb46a028387221053e9cb29feaad3a1</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_fbb46a028387221053e9cb29feaad3a1">bbb42e028387221053e9cb29feaad37d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-01 12:18:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

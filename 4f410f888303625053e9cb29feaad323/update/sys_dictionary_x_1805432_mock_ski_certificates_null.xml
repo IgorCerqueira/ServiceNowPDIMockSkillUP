@@ -32,7 +32,7 @@
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Collection">collection</internal_type>
+        <internal_type display_value="Coleção">collection</internal_type>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
         <name>x_1805432_mock_ski_certificates</name>
@@ -52,7 +52,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-31 20:17:09</sys_created_on>
-        <sys_id>8880db8e834b221053e9cb29feaad3ad</sys_id>
         <sys_name>x_1805432_mock_ski_certificates</sys_name>
         <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
         <sys_policy/>

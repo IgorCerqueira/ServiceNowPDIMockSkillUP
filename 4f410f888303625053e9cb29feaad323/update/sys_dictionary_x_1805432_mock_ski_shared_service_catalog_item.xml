@@ -32,7 +32,7 @@
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="Referência">reference</internal_type>
         <mandatory>false</mandatory>
         <max_length>32</max_length>
         <name>x_1805432_mock_ski_shared_service</name>
@@ -52,7 +52,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-08-01 15:42:36</sys_created_on>
-        <sys_id>c22b9fd68303a21053e9cb29feaad34a</sys_id>
         <sys_name>Catalog item</sys_name>
         <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
         <sys_policy/>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_catalog">
+    <sc_catalog action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Envio de certificados</description>
+        <desktop_continue_shopping/>
+        <desktop_home_page/>
+        <desktop_image/>
+        <editors/>
+        <enable_wish_list>false</enable_wish_list>
+        <manager/>
+        <sys_class_name>sc_catalog</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 02:18:06</sys_created_on>
+        <sys_id>1cdfbb0f8303a61053e9cb29feaad3dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Certificados</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name>sc_catalog_1cdfbb0f8303a61053e9cb29feaad3dd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:18:06</sys_updated_on>
+        <title>Certificados</title>
+    </sc_catalog>
+    <sys_translated_text action="delete_multiple" query="documentkey=1cdfbb0f8303a61053e9cb29feaad3dd"/>
+</record_update>

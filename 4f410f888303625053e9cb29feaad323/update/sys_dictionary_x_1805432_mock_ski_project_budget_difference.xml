@@ -32,7 +32,7 @@
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Currency">currency</internal_type>
+        <internal_type display_value="Moeda">currency</internal_type>
         <mandatory>false</mandatory>
         <max_length>20</max_length>
         <name>x_1805432_mock_ski_project</name>
@@ -52,7 +52,6 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-31 20:31:26</sys_created_on>
-        <sys_id>a6b35b06838b221053e9cb29feaad36c</sys_id>
         <sys_name>Budget difference</sys_name>
         <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
         <sys_policy/>

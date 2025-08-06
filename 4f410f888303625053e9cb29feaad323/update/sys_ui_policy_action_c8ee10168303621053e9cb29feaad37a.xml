@@ -19,7 +19,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-08-01 02:02:11</sys_updated_on>
         <table>x_1805432_mock_ski_project</table>
-        <ui_policy display_value="Project Table - Fields If Status is Cancelled">987e54d28303621053e9cb29feaad364</ui_policy>
+        <ui_policy display_value="SkillUP - Project Table - Fields If Status is Cancelled">987e54d28303621053e9cb29feaad364</ui_policy>
         <value/>
         <value_action>ignore</value_action>
         <visible>false</visible>

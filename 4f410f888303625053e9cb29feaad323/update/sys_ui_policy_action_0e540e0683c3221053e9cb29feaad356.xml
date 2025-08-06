@@ -19,7 +19,7 @@
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-07-31 14:54:27</sys_updated_on>
         <table>x_1805432_mock_ski_team</table>
-        <ui_policy display_value="If ddddd">ee04460683c3221053e9cb29feaad398</ui_policy>
+        <ui_policy display_value="Unmark Active Field if Exit Date has value">ee04460683c3221053e9cb29feaad398</ui_policy>
         <value/>
         <value_action>ignore</value_action>
         <visible>ignore</visible>

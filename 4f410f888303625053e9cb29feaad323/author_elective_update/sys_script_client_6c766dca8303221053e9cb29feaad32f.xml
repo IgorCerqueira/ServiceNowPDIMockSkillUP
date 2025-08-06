@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="DELETE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Mask CPF field</description>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>CPF Mask</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   var input = g_form.getElement('cpf');
+
+   input.addEventListener('input', function(){
+		var value = input.value.replace(/\D/g, ''); //remove letras se houver
+
+		var formatted = "";
+		
+		if(value.length > 0){
+			formatted += value.substring(0,3);
+		}
+
+		if(value.length > 3){
+			formatted += "." + value.substring(3,6);
+		}
+
+		if(value.length > 6){
+			formatted += "." + value.substring(6,9);
+		}
+
+		if(value.length > 9){
+			formatted += "-" + value.substring(9,11);
+		}
+
+		input.value = formatted;
+   });
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 12:49:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6c766dca8303221053e9cb29feaad32f</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>CPF Mask</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name>sys_script_client_6c766dca8303221053e9cb29feaad32f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:23:18</sys_updated_on>
+        <table>x_1805432_mock_ski_team</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</application>
+        <file_path/>
+        <instance_id>a68516d2ebb06ad0cbdefceacad0cd70</instance_id>
+        <instance_name>dev324686</instance_name>
+        <name>sys_script_client_6c766dca8303221053e9cb29feaad32f</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script_client"&gt;&lt;sys_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;condition/&gt;&lt;description&gt;Mask CPF field&lt;/description&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;CPF Mask&lt;/name&gt;&lt;order/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+   var input = g_form.getElement('cpf');
+
+   input.addEventListener('input', function(){
+		var value = input.value.replace(/\D/g, ''); //remove letras se houver
+
+		var formatted = "";
+		
+		if(value.length &gt; 0){
+			formatted += value.substring(0,3);
+		}
+
+		if(value.length &gt; 3){
+			formatted += "." + value.substring(3,6);
+		}
+
+		if(value.length &gt; 6){
+			formatted += "." + value.substring(6,9);
+		}
+
+		if(value.length &gt; 9){
+			formatted += "-" + value.substring(9,11);
+		}
+
+		input.value = formatted;
+   });
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-07-31 12:49:19&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;6c766dca8303221053e9cb29feaad32f&lt;/sys_id&gt;&lt;sys_mod_count&gt;18&lt;/sys_mod_count&gt;&lt;sys_name&gt;CPF Mask&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski"&gt;4f410f888303625053e9cb29feaad323&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Mock SkillUp"&gt;4f410f888303625053e9cb29feaad323&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_client_6c766dca8303221053e9cb29feaad32f&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-07-31 13:23:18&lt;/sys_updated_on&gt;&lt;table&gt;x_1805432_mock_ski_team&lt;/table&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;view/&gt;&lt;/sys_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>49736008</payload_hash>
+        <record_name>CPF Mask</record_name>
+        <reverted_from/>
+        <source>b55b0bc88343625053e9cb29feaad38d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 13:23:18</sys_created_on>
+        <sys_id>f9c1f1ca8343221053e9cb29feaad3f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19860a6c43d0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:23:18</sys_updated_on>
+        <type>Client Script</type>
+        <update_guid>b1c1f1ca444322106d8bb40bf134e7f3</update_guid>
+        <update_guid_history>b1c1f1ca444322106d8bb40bf134e7f3:49736008,0aa13d8a344322107f55f9a1538e774a:-621784312,62713d8a31432210596d034ed948f346:1316724102,5041314a12432210087804da6908de2a:-115469440,6700b5c617432210d80b3121c39c0b28:1831706960,d0efa1c6194322106778d95ca9135092:1710306852,0d7fe546df4322107fdfb7497e5b6750:-1788921158,c2cee586f74322107b53b48f27a4c526:252972173,3f6e6146b64322107b8d6486d293afbf:-410756389,a43ea186cc432210ba86b923f5413ae3:152803556,b50ead82e4432210b0ec1713c5ea9251:-742831756,7b9de182c44322103790b4e63a99b200:-1722262789,9f3d25c2c2432210b1550365eafc99b7:-1901824442,a4db2982894322100dacaceb6eca321c:2029414727,8eab6942d84322101f05e79a65a7a3de:-1174817337,786b2902b84322104d22e0e30aab435f:-1956881442,f41b6942d643221020281a502b4c155e:2008902375,6dbae542d14322109302fa505b209c99:1872876630,8c0a258aab0322103637fcd6fdfa73ae:-963065899</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 13:27:02</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_client">sys_script_client</sys_db_object>
+        <sys_id>4e772b3a411b4985b70566b62c541c91</sys_id>
+        <sys_metadata>6c766dca8303221053e9cb29feaad32f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>CPF Mask</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_parent display_value="Team">4a54cac58303221053e9cb29feaad3e6</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_scope_delete display_value="">268ad51b8f0946f5bb145049f5e84279</sys_scope_delete>
+        <sys_update_name>sys_script_client_6c766dca8303221053e9cb29feaad32f</sys_update_name>
+        <sys_update_version display_value="sys_script_client_6c766dca8303221053e9cb29feaad32f">f9c1f1ca8343221053e9cb29feaad3f3</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 13:27:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

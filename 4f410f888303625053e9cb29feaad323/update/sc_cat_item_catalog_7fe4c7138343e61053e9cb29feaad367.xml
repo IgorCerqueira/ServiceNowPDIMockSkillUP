@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_catalog">
     <sc_cat_item_catalog action="INSERT_OR_UPDATE">
         <sc_cat_item display_value="Reportar Bug">adf9029f83cba61053e9cb29feaad3ea</sc_cat_item>
-        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sc_catalog display_value="Catálogo de serviços">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
         <sys_class_name>sc_cat_item_catalog</sys_class_name>
         <sys_created_by>estagiario.1</sys_created_by>
         <sys_created_on>2025-08-04 16:39:01</sys_created_on>

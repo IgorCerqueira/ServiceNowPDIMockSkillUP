@@ -5,7 +5,7 @@
         <entitlement_script/>
         <header_icon/>
         <homepage_image/>
-        <homepage_renderer display_value="Category Items">47ebe8aa3742300054b6a3549dbe5dfa</homepage_renderer>
+        <homepage_renderer display_value="Itens da categoria">47ebe8aa3742300054b6a3549dbe5dfa</homepage_renderer>
         <icon/>
         <image/>
         <location/>
@@ -16,7 +16,7 @@
         <order>0</order>
         <parent/>
         <roles/>
-        <sc_catalog display_value="Service Catalog">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
+        <sc_catalog display_value="Catálogo de serviços">e0d08b13c3330100c8b837659bba8fb4</sc_catalog>
         <sys_class_name>sc_category</sys_class_name>
         <sys_created_by>estagiario.1</sys_created_by>
         <sys_created_on>2025-08-04 16:39:25</sys_created_on>

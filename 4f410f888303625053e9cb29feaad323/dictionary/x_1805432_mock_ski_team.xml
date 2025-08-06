@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="4a54cac58303221053e9cb29feaad3e6" extends="sys_user" label="Team" max_length="40" name="x_1805432_mock_ski_team" type="collection">
+        <element label="Hire Date" mandatory="true" max_length="40" name="hire_date" type="glide_date"/>
+        <element label="CPF" mandatory="true" max_length="14" name="cpf" type="string" unique="true"/>
+        <element label="Exit Date" max_length="40" name="exit_date" type="glide_date"/>
+        <element label="Salary" mandatory="true" max_length="20" name="salary" type="currency"/>
+        <element choice="1" label="Position" mandatory="true" max_length="40" name="position" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Manager" value="manager"/>
+                <element inactive_on_update="false" label="Intern" value="intern"/>
+                <element inactive_on_update="false" label="Monitor" value="monitor"/>
+            </choice>
+        </element>
+        <index name="index" unique="true">
+            <element name="cpf"/>
+        </index>
+    </element>
+</database>

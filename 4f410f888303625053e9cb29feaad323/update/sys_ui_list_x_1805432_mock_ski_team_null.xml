@@ -160,7 +160,7 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-08-04 01:19:28</sys_updated_on>
             <sys_user/>
-            <view display_value="Default view" name="NULL">Default view</view>
+            <view display_value="Exibição padrão" name="NULL">Default view</view>
             <view_name/>
         </sys_ui_list>
     </sys_ui_list>

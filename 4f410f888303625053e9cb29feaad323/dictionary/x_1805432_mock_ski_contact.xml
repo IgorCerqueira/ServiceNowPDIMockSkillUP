@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ff4b531a8303a21053e9cb29feaad325" extends="sys_user" label="Contact" max_length="40" name="x_1805432_mock_ski_contact" type="collection"/>
+</database>

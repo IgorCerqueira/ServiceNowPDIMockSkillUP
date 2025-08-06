@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7d2e3c048397aa1053e9cb29feaad396" extends="sys_import_set_row" label="Import municipalities data xlxs" max_length="40" name="x_1805432_mock_ski_import_municipalities_data_xlxs" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=state" label="state" max_length="40" name="u_state" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Parent" label="Parent" max_length="40" name="u_parent" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Country" label="Country" max_length="40" name="u_country" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Name" label="Name" max_length="40" name="u_name" type="string"/>
+    </element>
+</database>

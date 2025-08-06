@@ -13,7 +13,7 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Course</column_label>
+        <column_label>Curso</column_label>
         <comments/>
         <create_roles/>
         <default_value/>
@@ -32,8 +32,8 @@
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Reference">reference</internal_type>
-        <mandatory>false</mandatory>
+        <internal_type display_value="Referência">reference</internal_type>
+        <mandatory>true</mandatory>
         <max_length>32</max_length>
         <name>x_1805432_mock_ski_progress</name>
         <next_element/>
@@ -54,14 +54,13 @@
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-08-01 12:20:13</sys_created_on>
-        <sys_id>94dce6d2830f621053e9cb29feaad3f1</sys_id>
-        <sys_name>Course</sys_name>
+        <sys_name>Curso</sys_name>
         <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
         <sys_policy/>
         <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
         <sys_update_name>sys_dictionary_x_1805432_mock_ski_progress_course</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-01 12:20:13</sys_updated_on>
+        <sys_updated_on>2025-08-06 16:36:34</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

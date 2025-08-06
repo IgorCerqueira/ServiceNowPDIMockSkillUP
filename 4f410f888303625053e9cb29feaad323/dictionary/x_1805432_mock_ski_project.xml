@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="6761db02838b221053e9cb29feaad3e4" extends="task" label="Project" max_length="40" name="x_1805432_mock_ski_project" type="collection">
+        <element label="Start Date" max_length="40" name="start_date" type="glide_date"/>
+        <element choice="1" label="Status" mandatory="true" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Cancelled" value="cancelled"/>
+                <element inactive_on_update="false" label="Opened" value="opened"/>
+                <element inactive_on_update="false" label="In progress" value="in_progress"/>
+                <element inactive_on_update="false" label="Completed" value="Completed"/>
+            </choice>
+        </element>
+        <element label="Reason for cancellation" max_length="255" name="reason_cancellation" type="string"/>
+        <element label="Manager" max_length="32" name="manager" reference="x_1805432_mock_ski_team" reference_qual="position=manager^active=true^EQ" reference_qual_condition="position=manager^active=true^EQ" type="reference"/>
+        <element label="Estimated Budget" max_length="20" name="estimated_budget" type="currency"/>
+        <element label="Budget difference" max_length="20" name="budget_difference" read_only="true" type="currency"/>
+        <element label="End Date" max_length="40" name="end_date" type="glide_date"/>
+        <element display="true" label="Nome do projeto" mandatory="true" max_length="255" name="project_name" type="string"/>
+        <element label="Actual budget" max_length="20" name="actual_budget" type="currency"/>
+    </element>
+</database>

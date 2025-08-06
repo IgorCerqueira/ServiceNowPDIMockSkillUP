@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_1805432_mock_ski_team</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>SkillUP - Intern add manager</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	if (current.position == "intern"){
+		var department = current.department;
+
+		var teamMembers = new GlideRecord('x_1805432_mock_ski_team');
+		teamMembers.addQuery('department', department); // Certifique-se que 'department' esteja definido
+		teamMembers.query();
+
+		if (teamMembers.getRowCount() > 0) {
+			gs.info('Membros encontrados para o departamento: ' + department);
+			while (teamMembers.next()) {
+				gs.info('Membro da Equipe: ' + teamMembers.name + ' - ID: ' + teamMembers.sys_id);
+			}
+		} else {
+			gs.info('Nenhum membro da equipe encontrado para o departamento: ' + department);
+		}
+	} 
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-02 22:47:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>09a14a768383261053e9cb29feaad33e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>SkillUP - Intern add manager</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name>sys_script_09a14a768383261053e9cb29feaad33e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-02 23:07:09</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=09a14a768383261053e9cb29feaad33e"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</application>
+        <file_path/>
+        <instance_id>a68516d2ebb06ad0cbdefceacad0cd70</instance_id>
+        <instance_name>dev324686</instance_name>
+        <name>sys_script_09a14a768383261053e9cb29feaad33e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_1805432_mock_ski_team&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;SkillUP - Intern add manager&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	if (current.position == "intern"){
+		var department = current.department;
+
+		var teamMembers = new GlideRecord('x_1805432_mock_ski_team');
+		teamMembers.addQuery('department', department); // Certifique-se que 'department' esteja definido
+		teamMembers.query();
+
+		if (teamMembers.getRowCount() &gt; 0) {
+			gs.info('Membros encontrados para o departamento: ' + department);
+			while (teamMembers.next()) {
+				gs.info('Membro da Equipe: ' + teamMembers.name + ' - ID: ' + teamMembers.sys_id);
+			}
+		} else {
+			gs.info('Nenhum membro da equipe encontrado para o departamento: ' + department);
+		}
+	} 
+
+})(current, previous);]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-02 22:47:30&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;09a14a768383261053e9cb29feaad33e&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;SkillUP - Intern add manager&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski"&gt;4f410f888303625053e9cb29feaad323&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Mock SkillUp"&gt;4f410f888303625053e9cb29feaad323&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_09a14a768383261053e9cb29feaad33e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-02 23:07:09&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;before&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=09a14a768383261053e9cb29feaad33e"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-260640812</payload_hash>
+        <record_name>SkillUP - Intern add manager</record_name>
+        <reverted_from/>
+        <source>b112886e83c3a21053e9cb29feaad3e1</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-02 23:07:09</sys_created_on>
+        <sys_id>759a4a7283c3261053e9cb29feaad36f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1986d0a03a00000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-02 23:07:09</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>799a4a726fc3261053703026c91a906e</update_guid>
+        <update_guid_history>799a4a726fc3261053703026c91a906e:-260640812,d6698a3258c32610329091227f665572:-20750401,94f882fec2832610503f9aeee75a2f0a:1993428174,e7384ebe5983261081090df34cff0f74:1723192707,bd16c23e478326104620ee2c8fc52e43:-943099253</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 00:37:01</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>87dd52f0712c4eb7afedcd48bc379c11</sys_id>
+        <sys_metadata>09a14a768383261053e9cb29feaad33e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>SkillUP - Intern add manager</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_parent display_value="Team">4a54cac58303221053e9cb29feaad3e6</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_scope_delete display_value="">268ad51b8f0946f5bb145049f5e84279</sys_scope_delete>
+        <sys_update_name>sys_script_09a14a768383261053e9cb29feaad33e</sys_update_name>
+        <sys_update_version display_value="sys_script_09a14a768383261053e9cb29feaad33e">759a4a7283c3261053e9cb29feaad36f</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 00:37:01</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

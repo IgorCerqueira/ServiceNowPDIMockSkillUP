@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
     <sys_ui_related sys_domain="global" table="x_1805432_mock_ski_project" version="2" view="">
         <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
-            <filter/>
-            <list_id display_value="Project - Default view" name="x_1805432_mock_ski_project" related_list="NULL" sys_domain="global" view="Default view">cea98b5a838f621053e9cb29feaad300</list_id>
+            <filter table="x_1805432_mock_ski_allocated.project">team.position=intern^EQ<item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+            </filter>
+            <list_id display_value="Projeto - Default view" name="x_1805432_mock_ski_project" related_list="NULL" sys_domain="global" view="Default view">cea98b5a838f621053e9cb29feaad300</list_id>
             <order_by/>
             <position>0</position>
             <related_list>x_1805432_mock_ski_allocated.project</related_list>
@@ -10,12 +11,12 @@
             <sys_created_by>admin</sys_created_by>
             <sys_created_on>2025-08-01 14:25:44</sys_created_on>
             <sys_id>0ea98b5a838f621053e9cb29feaad301</sys_id>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>5</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2025-08-01 14:25:44</sys_updated_on>
+            <sys_updated_on>2025-08-05 21:00:46</sys_updated_on>
         </sys_ui_related_list_entry>
         <sys_ui_related_list action="INSERT_OR_UPDATE">
-            <calculated_name>Project - Default view</calculated_name>
+            <calculated_name>Projeto - Default view</calculated_name>
             <filter/>
             <name>x_1805432_mock_ski_project</name>
             <order_by/>
@@ -36,7 +37,7 @@
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2025-08-01 14:25:44</sys_updated_on>
             <sys_user/>
-            <view display_value="Default view" name="NULL">Default view</view>
+            <view display_value="Exibição padrão" name="NULL">Default view</view>
             <view_name/>
         </sys_ui_related_list>
     </sys_ui_related>

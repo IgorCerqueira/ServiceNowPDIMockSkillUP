@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="1cfa93d68303a21053e9cb29feaad3b4" extends="task" label="Shared service" max_length="40" name="x_1805432_mock_ski_shared_service" type="collection">
+        <element label="Requester" max_length="255" name="requester" type="string"/>
+        <element label="Catalog item" max_length="32" name="catalog_item" reference="sc_cat_item" type="reference"/>
+    </element>
+</database>

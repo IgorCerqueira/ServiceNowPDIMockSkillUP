@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a0766e4583c3221053e9cb29feaad3fc" extends="sys_import_set_row" label="Brazil States Data" max_length="40" name="x_1805432_mock_ski_brazil_states_data" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=City" label="City" max_length="40" name="u_city" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Parent" label="Parent" max_length="40" name="u_parent" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Name" label="Name" max_length="40" name="u_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Country" label="Country" max_length="40" name="u_country" type="string"/>
+    </element>
+</database>

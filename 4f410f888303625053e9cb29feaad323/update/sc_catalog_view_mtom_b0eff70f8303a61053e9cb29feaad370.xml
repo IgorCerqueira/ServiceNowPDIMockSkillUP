@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_catalog_view_mtom">
+    <sc_catalog_view_mtom action="INSERT_OR_UPDATE">
+        <default>true</default>
+        <sc_catalog display_value="Certificados">1cdfbb0f8303a61053e9cb29feaad3dd</sc_catalog>
+        <sys_class_name>sc_catalog_view_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-04 02:18:06</sys_created_on>
+        <sys_id>b0eff70f8303a61053e9cb29feaad370</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Certificados.catalog_certificados</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_portal_page display_value="catalog_certificados">28eff70f8303a61053e9cb29feaad36e</sys_portal_page>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name>sc_catalog_view_mtom_b0eff70f8303a61053e9cb29feaad370</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-04 02:18:06</sys_updated_on>
+    </sc_catalog_view_mtom>
+</record_update>

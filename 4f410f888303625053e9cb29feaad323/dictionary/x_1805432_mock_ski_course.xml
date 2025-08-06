@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="0b9762468387221053e9cb29feaad354" label="Course" max_length="40" name="x_1805432_mock_ski_course" type="collection">
+        <element label="Duração" mandatory="true" max_length="40" name="duration" type="float"/>
+        <element label="URL" mandatory="true" max_length="1024" name="url" type="url"/>
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Template" max_length="255" name="template" type="string"/>
+        <element display="true" label="Treinamento" mandatory="true" max_length="255" name="training" type="string"/>
+        <element label="Ordem" mandatory="true" max_length="40" name="order" type="integer"/>
+    </element>
+</database>

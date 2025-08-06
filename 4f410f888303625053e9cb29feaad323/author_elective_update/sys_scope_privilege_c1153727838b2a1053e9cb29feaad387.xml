@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege">
+    <sys_scope_privilege action="DELETE">
+        <operation>execute</operation>
+        <source_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</source_scope>
+        <status>allowed</status>
+        <sys_class_name>sys_scope_privilege</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 14:48:46</sys_created_on>
+        <sys_id>c1153727838b2a1053e9cb29feaad387</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>sys_attachment</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name>sys_scope_privilege_c1153727838b2a1053e9cb29feaad387</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 16:31:10</sys_updated_on>
+        <target_name>sys_attachment</target_name>
+        <target_scope display_value="Global">global</target_scope>
+        <target_type>scriptable</target_type>
+    </sys_scope_privilege>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</application>
+        <file_path/>
+        <instance_id>a68516d2ebb06ad0cbdefceacad0cd70</instance_id>
+        <instance_name>dev324686</instance_name>
+        <name>sys_scope_privilege_c1153727838b2a1053e9cb29feaad387</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_scope_privilege"><sys_scope_privilege action="INSERT_OR_UPDATE"><operation>execute</operation><source_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</source_scope><status>allowed</status><sys_class_name>sys_scope_privilege</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-05 14:48:46</sys_created_on><sys_id>c1153727838b2a1053e9cb29feaad387</sys_id><sys_mod_count>1</sys_mod_count><sys_name>sys_attachment</sys_name><sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package><sys_policy/><sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope><sys_update_name>sys_scope_privilege_c1153727838b2a1053e9cb29feaad387</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-05 16:31:10</sys_updated_on><target_name>sys_attachment</target_name><target_scope display_value="Global">global</target_scope><target_type>scriptable</target_type></sys_scope_privilege></record_update>]]></payload>
+        <payload_hash>-380777087</payload_hash>
+        <record_name>sys_attachment</record_name>
+        <reverted_from/>
+        <source>8b410f888303625053e9cb29feaad326</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 16:31:10</sys_created_on>
+        <sys_id>62bcc833830f2a1053e9cb29feaad33a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1987b128fb70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 16:31:10</sys_updated_on>
+        <type>Cross scope privilege</type>
+        <update_guid>2abcc8332b0f2a100d8423c97cc0e739</update_guid>
+        <update_guid_history>2abcc8332b0f2a100d8423c97cc0e739:-380777087,66453b270e8b2a100213b8481ab16ed4:-42660676</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-05 16:34:57</sys_created_on>
+        <sys_db_object display_value="" name="sys_scope_privilege">sys_scope_privilege</sys_db_object>
+        <sys_id>070fb7d91b984cab818e1f5ae2240081</sys_id>
+        <sys_metadata>c1153727838b2a1053e9cb29feaad387</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>sys_attachment</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_scope_delete display_value="">268ad51b8f0946f5bb145049f5e84279</sys_scope_delete>
+        <sys_update_name>sys_scope_privilege_c1153727838b2a1053e9cb29feaad387</sys_update_name>
+        <sys_update_version display_value="sys_scope_privilege_c1153727838b2a1053e9cb29feaad387">62bcc833830f2a1053e9cb29feaad33a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-05 16:34:57</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

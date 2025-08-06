@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation action="DELETE" element="name" label="Nome" language="pb" table="x_1805432_mock_ski_team">
+        <sys_documentation action="DELETE">
+            <element>name</element>
+            <help/>
+            <hint/>
+            <label>Nome</label>
+            <language>pb</language>
+            <name>x_1805432_mock_ski_team</name>
+            <plural>Nomes</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-25 16:33:57</sys_created_on>
+            <sys_id>8963ab8883c3625053e9cb29feaad3fe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Nome</sys_name>
+            <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+            <sys_update_name>sys_documentation_x_1805432_mock_ski_team_name_pb</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-25 16:33:57</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</application>
+        <file_path/>
+        <instance_id>a68516d2ebb06ad0cbdefceacad0cd70</instance_id>
+        <instance_name>dev324686</instance_name>
+        <name>sys_documentation_x_1805432_mock_ski_team_name_pb</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_documentation element="name" label="Nome" language="pb" table="x_1805432_mock_ski_team"><sys_documentation action="INSERT_OR_UPDATE"><element>name</element><help/><hint/><label>Nome</label><language>pb</language><name>x_1805432_mock_ski_team</name><plural>Nomes</plural><sys_class_name>sys_documentation</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-25 16:33:57</sys_created_on><sys_id>8963ab8883c3625053e9cb29feaad3fe</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Nome</sys_name><sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package><sys_policy/><sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope><sys_update_name>sys_documentation_x_1805432_mock_ski_team_name_pb</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-25 16:33:57</sys_updated_on><url/><url_target/></sys_documentation></sys_documentation></record_update>]]></payload>
+        <payload_hash>-2146197458</payload_hash>
+        <record_name>Team.Name</record_name>
+        <reverted_from/>
+        <source>b55b0bc88343625053e9cb29feaad38d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-25 16:33:57</sys_created_on>
+        <sys_id>00e32b4883c3625053e9cb29feaad3f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198426f26320000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-25 16:33:57</sys_updated_on>
+        <type>Field Label</type>
+        <update_guid>4ce32b48c7c362509aafc70a664889f5</update_guid>
+        <update_guid_history>4ce32b48c7c362509aafc70a664889f5:-2146197458</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-25 17:08:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_documentation">sys_documentation</sys_db_object>
+        <sys_id>5f0639938f8f4bec85dfb76d5ac95e10</sys_id>
+        <sys_metadata>8963ab8883c3625053e9cb29feaad3fe</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Nome</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_parent display_value="">5371e30883c3625053e9cb29feaad394</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_scope_delete display_value="">268ad51b8f0946f5bb145049f5e84279</sys_scope_delete>
+        <sys_update_name>sys_documentation_x_1805432_mock_ski_team_name_pb</sys_update_name>
+        <sys_update_version display_value="sys_documentation_x_1805432_mock_ski_team_name_pb">00e32b4883c3625053e9cb29feaad3f7</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-25 17:08:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

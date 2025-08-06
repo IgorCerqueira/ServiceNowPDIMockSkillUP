@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Mock SkillUp">e0cc0b4c8343625053e9cb29feaad3d4</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>M2M Cursos / Equipes</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_1805432_mock_ski_m2m_cursos_equipe</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <require_confirmation>true</require_confirmation>
+        <roles>x_1805432_mock_ski.m2m_cursos_equipe_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 16:39:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>59ce96c68347221053e9cb29feaad30b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>M2M Cursos / Equipes</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name>sys_app_module_59ce96c68347221053e9cb29feaad30b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 16:39:52</sys_updated_on>
+        <timeline_page/>
+        <title>M2M Cursos / Equipes</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</application>
+        <file_path/>
+        <instance_id>a68516d2ebb06ad0cbdefceacad0cd70</instance_id>
+        <instance_name>dev324686</instance_name>
+        <name>sys_app_module_59ce96c68347221053e9cb29feaad30b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Mock SkillUp">e0cc0b4c8343625053e9cb29feaad3d4</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>M2M Cursos / Equipes</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_1805432_mock_ski_m2m_cursos_equipe</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><require_confirmation>true</require_confirmation><roles>x_1805432_mock_ski.m2m_cursos_equipe_user</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-31 16:39:52</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>59ce96c68347221053e9cb29feaad30b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>M2M Cursos / Equipes</sys_name><sys_overrides/><sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package><sys_policy/><sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope><sys_update_name>sys_app_module_59ce96c68347221053e9cb29feaad30b</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-31 16:39:52</sys_updated_on><timeline_page/><title>M2M Cursos / Equipes</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-1376628962</payload_hash>
+        <record_name>M2M Cursos / Equipes</record_name>
+        <reverted_from/>
+        <source>b55b0bc88343625053e9cb29feaad38d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 16:39:52</sys_created_on>
+        <sys_id>9dce96c68347221053e9cb29feaad30e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198615abb660000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 16:39:52</sys_updated_on>
+        <type>Module</type>
+        <update_guid>51ce96c68b472210e6731235d49d9d0e</update_guid>
+        <update_guid_history>51ce96c68b472210e6731235d49d9d0e:-1376628962</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="M2M Cursos / Equipes">03e2aa4e8347221053e9cb29feaad34d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-31 16:58:00</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>550fdcd0d7c14eef99633d22ce63add1</sys_id>
+        <sys_metadata>59ce96c68347221053e9cb29feaad30b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>M2M Cursos / Equipes</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_scope_delete display_value="">268ad51b8f0946f5bb145049f5e84279</sys_scope_delete>
+        <sys_update_name>sys_app_module_59ce96c68347221053e9cb29feaad30b</sys_update_name>
+        <sys_update_version display_value="sys_app_module_59ce96c68347221053e9cb29feaad30b">9dce96c68347221053e9cb29feaad30e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-31 16:58:00</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

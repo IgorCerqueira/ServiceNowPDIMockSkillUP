@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a50e1327830b2a1053e9cb29feaad351" extends="sys_import_set_row" label="SkillUP - Batch bug to bug table" max_length="40" name="x_1805432_mock_ski_bug_temp" type="collection">
+        <element attributes="import_attribute_name=Linha" label="Linha " max_length="40" name="u_linha" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Passo a passo" label="Passo a passo " max_length="55" name="u_passo_a_passo" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Project" label="Project" max_length="40" name="u_project" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Steps to reproduce the bug" label="Steps to reproduce the bug" max_length="40" name="u_steps_to_reproduce_the_bug" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Task" label="Task" max_length="40" name="u_task" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Short description" label="Short description" max_length="40" name="u_short_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Projeto" label="Projeto" max_length="40" name="u_projeto" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Description" label="Description " max_length="58" name="u_description" type="string"/>
+    </element>
+</database>

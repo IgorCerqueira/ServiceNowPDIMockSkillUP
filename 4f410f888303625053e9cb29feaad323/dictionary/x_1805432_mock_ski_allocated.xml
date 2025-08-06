@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="9492be1e830f621053e9cb29feaad3f4" label="Alocado" max_length="40" name="x_1805432_mock_ski_allocated" type="collection">
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Cancelled" value="cancelled"/>
+                <element inactive_on_update="false" label="In Progress" value="in_progress"/>
+                <element inactive_on_update="false" label="Opened" value="opened"/>
+                <element inactive_on_update="false" label="Completed" value="Completed"/>
+            </choice>
+        </element>
+        <element label="Project" mandatory="true" max_length="32" name="project" reference="x_1805432_mock_ski_project" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element label="Equipe" mandatory="true" max_length="32" name="team" reference="x_1805432_mock_ski_team" reference_qual="position=intern^EQ" reference_qual_condition="position=intern^EQ" type="reference"/>
+        <element label="Task" max_length="32" name="task" reference="x_1805432_mock_ski_project_task" reference_qual="javascript:'project=' + current.project" type="reference" use_reference_qualifier="advanced"/>
+        <index name="index">
+            <element name="project"/>
+        </index>
+        <index name="index2">
+            <element name="task"/>
+        </index>
+        <index name="index3">
+            <element name="team"/>
+        </index>
+    </element>
+</database>

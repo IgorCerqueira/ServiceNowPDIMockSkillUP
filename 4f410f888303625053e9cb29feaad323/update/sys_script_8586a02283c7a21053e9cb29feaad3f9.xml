@@ -5,7 +5,7 @@
         <action_delete>false</action_delete>
         <action_insert>true</action_insert>
         <action_query>false</action_query>
-        <action_update>false</action_update>
+        <action_update>true</action_update>
         <active>true</active>
         <add_message>false</add_message>
         <advanced>true</advanced>
@@ -41,14 +41,26 @@
 		return null;
 	}
 
+	function deleteGroupAssociationToUser(group_id, sys_id){
+		var group_to_remove_member = new GlideRecord('sys_user_grmember');
+		group_to_remove_member.addQuery('group', group_id);
+		group_to_remove_member.addQuery('user', sys_id);
+		group_to_remove_member.query();
+
+		while (group_to_remove_member.next()) {
+			group_to_remove_member.deleteRecord();
+		}
+	}
+
+
 	function insertGroupById(group_id) {
-		var groupMembers = new GlideRecord('sys_user_grmember');
-		groupMembers.initialize();
+		var group_members = new GlideRecord('sys_user_grmember');
+		group_members.initialize();
 
-		groupMembers.group = group_id;
-		groupMembers.user = current.sys_id;
+		group_members.group = group_id;
+		group_members.user = current.sys_id;
 
-		var registerInsert = groupMembers.insert();
+		var registerInsert = group_members.insert();
 
 		if(!registerInsert){
 			gs.error("Falha ao adicionar o usuário ao grupo.");
@@ -64,9 +76,14 @@
     var group_name = groupMap[current.position];
 	var group_id = getGroupIdByName(group_name);
 
-	if (!group_id) {
-		gs.error("Grupo não encontrado: " + group_name);
-		return;
+	if (!current.isNewRecord()){
+		//no ultimo 1:1 falamos sobre atualizar as permissões no update, mas para isso precisa remover a permissão antiga
+		
+		var old_group = groupMap[previous.position];
+		var group_to_remove_user_id = getGroupIdByName(old_group);
+		deleteGroupAssociationToUser(group_to_remove_user_id, current.sys_id);
+		gs.info("grupo nome" + old_group);
+		gs.info("grupo nome" + group_to_remove_user_id);
 	}
 
 	insertGroupById(group_id);
@@ -78,7 +95,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>8586a02283c7a21053e9cb29feaad3f9</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>SkillUP - User to a group by position</sys_name>
         <sys_overrides/>
         <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
@@ -86,7 +103,7 @@
         <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
         <sys_update_name>sys_script_8586a02283c7a21053e9cb29feaad3f9</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-02 03:51:44</sys_updated_on>
+        <sys_updated_on>2025-08-12 01:57:43</sys_updated_on>
         <template/>
         <when>after</when>
     </sys_script>

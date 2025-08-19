@@ -7,14 +7,14 @@
         <hint/>
         <name>Mock SkillUp</name>
         <order>100</order>
-        <roles>x_1805432_mock_ski.equipe_user</roles>
+        <roles>x_1805432_mock_ski.equipe_user,x_1805432_mock_ski.Intern,x_1805432_mock_ski.Manager,x_1805432_mock_ski.Monitor</roles>
         <sys_class_name>sys_app_application</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-25 14:52:57</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e0cc0b4c8343625053e9cb29feaad3d4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name>Mock SkillUp</sys_name>
         <sys_overrides/>
         <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
@@ -22,7 +22,7 @@
         <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
         <sys_update_name>sys_app_application_e0cc0b4c8343625053e9cb29feaad3d4</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-25 14:52:57</sys_updated_on>
+        <sys_updated_on>2025-08-19 17:43:41</sys_updated_on>
         <title>Mock SkillUp</title>
         <view_name/>
     </sys_app_application>

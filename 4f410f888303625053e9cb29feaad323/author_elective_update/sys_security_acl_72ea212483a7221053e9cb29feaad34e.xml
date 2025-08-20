@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description/>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_1805432_mock_ski_certificates.attachment</name>
+        <operation display_value="create">create</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-20 17:34:26</sys_created_on>
+        <sys_id>72ea212483a7221053e9cb29feaad34e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1805432_mock_ski_certificates.attachment</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name>sys_security_acl_72ea212483a7221053e9cb29feaad34e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-20 17:34:26</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</application>
+        <file_path/>
+        <instance_id>a68516d2ebb06ad0cbdefceacad0cd70</instance_id>
+        <instance_name>dev324686</instance_name>
+        <name>sys_security_acl_72ea212483a7221053e9cb29feaad34e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><applies_to/><condition/><controlled_by_refs/><decision_type>allow</decision_type><description/><local_or_existing>Local</local_or_existing><name>x_1805432_mock_ski_certificates.attachment</name><operation display_value="create">create</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-20 17:34:26</sys_created_on><sys_id>72ea212483a7221053e9cb29feaad34e</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_1805432_mock_ski_certificates.attachment</sys_name><sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package><sys_policy/><sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope><sys_update_name>sys_security_acl_72ea212483a7221053e9cb29feaad34e</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-20 17:34:26</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-981807745</payload_hash>
+        <record_name>x_1805432_mock_ski_certificates.attachment</record_name>
+        <reverted_from/>
+        <source>3a12e09c8367221053e9cb29feaad3a2</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-20 17:34:26</sys_created_on>
+        <sys_id>630be12483a7221053e9cb29feaad335</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198c88bdee60000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-20 17:34:26</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>670be124aea7221056f7112dafe31534</update_guid>
+        <update_guid_history>670be124aea7221056f7112dafe31534:-981807745</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-20 17:34:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>a3a6b3bab8e6417c924d5c3020159c10</sys_id>
+        <sys_metadata>72ea212483a7221053e9cb29feaad34e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1805432_mock_ski_certificates.attachment</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_parent display_value="Anexo">bf01dfce834b221053e9cb29feaad356</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_scope_delete display_value="">268ad51b8f0946f5bb145049f5e84279</sys_scope_delete>
+        <sys_update_name>sys_security_acl_72ea212483a7221053e9cb29feaad34e</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_72ea212483a7221053e9cb29feaad34e">630be12483a7221053e9cb29feaad335</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-20 17:34:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

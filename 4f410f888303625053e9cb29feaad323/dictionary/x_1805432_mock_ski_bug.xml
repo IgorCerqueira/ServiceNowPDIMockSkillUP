@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element db_object_id="3a533b1a8383a21053e9cb29feaad3ee" label="Bug" max_length="40" name="x_1805432_mock_ski_bug" type="collection">
+        <element label="Project" mandatory="true" max_length="32" name="project" reference="x_1805432_mock_ski_project" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element label="Requester" mandatory="true" max_length="255" name="requester" type="string"/>
-        <element label="Task" mandatory="true" max_length="32" name="task" reference="x_1805432_mock_ski_project_task" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
+        <element dependent="project" dependent_on_field="project" label="Task" mandatory="true" max_length="32" name="task" reference="x_1805432_mock_ski_project_task" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference" use_dependent_field="true"/>
         <element choice="1" label="Gravidade" mandatory="true" max_length="40" name="risk_severity" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Medium" value="medium"/>
@@ -13,7 +14,6 @@
         <element label="Ane" mandatory="true" max_length="40" name="attachment" type="file_attachment"/>
         <element label="Assigned to" max_length="32" name="assigned_to" reference="sys_user" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element label="Description" max_length="255" name="description" type="html"/>
-        <element label="Projeto" mandatory="true" max_length="32" name="project" reference="x_1805432_mock_ski_project" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="reference"/>
         <element label="Descrição breve" mandatory="true" max_length="255" name="short_description" type="string"/>
         <index name="index">
             <element name="assigned_to"/>

@@ -15,6 +15,6 @@
                 <element inactive_on_update="false" label="Experience" sequence="0" value="Experience"/>
             </choice>
         </element>
-        <element label="Skill" mandatory="true" max_length="255" name="skill" type="string"/>
+        <element display="true" label="Skill" mandatory="true" max_length="255" name="skill" type="string"/>
     </element>
 </database>

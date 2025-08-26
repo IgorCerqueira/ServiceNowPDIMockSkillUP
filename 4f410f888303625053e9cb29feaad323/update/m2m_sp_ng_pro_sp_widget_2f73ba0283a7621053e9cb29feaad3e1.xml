@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="m2m_sp_ng_pro_sp_widget">
+    <m2m_sp_ng_pro_sp_widget action="INSERT_OR_UPDATE">
+        <sp_angular_provider display_value="onFinishRepeat">4e9ff00eeb343010ed7966d647522896</sp_angular_provider>
+        <sp_widget display_value="SkillUP - Employee Portal Footer">ef73ba0283a7621053e9cb29feaad3de</sp_widget>
+        <sys_class_name>m2m_sp_ng_pro_sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-25 14:41:49</sys_created_on>
+        <sys_id>2f73ba0283a7621053e9cb29feaad3e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onFinishRepeat.Copy of Employee Center Footer</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name>m2m_sp_ng_pro_sp_widget_2f73ba0283a7621053e9cb29feaad3e1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-25 14:41:49</sys_updated_on>
+    </m2m_sp_ng_pro_sp_widget>
+</record_update>

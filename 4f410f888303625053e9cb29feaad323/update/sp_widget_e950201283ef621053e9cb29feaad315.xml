@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope, spUtil) {
+    var c = this;
+
+    // Use a temporary variable to hold the old value
+    var lastValue = {};
+
+    /* Function that's called before a level is selected */
+    c.setOriginalLevel = function(skill) {
+        // Store the current level before the new one is applied
+        lastValue[skill.sys_id] = skill.existing_level;
+    };
+
+    /* Function that's called when a skill level is selected */
+    c.selectLevel = function(skill) {
+        // Get the original level from our temporary store
+        var originalLevel = lastValue[skill.sys_id];
+        
+        c.server.get({
+            action: 'update_skill_level',
+            sys_id: skill.sys_id,
+            new_level: skill.existing_level // Uses the new value
+        }).then(function(response) {
+            if (response.data.success) {
+                // Success: Update the skill level from the server's response
+                skill.existing_level = response.data.updated_level;
+                spUtil.addInfoMessage("Nível de habilidade atualizado com sucesso!");
+            } else {
+                // Failure: Revert to the original value stored earlier
+                skill.existing_level = originalLevel;
+                var errorMessage = response.data.error || "Erro ao atualizar o nível de habilidade.";
+                spUtil.addErrorMessage(errorMessage);
+            }
+            // Clear the temporary store for this skill
+            delete lastValue[skill.sys_id];
+        });
+    };
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.skill-list-container {
+    /* Remove padding lateral para alinhar com a borda do container de cima */
+    padding: 10px 0;
+    margin-top: 20px;
+  
+  /* Adicione estas propriedades para controlar a largura */
+    max-width: 750px; /* Define a largura máxima, pode ser ajustado */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.skill-widget {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px; /* Reduza este valor se precisar de menos altura */
+    border: 1px solid #ccc;
+    background-color: #fff;
+    /* Use box-shadow e border-radius apenas no container externo,
+       não em cada item da lista. Isso cria um visual mais limpo.
+    */
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.skill-name {
+    font-weight: bold;
+    flex-grow: 1;
+    font-size: 16px;
+    color: #333;
+}
+
+.skill-type {
+    text-align: center;
+    width: 100px;
+    color: #666;
+    font-size: 14px;
+}
+
+.skill-level-container {
+    position: relative;
+}
+
+.skill-level-select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 5px 30px 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.skill-level-select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.select-arrow {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #666;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>skillup_skills</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>SkillUP Skills</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+    /* Data update logic */
+    if (input && input.action === 'update_skill_level') {
+        var success = false;
+        var updatedLevel = '';
+        
+        var grUpdate = new GlideRecord('x_1805432_mock_ski_has_skill');
+        if (grUpdate.get(input.sys_id)) {
+            // Check if the current user is the owner of the record
+            if (grUpdate.getValue('employee') === gs.getUserID()) {
+                grUpdate.setValue('level', input.new_level);
+                grUpdate.update();
+                success = true;
+                updatedLevel = input.new_level;
+            } else {
+                // If not the owner, set a specific error message or flag
+                data.error = 'You do not have permission to update this skill.';
+            }
+        }
+
+        data.success = success;
+        data.updated_level = updatedLevel;
+        return;
+    }
+
+    /* Initial data logic */
+    data.skills = [];
+
+    var grHasSkill = new GlideRecord('x_1805432_mock_ski_has_skill');
+    grHasSkill.query();
+
+    while (grHasSkill.next()) {
+        var skillData = {};
+        skillData.sys_id = grHasSkill.getUniqueValue();
+        skillData.existing_level = grHasSkill.getValue('level');
+
+        var grSkill = new GlideRecord('x_1805432_mock_ski_skill');
+        if (grSkill.get(grHasSkill.getValue('skill'))) {
+            skillData.skill_name = grSkill.getValue('skill');
+            skillData.skill_type = grSkill.getValue('technical');
+        }
+
+        var grTeam = new GlideRecord('x_1805432_mock_ski_team');
+        if (grTeam.get(grHasSkill.getValue('employee'))) {
+            skillData.employee = grTeam.getDisplayValue('name');
+        }
+				
+				skillData.is_owner = (grHasSkill.getValue('employee') === gs.getUserID());
+			
+        data.skills.push(skillData);
+    }
+    
+    data.levels = [
+        {value: 'basic', label: 'Basic'},
+        {value: 'intermediate', label: 'Intermediate'},
+        {value: 'advanced', label: 'Advanced'}
+    ];
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-25 22:37:22</sys_created_on>
+        <sys_id>e950201283ef621053e9cb29feaad315</sys_id>
+        <sys_mod_count>47</sys_mod_count>
+        <sys_name>SkillUP Skills</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name>sp_widget_e950201283ef621053e9cb29feaad315</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-26 00:33:53</sys_updated_on>
+        <template><![CDATA[<div class="skill-list-container">
+    <div ng-repeat="skill in c.data.skills" class="skill-widget">
+        <span class="skill-name">{{skill.skill_name}}</span>
+        <span class="skill-name">{{skill.employee}}</span>
+        <span class="skill-type">{{skill.skill_type}}</span>
+        
+        <div class="skill-level-container">
+            <select class="skill-level-select" ng-model="skill.existing_level" ng-change="c.selectLevel(skill)" ng-disabled="!skill.is_owner">
+                <option ng-repeat="level in c.data.levels" value="{{level.value}}">{{level.label}}</option>
+            </select>
+            <div class="select-arrow"></div>
+        </div>
+    </div>
+</div>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>e950201283ef621053e9cb29feaad315</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-25 22:37:22</sys_created_on>
+        <sys_id>2150201283ef621053e9cb29feaad318</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-25 22:37:22</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

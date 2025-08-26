@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="db_image">
+    <db_image action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>Service Portal</category>
+        <format>png</format>
+        <height>80</height>
+        <image>44bcc342832b621053e9cb29feaad345</image>
+        <name>edx_logo.png</name>
+        <size_bytes>2233</size_bytes>
+        <sys_class_name>db_image</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-25 16:30:54</sys_created_on>
+        <sys_id>f11c8702832b621053e9cb29feaad3ee</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>edx_logo.png</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name>db_image_f11c8702832b621053e9cb29feaad3ee</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-25 16:31:54</sys_updated_on>
+        <thumbnail/>
+        <width>84</width>
+    </db_image>
+    <sys_attachment action="INSERT_OR_UPDATE">
+        <average_image_color>#fafafa</average_image_color>
+        <chunk_size_bytes>700000</chunk_size_bytes>
+        <compressed>true</compressed>
+        <content_type>image/png</content_type>
+        <file_name>image</file_name>
+        <hash>f46ce92cfb6543a2b8edc26e9ebe83f009d002d74fb012a4d12e236bafaa6a62</hash>
+        <image_height>80</image_height>
+        <image_width>84</image_width>
+        <size_bytes>2233</size_bytes>
+        <size_compressed>2256</size_compressed>
+        <state>available</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-25 16:31:54</sys_created_on>
+        <sys_id>44bcc342832b621053e9cb29feaad345</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-25 16:31:54</sys_updated_on>
+        <table_name>ZZ_YYdb_image</table_name>
+        <table_sys_id>f11c8702832b621053e9cb29feaad3ee</table_sys_id>
+    </sys_attachment>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>H4sIAAAAAAAA/w==</data>
+        <length>16</length>
+        <position>0</position>
+        <sys_attachment display_value="image" sys_id="44bcc342832b621053e9cb29feaad345">44bcc342832b621053e9cb29feaad345</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-25 16:31:54</sys_created_on>
+        <sys_id>84bcc342832b621053e9cb29feaad345</sys_id>
+    </sys_attachment_doc>
+    <sys_attachment_doc action="INSERT_OR_UPDATE">
+        <data>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</data>
+        <length>2996</length>
+        <position>1</position>
+        <sys_attachment display_value="image" sys_id="44bcc342832b621053e9cb29feaad345">44bcc342832b621053e9cb29feaad345</sys_attachment>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-25 16:31:54</sys_created_on>
+        <sys_id>08bcc342832b621053e9cb29feaad345</sys_id>
+    </sys_attachment_doc>
+</record_update>

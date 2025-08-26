@@ -17,6 +17,16 @@
 	 * fields (string) = comma separated list of fields that become the list columns
 	 * view (string) = the default view to load for columns, overrides fields
 	*/
+	
+	 // Lógica do botão "Criar novo"
+  c.createNew = function() {
+    var p = $scope.data.page_id || 'skillup_form';
+    var s = {id: p, table: $scope.data.table, sys_id: '-1', view: 'esc'};
+    var newURL = $location.search(s);
+    spAriaFocusManager.navigateToLink(newURL.url());
+  };
+
+	
 	$scope.accessibilityModeEnabled = spAriaUtil.isAccessibilityEnabled();
 	$scope.exportTypes = [{label:'PDF', value: 'PDF'}, {label:'Excel', value:'EXCEL'}, {label:'CSV', value:'CSV'}];
 	$scope.guID = spUtil.generateUniqueID();
@@ -530,10 +540,6 @@ th .disabled{
   color: $primary;
 }
 
-.panel-body {
-  overflow: auto;
-  padding: 0px;
-}
 
 
 .selected {
@@ -583,47 +589,81 @@ tbody tr:last-child {
 
 .warnings-table {
   border-collapse: separate;
-  border-spacing: 0;   /* sem espaço automático */
+  border-spacing: 0;
   width: 100%;
+  border: none;
 }
-
 
 .warnings-table tbody {
-  display: block;
-  margin-top: 15px;
-  overflow: hidden;
-  border: 1px solid rgba(0,0,0,0.08);
-  box-shadow: none !important;
+  display: table-row-group;
 }
 
-.warnings-table tr {
-  display: table;       /* mantém alinhamento das colunas */
+.warnings-table .card-row {
+  display: table;
   width: 100%;
   table-layout: fixed;
-  background: #fff;     /* fundo branco para cada card */
+  background: #fff;
+  border-left: 1px solid rgba(0,0,0,0.08);
+  border-right: 1px solid rgba(0,0,0,0.08);
 }
 
-.warnings-table td {
-  background: transparent !important;
-  padding: 10px 12px;
-  vertical-align: top;
-  word-wrap: break-word;
+.warnings-table .first-row {
+  border-top: 1px solid rgba(0,0,0,0.08);
+  border-radius: 6px 6px 0 0;   /* arredonda só em cima */
 }
 
-.warnings-table td:nth-child(2),
-.warnings-table th:nth-child(2) {
-  text-align: right;
+.warnings-table .last-row {
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+  border-radius: 0 0 6px 6px;   /* arredonda só embaixo */
+  margin-bottom: 12px;          /* espaço entre cards */
 }
 
+.warnings-table .last-row td {
+  border-top: 1px solid #ddd;   /* linha horizontal */
+  padding-top: 8px;
+}
+
+.warnings-table tr.last-row td[colspan="2"] {
+  border-top: 1px solid #ddd !important;
+}
+
+/* mantém só a divisória entre colunas no header */
 .warnings-table td:nth-child(2),
 .warnings-table th:nth-child(2) {
   border-left: 1px solid #ddd !important;
-  text-align: right;       /* texto alinhado à direita */
-  padding-left: 2px;       /* deixa a linha quase encostada no texto */
-  padding-right: 16px;     /* dá espaço do lado direito */
-  width: 30%;               /* força a coluna a ficar o mais estreita possível */
-  white-space: nowrap;     /* evita quebra de linha */
-}</css>
+  text-align: right;
+  padding-left: 2px;
+  padding-right: 3%;
+  width: 30%;
+  white-space: nowrap;
+}
+
+.card-content {
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: all 0.2s ease;
+}
+
+.card-content:hover {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+/* efeito hover no bloco inteiro */
+.warnings-table .first-row:hover,
+.warnings-table .last-row:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: all 0.2s ease;
+}
+
+</css>
         <data_table>sp_instance_table</data_table>
         <demo_data>{"data":
 	{
@@ -1046,14 +1086,14 @@ tbody tr:last-child {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-08-25 04:00:32</sys_created_on>
         <sys_id>71b0604283ab221053e9cb29feaad3ed</sys_id>
-        <sys_mod_count>87</sys_mod_count>
+        <sys_mod_count>142</sys_mod_count>
         <sys_name>Data Table</sys_name>
         <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
         <sys_policy/>
         <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
         <sys_update_name>sp_widget_71b0604283ab221053e9cb29feaad3ed</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-25 05:18:23</sys_updated_on>
+        <sys_updated_on>2025-08-25 21:05:18</sys_updated_on>
         <template><![CDATA[  <div class="panel panel-{{options.color}} b" ng-class="{'data-table-high-contrast': accessibilityModeEnabled}">
     <div class="panel-heading form-inline" ng-hide="options.hide_header">
       <span class="dropdown m-r-xs">
@@ -1091,22 +1131,30 @@ tbody tr:last-child {
       <div class="alert alert-info" ng-if="loadingData">
           <fa name="spinner" spin="true"></fa> ${Loading data}...
        </div>
+     
+      
     <table class="table warnings-table">
       <caption class="sr-only">{{data.title || data.table_plural}}</caption>
-
-      <tbody ng-repeat="item in data.list track by item.sys_id" ng-class-even="'even-row'" ng-class-odd="'odd-row'"  ng-style="$first && {'margin-top':'0'}">
-        <tr>
-          <td class="pointer sp-list-cell" ng-click="go(item.targetTable, item)">
-            <a href="javascript:void(0)">
-              {{::item.warning.display_value}}
-            </a>
+        <div ng-if="data.canCreate" class="pull-right">
+            <button class="btn btn-primary" ng-click="c.createNew()">
+              Criar novo aviso
+            </button>
+          </div>
+      <tbody>
+        <tr class="card-row first-row"
+            ng-repeat-start="item in data.list track by item.sys_id"
+            ng-click="go(item.targetTable, item)">
+          <td class="sp-list-cell">
+            {{::item.warning.display_value}}
           </td>
           <td>{{::item.urgency.display_value}}</td>
         </tr>
-        <tr>
+        <tr class="card-row last-row"
+            ng-repeat-end
+            ng-click="go(item.targetTable, item)">
           <td colspan="2">{{::item.description.display_value}}</td>
         </tr>
-      </tbody>
+			</tbody>
     </table>
       <div ng-class="{'pruned-msg-filter-pad': (!options.show_breadcrumbs || !data.filter) && !data.list.length}" class="pruned-msg" ng-if="rowsWerePruned()">
         <span ng-if="rowsPruned == 1">${{{rowsPruned}} row removed by security constraints}</span>

@@ -1,11 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
     <sp_widget action="INSERT_OR_UPDATE">
         <category>custom</category>
-        <client_script><![CDATA[function($scope, spUtil) {
+        <client_script><![CDATA[function($scope, $location, $window, spUtil, amb, $http, spAriaUtil, $timeout, spNavStateManager, i18n) {
     var c = this;
 
     // Use a temporary variable to hold the old value
     var lastValue = {};
+	
+		c.createNew = function() {
+			var p = $scope.data.page_id || 'skillup_form';
+			var s = {id: p, table: "x_1805432_mock_ski_has_skill", sys_id: '-1', view: 'esc'};
+			var newURL = $location.search(s);
+			spAriaFocusManager.navigateToLink(newURL.url());
+		};
+	
+		c.deleteSkill = function(skill) {
+			if (confirm("Tem certeza de que deseja remover esta habilidade?")) {
+					c.server.get({
+							action: 'delete_skill',
+							sys_id: skill.sys_id
+					}).then(function(response) {
+							if (response.data.success) {
+									// Remove the skill from the array to update the UI
+									$scope.data.skills = $scope.data.skills.filter(function(s) {
+											return s.sys_id !== skill.sys_id;
+									});
+									spUtil.addInfoMessage("Habilidade removida com sucesso.");
+							} else {
+									var errorMessage = response.data.error || "Erro ao remover a habilidade.";
+									spUtil.addErrorMessage(errorMessage);
+									}
+							});
+					}
+			};
 
     /* Function that's called before a level is selected */
     c.setOriginalLevel = function(skill) {
@@ -40,49 +67,100 @@
 }]]></client_script>
         <controller_as>c</controller_as>
         <css>.skill-list-container {
-    /* Remove padding lateral para alinhar com a borda do container de cima */
     padding: 10px 0;
     margin-top: 20px;
-  
-  /* Adicione estas propriedades para controlar a largura */
-    max-width: 750px; /* Define a largura máxima, pode ser ajustado */
+    max-width: 750px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.skill-header {
+    display: flex; /* Adicionado para o alinhamento do cabeçalho */
+    align-items: center; /* Adicionado para o alinhamento vertical do cabeçalho */
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.addSkill{
+	float: right; 
 }
 
 .skill-widget {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px; /* Reduza este valor se precisar de menos altura */
+    padding: 10px;
     border: 1px solid #ccc;
     background-color: #fff;
-    /* Use box-shadow e border-radius apenas no container externo,
-       não em cada item da lista. Isso cria um visual mais limpo.
-    */
     box-shadow: none;
     border-radius: 0;
 }
 
-.skill-name {
+/* ** Removidas as regras de "flex-basis" pois causam conflito ** */
+
+/* Ajustes para alinhar as colunas */
+.skill-widget &gt; div {
+    /* Define uma largura flexível para cada coluna */
+    flex: 1; 
+}
+
+.skill-header &gt; div:nth-child(1) {
+    flex-basis: 30%;
+}
+
+.skill-header &gt; div:nth-child(2) {
+    flex-basis: 20%;
+}
+
+.skill-header &gt; div:nth-child(3) {
+    flex-basis: 20%;
+    text-align: center;
+}
+
+.skill-header &gt; div:nth-child(4) {
+    flex-basis: 30%;
+}
+
+.skill-widget &gt; div:nth-child(1) {
+    flex-basis: 30%;
+}
+
+.skill-widget &gt; div:nth-child(2) {
+    flex-basis: 20%;
+}
+
+.skill-widget &gt; div:nth-child(3) {
+    flex-basis: 20%;
+    text-align: center;
+}
+
+.skill-widget &gt; div:nth-child(4) {
+    flex-basis: 30%;
+}
+
+.skill-name,
+.skill-employee {
     font-weight: bold;
-    flex-grow: 1;
     font-size: 16px;
     color: #333;
+    white-space: nowrap; /* Impede que o texto quebre para a próxima linha */
+    overflow: hidden; /* Oculta o texto que excede a largura */
+    text-overflow: ellipsis; /* Adiciona "..." ao final do texto cortado */
 }
 
 .skill-type {
     text-align: center;
-    width: 100px;
     color: #666;
     font-size: 14px;
 }
 
 .skill-level-container {
     position: relative;
+    width: 100%;
 }
 
 .skill-level-select {
+    width: 100%;
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -111,6 +189,18 @@
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
     border-top: 5px solid #666;
+}
+
+.header-text {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+    text-align: left; /* Garante que os títulos se alinhem à esquerda por padrão */
+}
+
+/* Ajusta o alinhamento do texto para o cabeçalho 'Tipo' */
+.skill-header .col-2 {
+    text-align: center;
 }</css>
         <data_table>sp_instance</data_table>
         <demo_data/>
@@ -127,6 +217,7 @@
         <roles/>
         <script><![CDATA[(function() {
     /* Data update logic */
+
     if (input && input.action === 'update_skill_level') {
         var success = false;
         var updatedLevel = '';
@@ -147,6 +238,25 @@
 
         data.success = success;
         data.updated_level = updatedLevel;
+        return;
+    }
+	
+		if (input && input.action === 'delete_skill') {
+        var success2 = false;
+        var grDelete = new GlideRecord('x_1805432_mock_ski_has_skill');
+        if (grDelete.get(input.sys_id)) {
+            // Check if the current user is the owner of the record before deleting
+            if (grDelete.getValue('employee') === gs.getUserID()) {
+                grDelete.deleteRecord();
+                success2 = true;
+                data.success = success2;
+            } else {
+                data.error = 'Você não tem permissão para excluir esta habilidade.';
+            }
+        } else {
+            data.error = 'Registro não encontrado.';
+        }
+        data.success = success2;
         return;
     }
 
@@ -188,27 +298,52 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-08-25 22:37:22</sys_created_on>
         <sys_id>e950201283ef621053e9cb29feaad315</sys_id>
-        <sys_mod_count>47</sys_mod_count>
+        <sys_mod_count>167</sys_mod_count>
         <sys_name>SkillUP Skills</sys_name>
         <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
         <sys_policy/>
         <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
         <sys_update_name>sp_widget_e950201283ef621053e9cb29feaad315</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-26 00:33:53</sys_updated_on>
+        <sys_updated_on>2025-08-26 14:39:46</sys_updated_on>
         <template><![CDATA[<div class="skill-list-container">
+    <div class="skill-header">
+        <div class="header-text">Habilidade</div>
+        <div class="header-text">Funcionário</div>
+        <div class="header-text">Tipo</div>
+        <div class="header-text create">Nível
+           <button class="btn btn-primary addSkill" ng-click="c.createNew()">
+                  +
+            </button>
+        </div>
+    </div>
+    
     <div ng-repeat="skill in c.data.skills" class="skill-widget">
-        <span class="skill-name">{{skill.skill_name}}</span>
-        <span class="skill-name">{{skill.employee}}</span>
-        <span class="skill-type">{{skill.skill_type}}</span>
-        
+        <div> 
+            <span class="skill-name">{{skill.skill_name}}</span>
+        </div>
+        <div> 
+            <span class="skill-name">{{skill.employee}}</span>
+        </div>
+        <div>
+            <span class="skill-type">{{skill.skill_type}}</span>
+        </div>
         <div class="skill-level-container">
             <select class="skill-level-select" ng-model="skill.existing_level" ng-change="c.selectLevel(skill)" ng-disabled="!skill.is_owner">
                 <option ng-repeat="level in c.data.levels" value="{{level.value}}">{{level.label}}</option>
             </select>
             <div class="select-arrow"></div>
         </div>
+      	<div>
+      	 	<button class="btn btn-danger addSkill" ng-disabled="!skill.is_owner" ng-click="c.deleteSkill(skill)">
+                  -
+         	</button>
+      	</div>
     </div>
+  
+    <div ng-if="c.data.skills.length === 0">
+      <p>Você precisa ter pelo menos uma skill adicionada</p>  
+  	</div>
 </div>]]></template>
     </sp_widget>
     <sys_es_latest_script action="INSERT_OR_UPDATE">

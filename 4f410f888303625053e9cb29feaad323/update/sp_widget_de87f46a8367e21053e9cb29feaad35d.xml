@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function($scope, $sce) {
+    var c = this;
+
+    // Garante que o admin digitou HTML nas options
+    var html = c.options.html || "";
+
+    // Substitui {{userName}} pelo nome real
+    html = html.replace(/\{\{userName\}\}/g, c.data.userName);
+
+    // Renderiza seguro
+    c.html = $sce.trustAsHtml(html);
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.welcome-banner {
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.welcome-banner p {
+  font-size: 20px;
+  font-weight: bold;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data>{"options": &#13;
+	{&#13;
+		"html": "&lt;i&gt;Hi&lt;/i&gt;",&#13;
+		"title": "HTML"&#13;
+	}&#13;
+}</demo_data>
+        <description/>
+        <docs/>
+        <field_list>title</field_list>
+        <has_preview>false</has_preview>
+        <id>skillup_html_widget</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>SkillUP HTML Widget</name>
+        <option_schema>[{"name":"html","default_value":" &lt;b&gt;hello&lt;/b&gt;","section":"Data","label":"HTML","type":"translated_html"}]</option_schema>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function() {
+  // Pega o nome do usuário logado
+  data.userName = gs.getUserDisplayName();
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 18:57:12</sys_created_on>
+        <sys_id>de87f46a8367e21053e9cb29feaad35d</sys_id>
+        <sys_mod_count>35</sys_mod_count>
+        <sys_name>SkillUP HTML Widget</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name>sp_widget_de87f46a8367e21053e9cb29feaad35d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-26 19:17:17</sys_updated_on>
+        <template><![CDATA[<div>
+  <div ng-if="!c.options.html" class="panel panel-default">
+    <div class="panel-body">
+      <b>${HTML Widget}</b><br>
+      ${Ctrl + Click > Options to set HTML content}
+    </div>
+  </div>
+  <div class="welcome-banner" ng-if="c.options.html" ng-bind-html="c.html"></div>
+</div>]]></template>
+    </sp_widget>
+</record_update>

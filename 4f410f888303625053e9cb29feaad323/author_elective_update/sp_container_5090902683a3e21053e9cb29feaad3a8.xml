@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container">
+    <sp_container action="DELETE">
+        <background_color>#fc8a3d</background_color>
+        <background_image/>
+        <background_style>default</background_style>
+        <bootstrap_alt>false</bootstrap_alt>
+        <class_name/>
+        <container_class_name/>
+        <name>Portal do Colaborador - Container 2</name>
+        <order>2</order>
+        <semantic_tag/>
+        <sp_page display_value="ep_index">3932ff318363221053e9cb29feaad3ab</sp_page>
+        <subheader>false</subheader>
+        <sys_class_name>sp_container</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 16:06:57</sys_created_on>
+        <sys_id>5090902683a3e21053e9cb29feaad3a8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Portal do Colaborador - Container 2</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name>sp_container_5090902683a3e21053e9cb29feaad3a8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-26 16:17:54</sys_updated_on>
+        <title/>
+        <width>container</width>
+    </sp_container>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</application>
+        <file_path/>
+        <instance_id>a68516d2ebb06ad0cbdefceacad0cd70</instance_id>
+        <instance_name>dev324686</instance_name>
+        <name>sp_container_5090902683a3e21053e9cb29feaad3a8</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_container"><sp_container action="INSERT_OR_UPDATE"><background_color>#fc8a3d</background_color><background_image/><background_style>default</background_style><bootstrap_alt>false</bootstrap_alt><class_name/><container_class_name/><name>Portal do Colaborador - Container 2</name><order>2</order><semantic_tag/><sp_page display_value="ep_index">3932ff318363221053e9cb29feaad3ab</sp_page><subheader>false</subheader><sys_class_name>sp_container</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-26 16:06:57</sys_created_on><sys_id>5090902683a3e21053e9cb29feaad3a8</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Portal do Colaborador - Container 2</sys_name><sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package><sys_policy/><sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope><sys_update_name>sp_container_5090902683a3e21053e9cb29feaad3a8</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-26 16:17:54</sys_updated_on><title/><width>container</width></sp_container></record_update>]]></payload>
+        <payload_hash>1311063982</payload_hash>
+        <record_name>Portal do Colaborador - Container 2</record_name>
+        <reverted_from/>
+        <source>4e04109183e7221053e9cb29feaad3fa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 16:17:54</sys_created_on>
+        <sys_id>01139ce683a3e21053e9cb29feaad393</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198e72bf6ed0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-26 16:17:54</sys_updated_on>
+        <type>Container</type>
+        <update_guid>85139ce6e7a3e2107ad3225800289992</update_guid>
+        <update_guid_history>85139ce6e7a3e2107ad3225800289992:1311063982,d09090268aa3e21059b0075a230f61ab:-941595498</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Portal do Colaborador - Container 2">8833902a83a3e21053e9cb29feaad350</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 16:18:23</sys_created_on>
+        <sys_db_object display_value="" name="sp_container">sp_container</sys_db_object>
+        <sys_id>1f93c486331d4358852052b17b4aa5e4</sys_id>
+        <sys_metadata>5090902683a3e21053e9cb29feaad3a8</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Portal do Colaborador - Container 2</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_scope_delete display_value="">268ad51b8f0946f5bb145049f5e84279</sys_scope_delete>
+        <sys_update_name>sp_container_5090902683a3e21053e9cb29feaad3a8</sys_update_name>
+        <sys_update_version display_value="sp_container_5090902683a3e21053e9cb29feaad3a8">01139ce683a3e21053e9cb29feaad393</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-26 16:18:23</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

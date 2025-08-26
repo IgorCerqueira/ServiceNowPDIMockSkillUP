@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link">
+    <sp_instance_link action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color/>
+        <css/>
+        <glyph>paperclip</glyph>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>1</order>
+        <roles/>
+        <sc_cat_item display_value="Envio de certificados">8b5a3bc38303a61053e9cb29feaad365</sc_cat_item>
+        <sc_category/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="2">172d58a683e3e21053e9cb29feaad381</sp_column>
+        <sp_page display_value="sc_cat_item">9f12251147132100ba13a5554ee490f4</sp_page>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 16:47:03</sys_created_on>
+        <sys_id>3fb9d86283e3e21053e9cb29feaad322</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Envio de certificados</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name>sp_instance_link_3fb9d86283e3e21053e9cb29feaad322</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-26 17:02:20</sys_updated_on>
+        <title>Envio de certificados</title>
+        <type>sc_cat_item</type>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="DELETE" query="documentkey=3fb9d86283e3e21053e9cb29feaad322"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</application>
+        <file_path/>
+        <instance_id>a68516d2ebb06ad0cbdefceacad0cd70</instance_id>
+        <instance_name>dev324686</instance_name>
+        <name>sp_instance_link_3fb9d86283e3e21053e9cb29feaad322</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_link"&gt;&lt;sp_instance_link action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color/&gt;&lt;css/&gt;&lt;glyph&gt;paperclip&lt;/glyph&gt;&lt;id/&gt;&lt;kb_article/&gt;&lt;kb_category/&gt;&lt;kb_topic/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;sc_cat_item display_value="Envio de certificados"&gt;8b5a3bc38303a61053e9cb29feaad365&lt;/sc_cat_item&gt;&lt;sc_category/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="2"&gt;172d58a683e3e21053e9cb29feaad381&lt;/sp_column&gt;&lt;sp_page display_value="sc_cat_item"&gt;9f12251147132100ba13a5554ee490f4&lt;/sp_page&gt;&lt;sp_widget display_value="Icon Link"&gt;3caa67afcb13020000f8d856634c9c2e&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-26 16:47:03&lt;/sys_created_on&gt;&lt;sys_id&gt;3fb9d86283e3e21053e9cb29feaad322&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;Envio de certificados&lt;/sys_name&gt;&lt;sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski"&gt;4f410f888303625053e9cb29feaad323&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Mock SkillUp"&gt;4f410f888303625053e9cb29feaad323&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_link_3fb9d86283e3e21053e9cb29feaad322&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-26 17:02:20&lt;/sys_updated_on&gt;&lt;title&gt;Envio de certificados&lt;/title&gt;&lt;type&gt;sc_cat_item&lt;/type&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"link_template": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_link&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=3fb9d86283e3e21053e9cb29feaad322"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1593355502</payload_hash>
+        <record_name>Envio de certificados</record_name>
+        <reverted_from/>
+        <source>4e04109183e7221053e9cb29feaad3fa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 17:02:20</sys_created_on>
+        <sys_id>fb3dd8a683e3e21053e9cb29feaad31e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198e754a2f10000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-26 17:02:20</sys_updated_on>
+        <type>Instance with Link</type>
+        <update_guid>733dd8a6bfe3e2106b3e44581d935a1e</update_guid>
+        <update_guid_history>733dd8a6bfe3e2106b3e44581d935a1e:1593355502,eb3d58a6bae3e210843374425a28883f:1803365507,b32d5c2638e3e2107b39c84a815880cc:1593355502,d1ab902674e3e2108cdc0aa719c69253:1097640498,8f9b9426a7e3e2104e403c9f71945949:-94736651,e78b1426e9e3e2101789ec64b51cf4e0:248516213,756b1ce2c6e3e210cfce18f53190d41d:1854978420,f3b9d862f8e3e2101fe314ff8c4e3824:-1549626891</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Envio de certificados">504d5c2683e3e21053e9cb29feaad3f3</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 17:02:22</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_link">sp_instance_link</sys_db_object>
+        <sys_id>5b83d652c9b5431cb41aa2fb756d2e99</sys_id>
+        <sys_metadata>3fb9d86283e3e21053e9cb29feaad322</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Envio de certificados</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_scope_delete display_value="">268ad51b8f0946f5bb145049f5e84279</sys_scope_delete>
+        <sys_update_name>sp_instance_link_3fb9d86283e3e21053e9cb29feaad322</sys_update_name>
+        <sys_update_version display_value="sp_instance_link_3fb9d86283e3e21053e9cb29feaad322">fb3dd8a683e3e21053e9cb29feaad31e</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-26 17:02:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

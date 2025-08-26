@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="kb_uc_can_read_mtom">
+    <kb_uc_can_read_mtom action="DELETE">
+        <kb_knowledge_base display_value="IT">a7e8a78bff0221009b20ffffffffff17</kb_knowledge_base>
+        <sys_class_name>kb_uc_can_read_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 16:32:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9f66502e83a3e21053e9cb29feaad3bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>IT.All SkillUP Users</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name>kb_uc_can_read_mtom_9f66502e83a3e21053e9cb29feaad3bc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-26 16:32:33</sys_updated_on>
+        <user_criteria display_value="All SkillUP Users">0e46542e83a3e21053e9cb29feaad331</user_criteria>
+    </kb_uc_can_read_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</application>
+        <file_path/>
+        <instance_id>a68516d2ebb06ad0cbdefceacad0cd70</instance_id>
+        <instance_name>dev324686</instance_name>
+        <name>kb_uc_can_read_mtom_9f66502e83a3e21053e9cb29feaad3bc</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="kb_uc_can_read_mtom"><kb_uc_can_read_mtom action="INSERT_OR_UPDATE"><kb_knowledge_base display_value="IT">a7e8a78bff0221009b20ffffffffff17</kb_knowledge_base><sys_class_name>kb_uc_can_read_mtom</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-26 16:32:33</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>9f66502e83a3e21053e9cb29feaad3bc</sys_id><sys_mod_count>0</sys_mod_count><sys_name>IT.All SkillUP Users</sys_name><sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package><sys_policy/><sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope><sys_update_name>kb_uc_can_read_mtom_9f66502e83a3e21053e9cb29feaad3bc</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-26 16:32:33</sys_updated_on><user_criteria display_value="All SkillUP Users">0e46542e83a3e21053e9cb29feaad331</user_criteria></kb_uc_can_read_mtom></record_update>]]></payload>
+        <payload_hash>940344467</payload_hash>
+        <record_name>IT.All SkillUP Users</record_name>
+        <reverted_from/>
+        <source>4e04109183e7221053e9cb29feaad3fa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 16:32:33</sys_created_on>
+        <sys_id>1766582e83a3e21053e9cb29feaad322</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198e7395e8b0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-26 16:32:33</sys_updated_on>
+        <type>Who Can Read Knowledge Base</type>
+        <update_guid>1b66582e44a3e210160d54605ccb9321</update_guid>
+        <update_guid_history>1b66582e44a3e210160d54605ccb9321:940344467</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="IT.All SkillUP Users">c92d6caa8327e21053e9cb29feaad37e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 18:11:47</sys_created_on>
+        <sys_db_object display_value="" name="kb_uc_can_read_mtom">kb_uc_can_read_mtom</sys_db_object>
+        <sys_id>8058b4b6380642de9c259e3386390744</sys_id>
+        <sys_metadata>9f66502e83a3e21053e9cb29feaad3bc</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>IT.All SkillUP Users</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_scope_delete display_value="">268ad51b8f0946f5bb145049f5e84279</sys_scope_delete>
+        <sys_update_name>kb_uc_can_read_mtom_9f66502e83a3e21053e9cb29feaad3bc</sys_update_name>
+        <sys_update_version display_value="kb_uc_can_read_mtom_9f66502e83a3e21053e9cb29feaad3bc">1766582e83a3e21053e9cb29feaad322</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-26 18:11:47</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="kb_uc_can_contribute_mtom">
+    <kb_uc_can_contribute_mtom action="DELETE">
+        <kb_knowledge_base display_value="IT">a7e8a78bff0221009b20ffffffffff17</kb_knowledge_base>
+        <sys_class_name>kb_uc_can_contribute_mtom</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 16:34:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>64f6946e83a3e21053e9cb29feaad340</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>IT.The SkillUP Monitors and Managers</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name>kb_uc_can_contribute_mtom_64f6946e83a3e21053e9cb29feaad340</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-26 16:34:48</sys_updated_on>
+        <user_criteria display_value="The SkillUP Monitors and Managers">60d6902e83a3e21053e9cb29feaad381</user_criteria>
+    </kb_uc_can_contribute_mtom>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</application>
+        <file_path/>
+        <instance_id>a68516d2ebb06ad0cbdefceacad0cd70</instance_id>
+        <instance_name>dev324686</instance_name>
+        <name>kb_uc_can_contribute_mtom_64f6946e83a3e21053e9cb29feaad340</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="kb_uc_can_contribute_mtom"><kb_uc_can_contribute_mtom action="INSERT_OR_UPDATE"><kb_knowledge_base display_value="IT">a7e8a78bff0221009b20ffffffffff17</kb_knowledge_base><sys_class_name>kb_uc_can_contribute_mtom</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-26 16:34:48</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>64f6946e83a3e21053e9cb29feaad340</sys_id><sys_mod_count>0</sys_mod_count><sys_name>IT.The SkillUP Monitors and Managers</sys_name><sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package><sys_policy/><sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope><sys_update_name>kb_uc_can_contribute_mtom_64f6946e83a3e21053e9cb29feaad340</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-26 16:34:48</sys_updated_on><user_criteria display_value="The SkillUP Monitors and Managers">60d6902e83a3e21053e9cb29feaad381</user_criteria></kb_uc_can_contribute_mtom></record_update>]]></payload>
+        <payload_hash>-887461865</payload_hash>
+        <record_name>IT.The SkillUP Monitors and Managers</record_name>
+        <reverted_from/>
+        <source>4e04109183e7221053e9cb29feaad3fa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 16:34:48</sys_created_on>
+        <sys_id>60f6946e83a3e21053e9cb29feaad343</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198e73b6f260000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-26 16:34:48</sys_updated_on>
+        <type>Who Can Contribute To Knowledge Base</type>
+        <update_guid>64f6946e96a3e21081250f1fe98baf42</update_guid>
+        <update_guid_history>64f6946e96a3e21081250f1fe98baf42:-887461865</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="IT.The SkillUP Monitors and Managers">172decaa8327e21053e9cb29feaad396</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 18:11:56</sys_created_on>
+        <sys_db_object display_value="" name="kb_uc_can_contribute_mtom">kb_uc_can_contribute_mtom</sys_db_object>
+        <sys_id>015760cdb7244258827830f6c8778eb1</sys_id>
+        <sys_metadata>64f6946e83a3e21053e9cb29feaad340</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>IT.The SkillUP Monitors and Managers</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_scope_delete display_value="">268ad51b8f0946f5bb145049f5e84279</sys_scope_delete>
+        <sys_update_name>kb_uc_can_contribute_mtom_64f6946e83a3e21053e9cb29feaad340</sys_update_name>
+        <sys_update_version display_value="kb_uc_can_contribute_mtom_64f6946e83a3e21053e9cb29feaad340">60f6946e83a3e21053e9cb29feaad343</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-26 18:11:56</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

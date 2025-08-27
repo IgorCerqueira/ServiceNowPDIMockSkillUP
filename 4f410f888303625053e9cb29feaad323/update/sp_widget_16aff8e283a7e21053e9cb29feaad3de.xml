@@ -845,6 +845,10 @@ tbody tr:last-child {
 	// copy to data[name] from input[name] || option[name]
 	optCopy(['table', 'p', 'o', 'd', 'filter', 'fixed_query', 'filterACLs', 'fields', 'keywords', 'view']);
 	optCopy(['relationship_id', 'apply_to', 'apply_to_sys_id', 'window_size']);
+	
+	data.o = 'sys_created_on';
+	data.d = 'desc';
+	
 	if (!data.table) {
 		data.invalid_table = true;
 		data.table_label = "";
@@ -1044,11 +1048,24 @@ tbody tr:last-child {
 						};
 					}
 				
+				var gr_task_project = new GlideRecord('x_1805432_mock_ski_project_task');
+				gr_task_project.addQuery('project', record.project.value);
+				gr_task_project.query();
 				
-				record.manager = {
-					value: gr_project.manager.toString(), // o sys_id do usuário
-					display_value: gr_project.manager.getDisplayValue() // o nome do usuário
-				};
+				while(gr_task_project.next()){
+					if(gr_task_project.assigned_to.toString() == gs.getUserID()){
+							record.displayCard = {
+							value: "true",
+							display_value: "true"
+						};
+					}
+					else{
+						
+						
+					}
+				
+				}
+	
 			}
 		}
 		else{
@@ -1138,14 +1155,14 @@ tbody tr:last-child {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-08-26 19:32:42</sys_created_on>
         <sys_id>16aff8e283a7e21053e9cb29feaad3de</sys_id>
-        <sys_mod_count>98</sys_mod_count>
+        <sys_mod_count>156</sys_mod_count>
         <sys_name>SkillUP Data Table V2</sys_name>
         <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
         <sys_policy/>
         <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
         <sys_update_name>sp_widget_16aff8e283a7e21053e9cb29feaad3de</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-26 21:33:14</sys_updated_on>
+        <sys_updated_on>2025-08-27 01:22:14</sys_updated_on>
         <template><![CDATA[  <div class="panel panel-{{options.color}} b" ng-class="{'data-table-high-contrast': accessibilityModeEnabled}">
     <div class="panel-heading form-inline" ng-hide="options.hide_header">
       <span class="dropdown m-r-xs">
@@ -1209,7 +1226,7 @@ tbody tr:last-child {
             ng-if="item.displayCard && item.displayCard.display_value"
             >
           <td colspan="2">
-            <p ng-if="item.project && item.project.display_value">Projeto: {{::item.project.display_value}} - Manager:  {{::item.manager.display_value}} - display:  {{::item.displayCard.display_value}}</p>
+            <p ng-if="item.project && item.project.display_value">Projeto: {{::item.project.display_value}}</p>
             <p>{{::item.description.display_value}}</p>
           
           </td>

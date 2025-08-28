@@ -664,6 +664,7 @@ tbody tr:last-child {
   transition: all 0.2s ease;
 }
 
+
 </css>
         <data_table>sp_instance_table</data_table>
         <demo_data>{"data":
@@ -1155,14 +1156,14 @@ tbody tr:last-child {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-08-26 19:32:42</sys_created_on>
         <sys_id>16aff8e283a7e21053e9cb29feaad3de</sys_id>
-        <sys_mod_count>156</sys_mod_count>
+        <sys_mod_count>166</sys_mod_count>
         <sys_name>SkillUP Data Table V2</sys_name>
         <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
         <sys_policy/>
         <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
         <sys_update_name>sp_widget_16aff8e283a7e21053e9cb29feaad3de</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-27 01:22:14</sys_updated_on>
+        <sys_updated_on>2025-08-27 17:22:46</sys_updated_on>
         <template><![CDATA[  <div class="panel panel-{{options.color}} b" ng-class="{'data-table-high-contrast': accessibilityModeEnabled}">
     <div class="panel-heading form-inline" ng-hide="options.hide_header">
       <span class="dropdown m-r-xs">
@@ -1218,7 +1219,13 @@ tbody tr:last-child {
           <td class="sp-list-cell">
             {{::item.warning.display_value}} - {{::item.sys_created_on.display_value}} ({{::item.sys_created_by.display_value}})
           </td>
-          <td>{{::item.urgency.display_value}}</td>
+          <td ng-style="{
+              'color': item.urgency.display_value === 'Low' ? 'green' :
+                       item.urgency.display_value === 'Medium' ? 'orange' :
+                       item.urgency.display_value === 'High' ? 'red' : 'black'
+            }">
+            	{{::item.urgency.display_value}}
+          </td>
         </tr>
         <tr class="card-row last-row"
             ng-repeat-end

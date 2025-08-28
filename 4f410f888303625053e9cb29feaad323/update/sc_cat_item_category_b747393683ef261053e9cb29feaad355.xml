@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
     <sc_cat_item_category action="INSERT_OR_UPDATE">
-        <sc_cat_item display_value="Envio de certificados">8b5a3bc38303a61053e9cb29feaad365</sc_cat_item>
-        <sc_category display_value="SkillUP">7110045f8303a61053e9cb29feaad302</sc_category>
+        <sc_cat_item display_value="Proposta comercial">3917fdf283ef261053e9cb29feaad3a2</sc_cat_item>
+        <sc_category display_value="Comercial">a9fa20fa83a7261053e9cb29feaad382</sc_category>
         <sys_class_name>sc_cat_item_category</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-08-04 02:19:12</sys_created_on>
-        <sys_id>7020045f8303a61053e9cb29feaad3c5</sys_id>
+        <sys_created_on>2025-08-27 18:14:18</sys_created_on>
+        <sys_id>b747393683ef261053e9cb29feaad355</sys_id>
         <sys_mod_count>0</sys_mod_count>
-        <sys_name>SkillUP.Envio de Certificados</sys_name>
+        <sys_name>Comercial.Proposta comercial</sys_name>
         <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
         <sys_policy/>
         <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
-        <sys_update_name>sc_cat_item_category_7020045f8303a61053e9cb29feaad3c5</sys_update_name>
+        <sys_update_name>sc_cat_item_category_b747393683ef261053e9cb29feaad355</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-08-04 02:19:12</sys_updated_on>
+        <sys_updated_on>2025-08-27 18:14:18</sys_updated_on>
     </sc_cat_item_category>
 </record_update>

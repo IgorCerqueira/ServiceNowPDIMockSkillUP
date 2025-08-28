@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_instance_link">
+    <sp_instance_link action="DELETE">
+        <active>true</active>
+        <class_name/>
+        <color>default</color>
+        <css/>
+        <glyph>bullhorn</glyph>
+        <id/>
+        <kb_article/>
+        <kb_category/>
+        <kb_topic/>
+        <order>1</order>
+        <roles/>
+        <sc_cat_item/>
+        <sc_category/>
+        <short_description/>
+        <size>md</size>
+        <sp_column display_value="4">05eba832836b261053e9cb29feaad329</sp_column>
+        <sp_page display_value="skillup_warning">030e14e683e3e21053e9cb29feaad345</sp_page>
+        <sp_widget display_value="Icon Link">3caa67afcb13020000f8d856634c9c2e</sp_widget>
+        <sys_class_name>sp_instance_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-26 17:03:13</sys_created_on>
+        <sys_id>f47d58a683e3e21053e9cb29feaad3c4</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Avisos</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name>sp_instance_link_f47d58a683e3e21053e9cb29feaad3c4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-27 12:45:12</sys_updated_on>
+        <title>Avisos</title>
+        <type>page</type>
+        <url/>
+        <widget_parameters><![CDATA[{
+	"link_template": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]></widget_parameters>
+    </sp_instance_link>
+    <sys_translated_text action="DELETE" query="documentkey=f47d58a683e3e21053e9cb29feaad3c4"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</application>
+        <file_path/>
+        <instance_id>a68516d2ebb06ad0cbdefceacad0cd70</instance_id>
+        <instance_name>dev324686</instance_name>
+        <name>sp_instance_link_f47d58a683e3e21053e9cb29feaad3c4</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_instance_link"&gt;&lt;sp_instance_link action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;class_name/&gt;&lt;color&gt;default&lt;/color&gt;&lt;css/&gt;&lt;glyph&gt;bullhorn&lt;/glyph&gt;&lt;id/&gt;&lt;kb_article/&gt;&lt;kb_category/&gt;&lt;kb_topic/&gt;&lt;order&gt;1&lt;/order&gt;&lt;roles/&gt;&lt;sc_cat_item/&gt;&lt;sc_category/&gt;&lt;short_description/&gt;&lt;size&gt;md&lt;/size&gt;&lt;sp_column display_value="4"&gt;05eba832836b261053e9cb29feaad329&lt;/sp_column&gt;&lt;sp_page display_value="skillup_warning"&gt;030e14e683e3e21053e9cb29feaad345&lt;/sp_page&gt;&lt;sp_widget display_value="Icon Link"&gt;3caa67afcb13020000f8d856634c9c2e&lt;/sp_widget&gt;&lt;sys_class_name&gt;sp_instance_link&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-08-26 17:03:13&lt;/sys_created_on&gt;&lt;sys_id&gt;f47d58a683e3e21053e9cb29feaad3c4&lt;/sys_id&gt;&lt;sys_mod_count&gt;14&lt;/sys_mod_count&gt;&lt;sys_name&gt;Avisos&lt;/sys_name&gt;&lt;sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski"&gt;4f410f888303625053e9cb29feaad323&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Mock SkillUp"&gt;4f410f888303625053e9cb29feaad323&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_instance_link_f47d58a683e3e21053e9cb29feaad3c4&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-08-27 12:45:12&lt;/sys_updated_on&gt;&lt;title&gt;Avisos&lt;/title&gt;&lt;type&gt;page&lt;/type&gt;&lt;url/&gt;&lt;widget_parameters&gt;&lt;![CDATA[{
+	"link_template": {
+		"value": "",
+		"displayValue": ""
+	}
+}]]&gt;&lt;/widget_parameters&gt;&lt;/sp_instance_link&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=f47d58a683e3e21053e9cb29feaad3c4"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>61875616</payload_hash>
+        <record_name>Avisos</record_name>
+        <reverted_from/>
+        <source>4e04109183e7221053e9cb29feaad3fa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-27 12:45:12</sys_created_on>
+        <sys_id>7efb2c32836b261053e9cb29feaad336</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198eb8f94ed0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-27 12:45:12</sys_updated_on>
+        <type>Instance with Link</type>
+        <update_guid>f2fb2c32d46b26104b7abfeeb5344936</update_guid>
+        <update_guid_history>f2fb2c32d46b26104b7abfeeb5344936:61875616,76fb2c32ac6b261051ee25454245b031:-1196007669,3afbe432d26b261064df5e0c1c4cd0be:1555944134,dafbe832386b2610af313619a5dcfcd7:-1196007669,9afbe832386b261021977c38f24232d0:1429100517,defbe832ca6b261021f7c9f6efce3ecb:1555944134,4efbe8323f6b2610596c6d868b41c6b2:61875616,cefbe8323e6b26107d4c93714cdcc8ad:-1196007669,cefbe832036b26107301dfa64608d0a6:1555944134,7dfbe832f86b2610d10a1c8fd0a00c7f:-1196007669,fdfb6432fa6b2610032efab9b16bad27:1555944134,0aeb2832b46b26105293df79a138ac6a:-1196007669,2f7e10e6ffe3e2101fe63c33fd22944a:1555944134,ceadd8a6d9e3e2109e23806d847faacc:969126069,bc7d58a6bae3e2107c948b4a8cc816c5:-291006088</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Avisos">e3fbacfe832b261053e9cb29feaad35d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-27 12:45:14</sys_created_on>
+        <sys_db_object display_value="" name="sp_instance_link">sp_instance_link</sys_db_object>
+        <sys_id>111cb61668a44fc887d8a3037726ce04</sys_id>
+        <sys_metadata>f47d58a683e3e21053e9cb29feaad3c4</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Avisos</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_scope_delete display_value="">268ad51b8f0946f5bb145049f5e84279</sys_scope_delete>
+        <sys_update_name>sp_instance_link_f47d58a683e3e21053e9cb29feaad3c4</sys_update_name>
+        <sys_update_version display_value="sp_instance_link_f47d58a683e3e21053e9cb29feaad3c4">7efb2c32836b261053e9cb29feaad336</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-27 12:45:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="DELETE">
+        <sc_cat_item display_value="Envio de certificado">126f2c76836b261053e9cb29feaad39c</sc_cat_item>
+        <sc_category display_value="Tecnica">77baecbe832b261053e9cb29feaad32f</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-27 13:00:36</sys_created_on>
+        <sys_id>288f24b6836b261053e9cb29feaad346</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Tecnica.Envio de certificado</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_update_name>sc_cat_item_category_288f24b6836b261053e9cb29feaad346</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-27 13:00:36</sys_updated_on>
+    </sc_cat_item_category>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</application>
+        <file_path/>
+        <instance_id>a68516d2ebb06ad0cbdefceacad0cd70</instance_id>
+        <instance_name>dev324686</instance_name>
+        <name>sc_cat_item_category_288f24b6836b261053e9cb29feaad346</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category"><sc_cat_item_category action="INSERT_OR_UPDATE"><sc_cat_item display_value="Envio de certificado">126f2c76836b261053e9cb29feaad39c</sc_cat_item><sc_category display_value="Tecnica">77baecbe832b261053e9cb29feaad32f</sc_category><sys_class_name>sc_cat_item_category</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-08-27 13:00:36</sys_created_on><sys_id>288f24b6836b261053e9cb29feaad346</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Tecnica.Envio de certificado</sys_name><sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package><sys_policy/><sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope><sys_update_name>sc_cat_item_category_288f24b6836b261053e9cb29feaad346</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-08-27 13:00:36</sys_updated_on></sc_cat_item_category></record_update>]]></payload>
+        <payload_hash>965718893</payload_hash>
+        <record_name>Tecnica.Envio de certificado</record_name>
+        <reverted_from/>
+        <source>4e04109183e7221053e9cb29feaad3fa</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-27 13:00:36</sys_created_on>
+        <sys_id>e88f24b6836b261053e9cb29feaad349</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>198eb9db0500000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-27 13:00:36</sys_updated_on>
+        <type>Catalog Item Category</type>
+        <update_guid>ec8f24b6076b2610718a76e6575fc148</update_guid>
+        <update_guid_history>ec8f24b6076b2610718a76e6575fc148:965718893</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Tecnica.Envio de certificado">76b5f8be836b261053e9cb29feaad31f</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-08-27 13:27:48</sys_created_on>
+        <sys_db_object display_value="" name="sc_cat_item_category">sc_cat_item_category</sys_db_object>
+        <sys_id>157f9da1789e45488537be52b7fd3a90</sys_id>
+        <sys_metadata>288f24b6836b261053e9cb29feaad346</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Tecnica.Envio de certificado</sys_name>
+        <sys_package display_value="Mock SkillUp" source="x_1805432_mock_ski">4f410f888303625053e9cb29feaad323</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Mock SkillUp">4f410f888303625053e9cb29feaad323</sys_scope>
+        <sys_scope_delete display_value="">268ad51b8f0946f5bb145049f5e84279</sys_scope_delete>
+        <sys_update_name>sc_cat_item_category_288f24b6836b261053e9cb29feaad346</sys_update_name>
+        <sys_update_version display_value="sc_cat_item_category_288f24b6836b261053e9cb29feaad346">e88f24b6836b261053e9cb29feaad349</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-08-27 13:27:48</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
